@@ -8,3 +8,4 @@
 /slide/
 /system/
 /application/cache/*
+/application/config/config.php

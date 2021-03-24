@@ -47,10 +47,10 @@
   left: 15px;
   right:15px;
   transition: .5s ease;
-  opacity:1;
+  opacity:0;
   color: white;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 .picture-product:hover .overlay-img-2 {

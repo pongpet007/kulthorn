@@ -95,6 +95,7 @@ body {
       bottom: -45px;
       left: 0;
       right: 0;
+<<<<<<< HEAD
       }
       .tab .nav-tabs li a.active:after{
       content: "";
@@ -119,16 +120,111 @@ body {
       font-size: 24px;
       margin-top: 0;
       }
+<<<<<<< HEAD
       @media only screen and (max-width: 479px){
       .tab .nav-tabs li{
       width: 100%;
       text-align: center;
       }
       .tab .nav-tabs li a.active:before{
+=======
+     
+      @media only screen and (max-width: 479px){
+      .tab .nav-tabs li{
+=======
+      top: 15px; 
+      z-index: 999999999;
+      background-color: #FFF;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+      font-size: 23px;
+    }
+  }
+
+  #infoMenu li a {
+    color: #fff;
+    z-index: 999;
+  }
+  a:hover,a:focus{
+    outline: none;
+    text-decoration: none;
+  }
+  .tab .nav-tabs{ border-bottom: 0px solid #e8e8e8; }
+  .tab .nav-tabs li a{
+    letter-spacing : 1px;
+    display: block;
+    padding: 10px 20px;
+    margin: 0 5px 1px 0;
+    background: #2f23b0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    z-index: 2;
+    position: relative;
+    transition:all 0.3s ease 0s;
+  }
+  .tab .nav-tabs li a:hover {
+    background: #4030f0;
+    color: #ffffff;
+    border: none;
+  }
+  .tab .nav-tabs li a.active{
+    background: #4030f0;
+    color: #ffffff;
+    border: none;
+  }
+  .tab .nav-tabs li a.active:before{
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    font-weight: 700;
+    color: #4030f0;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+  }
+  .tab .nav-tabs li a.active:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #4030f0;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+  }
+  .tab .tab-content{
+    padding: 30px 20px 20px;
+    margin-top: 0;
+    font-size: 15px;
+    color: #7a9181;
+    line-height: 30px;
+    border-radius: 0 0 5px 5px;
+  }
+  .tab .tab-content h3{
+    font-size: 24px;
+    margin-top: 0;
+  }
+  @media only screen and (max-width: 479px){
+    .tab .nav-tabs li{
+>>>>>>> 2ade28ac16a8fb3e386bce71f87c2e05ece3ed72
+      width: 100%;
+      text-align: center;
+    }
+    .tab .nav-tabs li a.active:before{
+>>>>>>> 8d94fc0eb52b2cf2a6ddc4c1702320b088da7797
       content: "\f105";
       bottom: 15%;
       left: 0;
       right: auto;
+<<<<<<< HEAD
       }
       }
       @media (min-width:1400px) {
@@ -138,5 +234,87 @@ body {
       }
       .pt-60 {
         padding-top: 60px;
+=======
+    }
+  }
+  @media (min-width:1400px) {
+    .container {
+      max-width: 1360px
+    }
+  }
+  .pt-60 {
+    padding-top: 60px;
+  }
+  .breadcrumb {
+        background-color:white;
+        font-size:24px;
+        padding: .75rem 0rem;
+      }
+      .btn-search{
+        background-color:#312C82;
+        border-radius:0px;
+        padding:7px 20px;
+        border:none;
+        color:white;
+      }
+      .search-product .form-inline{
+       float:right;
+      }
+      .search-product .form-control{
+        border-radius:0px;
+        width:270px;
+      }
+      
+      .search-product .form-group{
+        margin-bottom: 0rem;
+      }
+      
+      .all-product .nav-link{
+        border-bottom: dotted 2px #d7d7d7;
+        padding: .5rem 0rem;
+        font-size:24px;
+        color:#4D4D4D;
+      }
+      .all-product .icon-cate{
+        font-size:13px;
+        padding-right:5px;
+      }
+      .products-all img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .picture-product .overlay-img {
+      position: absolute; 
+      bottom: 0; 
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.5); /* Black see-through */
+      color: #f1f1f1; 
+      left:0;
+      right:0;
+      transition: .5s ease;
+      opacity:1;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+    .picture-product:hover .overlay-img {
+      opacity: 1;
+    }
+
+      
+      @media (max-width: 414px){
+        .products-all{
+          order: 1;
+        }
+        .search-product .form-inline{
+         float:left;
+        }
+        .breadcrumb{
+          margin-bottom:0rem;
+        }
+>>>>>>> 8d94fc0eb52b2cf2a6ddc4c1702320b088da7797
       }
 </style>

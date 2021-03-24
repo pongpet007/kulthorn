@@ -23,7 +23,7 @@
   </head>
   <body>
     <div id="header">
-      <ul id="menu">
+      <!-- <ul id="menu">
         <li data-menuanchor="firstPage" class="active"><a href="#firstPage">01.กุลธร</a></li>
         <li data-menuanchor="secondPage"><a href="#secondPage">02.เกี่ยวกับเรา</a></li>
         <li data-menuanchor="thirdPage"><a href="#thirdPage">03.สินค้าและบริการ</a></li>
@@ -31,7 +31,63 @@
         <li data-menuanchor="fifthPage"><a href="#fifthPage">05.ข่าวสารและกิจกรรม</a></li>
         <li data-menuanchor="sixthPage"><a href="#sixthPage">06.ร่วมงานกับเรา</a></li>
         <li data-menuanchor="seventhPage"><a href="#seventhPage">07.ติดต่อเรา</a></li>
-      </ul>
+      </ul> -->
+      <nav class="navbar navbar-expand-lg navbar-light /*bg-light*/ nav-color">
+        <a class="navbar-brand" href="#"> <img src="<?= base_url()?>/assets/img/logo-kul.png" style="width: 50%; "> </a>
+        <button class="navbar-toggler nav-color-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item nav-1">
+              <a class="nav-link nav-link-new" href="#"><span class="number-page-1">01.</span>เกี่ยวกับเรา</a>
+            </li>
+            <li class="nav-item nav-2">
+              <a class="nav-link" href="#"><span class="number-page-2">02.</span>สินค้าและบริการ</a>
+            </li>
+            <li class="nav-item nav-3">
+              <a class="nav-link" href="#"><span class="number-page-3">03.</span>เกร็ดความรู้</a>
+            </li>
+            <li class="nav-item nav-4">
+              <a class="nav-link" href="#"><span class="number-page-4">04.</span>ข่าวสารและกิจกรรม</a>
+            </li>
+            <li class="nav-item nav-5">
+              <a class="nav-link" href="#"><span class="number-page-5">05.</span>ร่วมงานกับเรา</a>
+            </li>
+            <li class="nav-item nav-6">
+              <a class="nav-link" href="#"><span class="number-page-6">06.</span>ติดต่อเรา</a>
+            </li>
+            <li class="nav-item nav-7">
+              <a class="nav-link img-flag" style="cursor: default;">
+                <img src="<?= base_url()?>assets/img/thai-flag.png" style="margin-top: -5px;">
+              </a>
+            </li>
+            <li class="nav-item  nav-8">
+              <div class="dropdown show changlang">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ภาษาไทย
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item nav-9">  
+              <a class="nav-link" href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item nav-9">  
+              <a class="nav-link" href=""><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item nav-9">  
+              <a class="nav-link" href=""><i class="fab fa-instagram"></i></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
     </div>
     <div id="fullpage">
       <div class="section " id="section0">

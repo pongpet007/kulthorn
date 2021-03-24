@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/fontawesome-free/css/all.min.css">
+    
+    <?php $this->load->view('2021_theme_1/inc/css-peck'); ?>
     <?php $this->load->view('2021_theme_1/inc/css'); ?>
     <title>Products</title>
 </head>
@@ -59,10 +62,10 @@
             <div class="col-lg-9 order-1 order-md-2 products-all mb-3">
                 <div class="row">
                     <div class= "col-6 col-lg-4 ">
-                        <
+                         
                         <div class ="picture-product">
                         <img src="image_new/p-1.jpg">
-                        <div class="overlay-img">My Name is John</div>
+                        <div class="overlay-img-2">My Name is John</div>
                         </div>
                     </div>
                     <div class= "col-6 col-lg-4">

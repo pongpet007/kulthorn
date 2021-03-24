@@ -1,28 +1,24 @@
 @font-face {
-    font-family: 'PSLDISPLAYPRO';
-    src: url('<?=base_url()?>assets_2021_theme_1/font/PSL029pro.ttf');
+    font-family: "myfont";
+    src: url("assets_2021_theme_1/font/PSL029pro.ttf");
     font-weight: normal;
     font-style: normal;
+   
   }
   
 @CHARSET "ISO-8859-1";
 
 /* Reset CSS
  * --------------------------------------- */
- @font-face {
-    font-family: 'PSLDISPLAYPRO';
-    src: url('/assets_2021_theme_1/font/PSL029pro.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
+
  body {
-    font-family:PSLDISPLAYPRO !important;
+    font-family: "myfont",sans-serif;
   }
   /* Style for our header texts
   * --------------------------------------- */
   h1{
   font-size: 5em;
-  font-family: PSLDISPLAYPRO !important;
+  font-family: PSLDISPLAYPRO;
   color: #fff;
   margin:0;
   padding:0;

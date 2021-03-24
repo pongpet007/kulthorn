@@ -18,7 +18,12 @@
     <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
     <script src="<?=base_url()?>assets/owlcarousel/owl.carousel.js"></script>
     <style type="text/css">
-    
+    @font-face {
+    font-family: 'PSLDISPLAYPRO';
+    src: url('<?=base_url()?>assets_2021_theme_1/font/PSL029pro.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
   </style>
     
   </head>

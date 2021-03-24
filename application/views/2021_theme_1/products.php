@@ -65,7 +65,7 @@
                          
                         <div class ="picture-product">
                         <img src="image_new/p-1.jpg">
-                        <div class="overlay-img-2">My Name is John</div>
+                        <div class="overlay-img-2"><h3>My Name is John<h3></div>
                         </div>
                     </div>
                     <div class= "col-6 col-lg-4">

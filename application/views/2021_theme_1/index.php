@@ -349,7 +349,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-1" style="padding-bottom: 30px;">
+                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-2" style="padding-bottom: 30px;">
                       <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                         <div style="padding-left: 15px; padding-right: 15px;">
                           <h1>วาล์ว</h1>
@@ -357,7 +357,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-1" style="padding-bottom: 30px;">
+                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-3" style="padding-bottom: 30px;">
                       <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                         <div style="padding-left: 15px; padding-right: 15px;">
                           <h1>อุปกรณ์ทำความเย็น</h1>
@@ -365,7 +365,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-1" style="padding-bottom: 30px;">
+                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-4" style="padding-bottom: 30px;">
                       <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                         <div style="padding-left: 15px; padding-right: 15px;">
                           <h1>รถตัดหญ้า</h1>
@@ -373,7 +373,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-1" style="padding-bottom: 30px;">
+                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-5" style="padding-bottom: 30px;">
                       <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                         <div style="padding-left: 15px; padding-right: 15px;">
                           <h1>ปั๊มน้ำ</h1>
@@ -381,7 +381,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-1" style="padding-bottom: 30px;">
+                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-6" style="padding-bottom: 30px;">
                       <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                         <div style="padding-left: 15px; padding-right: 15px;">
                           <h1>สปริงเกอร์</h1>
@@ -393,7 +393,22 @@
                 </div>
                 <div class="col-lg-8">
                   <div class="product-hide-1">
-                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product1.png">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product1.jpg">
+                  </div>
+                  <div class="product-hide-2">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product2.jpg">
+                  </div>
+                  <div class="product-hide-2">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product3.jpg">
+                  </div>
+                  <div class="product-hide-4">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product4.jpg">
+                  </div>
+                  <div class="product-hide-5">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product5.jpg">
+                  </div>
+                  <div class="product-hide-6">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product6.jpg">
                   </div>
                 </div>
               </div>
@@ -401,8 +416,66 @@
           </div>
         </div>
       </div>
-      <style type="text/css">
+      <script>
+        $(document).ready(function(){
+          $("#products-catagory-1").mouseover(function(){
+            $(".product-hide-1").css("display", "block");
+          });
+          $("#products-catagory-1").mouseout(function(){
+            $(".product-hide-1").css("display", "none");
+          });
+          $("#products-catagory-2").mouseover(function(){
+            $(".product-hide-2").css("display", "block");
+          });
+          $("#products-catagory-2").mouseout(function(){
+            $(".product-hide-2").css("display", "none");
+          });
+          $("#products-catagory-3").mouseover(function(){
+            $(".product-hide-3").css("display", "block");
+          });
+          $("#products-catagory-3").mouseout(function(){
+            $(".product-hide-3").css("display", "none");
+          });
+          $("#products-catagory-4").mouseover(function(){
+            $(".product-hide-4").css("display", "block");
+          });
+          $("#products-catagory-4").mouseout(function(){
+            $(".product-hide-4").css("display", "none");
+          });
+          $("#products-catagory-5").mouseover(function(){
+            $(".product-hide-5").css("display", "block");
+          });
+          $("#products-catagory-5").mouseout(function(){
+            $(".product-hide-5").css("display", "none");
+          });
+          $("#products-catagory-6").mouseover(function(){
+            $(".product-hide-6").css("display", "block");
+          });
+          $("#products-catagory-6").mouseout(function(){
+            $(".product-hide-6").css("display", "none");
+          });
+        });
         
+      </script>
+      <style type="text/css">
+        .product-hide-1 {
+          display: none;
+        }
+        .product-hide-2 {
+          display: none;
+        }
+        .product-hide-3 {
+          display: none;
+        }
+        .product-hide-4 {
+          display: none;
+        }
+        .product-hide-5 {
+          display: none;
+        }
+        .product-hide-6 {
+          display: none;
+        }
       </style>
       <div class="section" id="section3">
         <div class="intro">

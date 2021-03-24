@@ -9,8 +9,8 @@
     <meta name="Resource-type" content="Document" />
     <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/fullpage/fullpage.css" />
-    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/fullpage/examples.css" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/fullpage/examples.css" /> -->
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="<?=base_url()?>assets/owlcarousel/docs.theme.min.css">
     <link rel="stylesheet" href="<?=base_url()?>assets/owlcarousel/owl.carousel.min.css">

@@ -465,13 +465,7 @@
         }
 
       </style>
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $("#products-catagory-1").on('click', function(){
-            console.log("click!!!");
-          });
-        });
-      </script>
+      
       <div class="section" id="section2">
         <div class="container">
           <div class="row">
@@ -538,13 +532,18 @@
                   </div>
                 </div>
                 <div class="col-lg-8">
-                  
+                  <div class="product-hide-1">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product1.png">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <style type="text/css">
+        
+      </style>
       <div class="section" id="section3">
         <div class="intro">
           <h1>Enjoy it</h1>

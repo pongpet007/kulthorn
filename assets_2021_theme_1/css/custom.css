@@ -1,0 +1,5 @@
+/* Add here all your CSS customizations */
+#header .header-nav.header-nav-links.header-nav-light-text nav > ul > li > a, #header .header-nav.header-nav-line.header-nav-light-text nav > ul > li > a {
+	font-size: 28px;
+	letter-spacing: 1px;
+}

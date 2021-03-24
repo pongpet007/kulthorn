@@ -7,4 +7,4 @@
 /a_ref/
 /slide/
 /system/
-/application/cache/
+/application/cache/*

@@ -535,14 +535,63 @@
                   <div class="product-hide-1">
                     <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product1.png">
                   </div>
+                  <div class="product-hide-2">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product2.png">
+                  </div>
+                  <div class="product-hide-2">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product3.png">
+                  </div>
+                  <div class="product-hide-4">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product4.png">
+                  </div>
+                  <div class="product-hide-5">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product5.png">
+                  </div>
+                  <div class="product-hide-6">
+                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product6.png">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function(){
+          $("#products-catagory-1").mouseover(function(){
+            $(".product-hide-1").css("display", "block");
+          });
+        });
+        $(document).ready(function(){
+          $("#products-catagory-2").mouseover(function(){
+            $(".product-hide-2").css("display", "block");
+          });
+        });
+        $(document).ready(function(){
+          $("#products-catagory-3").mouseover(function(){
+            $(".product-hide-3").css("display", "block");
+          });
+        });
+      </script>
       <style type="text/css">
-        
+        .product-hide-1 {
+          display: none;
+        }
+        .product-hide-2 {
+          display: none;
+        }
+        .product-hide-3 {
+          display: none;
+        }
+        .product-hide-4 {
+          display: none;
+        }
+        .product-hide-5 {
+          display: none;
+        }
+        .product-hide-6 {
+          display: none;
+        }
       </style>
       <div class="section" id="section3">
         <div class="intro">

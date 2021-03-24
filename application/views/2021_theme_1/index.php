@@ -9,7 +9,10 @@
     <meta name="Resource-type" content="Document" />
     <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/fontawesome-free/css/all.min.css">
+    <?php $this->load->view('2021_theme_1/inc/css'); ?>
+    <?/*?>
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/style.css" />
+    <?*/?>
     <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/fullpage/examples.css" /> -->
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="<?=base_url()?>assets/owlcarousel/docs.theme.min.css">
@@ -528,22 +531,22 @@
                 </div>
                 <div class="col-lg-8">
                   <div class="product-hide-1">
-                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product1.jpg">
+                    <img style="" src="<?=base_url()?>image_new/product1.jpg">
                   </div>
                   <div class="product-hide-2">
-                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product2.jpg">
+                    <img style="" src="<?=base_url()?>image_new/product2.jpg">
                   </div>
-                  <div class="product-hide-2">
-                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product3.jpg">
+                  <div class="product-hide-3">
+                    <img style="" src="<?=base_url()?>image_new/product3.jpg">
                   </div>
                   <div class="product-hide-4">
-                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product4.jpg">
+                    <img style="" src="<?=base_url()?>image_new/product4.jpg">
                   </div>
                   <div class="product-hide-5">
-                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product5.jpg">
+                    <img style="" src="<?=base_url()?>image_new/product5.jpg">
                   </div>
                   <div class="product-hide-6">
-                    <img style="padding-top: 70px;" src="<?=base_url()?>image_new/product6.jpg">
+                    <img style="" src="<?=base_url()?>image_new/product6.jpg">
                   </div>
                 </div>
               </div>

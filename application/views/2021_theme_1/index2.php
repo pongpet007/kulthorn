@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Fixed headers - fullPage.js</title>
-    <meta name="author" content="Alvaro Trigo Lopez" />
-    <meta name="description" content="fullPage fixed header and footer." />
-    <meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
-    <meta name="Resource-type" content="Document" />
-    <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/fullpage/fullpage.css" />
-    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/fullpage/examples.css" />
-    <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="<?=base_url()?>assets/owlcarousel/docs.theme.min.css">
-    <link rel="stylesheet" href="<?=base_url()?>assets/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?=base_url()?>assets/owlcarousel/owl.theme.default.min.css">
-    <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
-    <script src="<?=base_url()?>assets/owlcarousel/owl.carousel.js"></script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Fixed headers - fullPage.js</title>
+  <meta name="author" content="Alvaro Trigo Lopez" />
+  <meta name="description" content="fullPage fixed header and footer." />
+  <meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+  <meta name="Resource-type" content="Document" />
+  <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/fullpage/fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/fullpage/examples.css" />
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="<?=base_url()?>assets/owlcarousel/docs.theme.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/owlcarousel/owl.theme.default.min.css">
+  <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
+  <script src="<?=base_url()?>assets/owlcarousel/owl.carousel.js"></script>
 
-    <?php $this->load->view('2021_theme_1/inc/css'); ?>
+  <?php $this->load->view('2021_theme_1/inc/css'); ?>
+  <?php $this->load->view('2021_theme_1/inc/css-pook'); ?>
 
-  </head>
-  <body>
-    <div id="header">
+</head>
+<body>
+  <div id="header">
       <!-- <ul id="menu">
         <li data-menuanchor="firstPage" class="active"><a href="#firstPage">01.กุลธร</a></li>
         <li data-menuanchor="secondPage"><a href="#secondPage">02.เกี่ยวกับเรา</a></li>
@@ -32,62 +33,78 @@
         <li data-menuanchor="sixthPage"><a href="#sixthPage">06.ร่วมงานกับเรา</a></li>
         <li data-menuanchor="seventhPage"><a href="#seventhPage">07.ติดต่อเรา</a></li>
       </ul> -->
-      <nav class="navbar navbar-expand-lg navbar-light /*bg-light*/ nav-color">
-        <a class="navbar-brand" href="#"> <img src="<?= base_url()?>/assets/img/logo-kul.png" style="width: 50%; "> </a>
-        <button class="navbar-toggler nav-color-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item nav-1">
-              <a class="nav-link nav-link-new" href="#"><span class="number-page-1">01.</span>เกี่ยวกับเรา</a>
-            </li>
-            <li class="nav-item nav-2">
-              <a class="nav-link" href="#"><span class="number-page-2">02.</span>สินค้าและบริการ</a>
-            </li>
-            <li class="nav-item nav-3">
-              <a class="nav-link" href="#"><span class="number-page-3">03.</span>เกร็ดความรู้</a>
-            </li>
-            <li class="nav-item nav-4">
-              <a class="nav-link" href="#"><span class="number-page-4">04.</span>ข่าวสารและกิจกรรม</a>
-            </li>
-            <li class="nav-item nav-5">
-              <a class="nav-link" href="#"><span class="number-page-5">05.</span>ร่วมงานกับเรา</a>
-            </li>
-            <li class="nav-item nav-6">
-              <a class="nav-link" href="#"><span class="number-page-6">06.</span>ติดต่อเรา</a>
-            </li>
-            <li class="nav-item nav-7">
-              <a class="nav-link img-flag" style="cursor: default;">
-                <img src="<?= base_url()?>assets/img/thai-flag.png" style="margin-top: -5px;">
-              </a>
-            </li>
-            <li class="nav-item  nav-8">
-              <div class="dropdown show changlang">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  ภาษาไทย
-                </a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-1 col-sm-4 col-4">
+            <div class="img-logo">
+              <img src="<?= base_url()?>/assets/img/logo-kul.png">
+            </div>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+          </div>
+
+          <div class="col-md-11 col-sm-8 col-8">
+            <nav class="navbar navbar-expand-lg navbar-light /*bg-light*/ nav-color">
+              <a class="navbar-brand" href="#"> </a>
+              <button class="navbar-toggler nav-color-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse scrollbar" id="navbarNav">
+                <ul class="navbar-nav navbar-nav-new">
+                  <li class="nav-item nav-item-new nav-1">
+                    <a class="nav-link nav-link-new" href="#firstPage"><span class="number-page-1">01.</span>หน้าหลัก</a>
+                  </li>
+                  <li class="nav-item  nav-item-new nav-2">
+                    <a class="nav-link nav-link-new" href="#secondPage"><span class="number-page-2">02.</span>เกี่ยวกับเรา</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-3">
+                    <a class="nav-link nav-link-new" href="#thirdPage"><span class="number-page-3">03.</span>สินค้าและบริการ</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-4">
+                    <a class="nav-link nav-link-new" href="#fourthPage"><span class="number-page-4">04.</span>เกร็ดความรู้</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-5">
+                    <a class="nav-link nav-link-new" href="#fifthPage"><span class="number-page-5">05.</span>ข่าวสารและกิจกรรม</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-6">
+                    <a class="nav-link nav-link-new" href="#sixthPage"><span class="number-page-6">06.</span>ร่วมงานกับเรา</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-6">
+                    <a class="nav-link nav-link-new" href="#seventhPage"><span class="number-page-6">07.</span>ติดต่อเรา</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-7">
+                    <a class="nav-link nav-link-new img-flag" style="cursor: default;">
+                      <img src="<?= base_url()?>assets/img/thai-flag.png" style="margin-top: -5px;">
+                    </a>
+                  </li>
+                  <li class="nav-item  nav-8">
+                    <div class="dropdown nav-link-new show changlang">
+                      <a class="btn btn-secondary dropdown-toggle button-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ภาษาไทย
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item drop-new" href="#">Action</a>
+                        <a class="dropdown-item drop-new" href="#">Another action</a>
+                        <a class="dropdown-item drop-new" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item nav-item-new nav-9">  
+                    <a class="nav-link nav-link-new" href=""><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-9">  
+                    <a class="nav-link nav-link-new" href=""><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-9">  
+                    <a class="nav-link nav-link-new" href=""><i class="fab fa-instagram"></i></a>
+                  </li>
+
+                </ul>
               </div>
-            </li>
-            <li class="nav-item nav-9">  
-              <a class="nav-link" href=""><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li class="nav-item nav-9">  
-              <a class="nav-link" href=""><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="nav-item nav-9">  
-              <a class="nav-link" href=""><i class="fab fa-instagram"></i></a>
-            </li>
-
-          </ul>
+            </nav>
+          </div>
         </div>
-      </nav>
+      </div>
     </div>
     <div id="fullpage">
       <div class="section " id="section0">
@@ -226,25 +243,25 @@
                       </div>
                     </div>
                     <script>
-                $(document).ready(function() {
-                  var owl = $('.owl-carousel-1');
-                  owl.owlCarousel({
-                    margin: 10,
-                    loop: true,
-                    responsive: {
-                      0: {
-                        items: 1
-                      },
-                      600: {
-                        items: 3
-                      },
-                      1000: {
-                        items: 2
-                      }
-                    }
-                  })
-                })
-              </script>
+                      $(document).ready(function() {
+                        var owl = $('.owl-carousel-1');
+                        owl.owlCarousel({
+                          margin: 10,
+                          loop: true,
+                          responsive: {
+                            0: {
+                              items: 1
+                            },
+                            600: {
+                              items: 3
+                            },
+                            1000: {
+                              items: 2
+                            }
+                          }
+                        })
+                      })
+                    </script>
                   </div>
                   <div role="tabpanel" class="tab-pane fade" id="Section2">
                     <div class="row">
@@ -259,7 +276,7 @@
                           </div>
                         </div>
                       </div>
-                      
+
                     </div>
                     <div class="row" style="margin-top: 30px;">
                       <div class="col-lg-12">
@@ -273,7 +290,7 @@
                           </div>
                         </div>
                       </div>
-                      
+
                     </div>
                   </div>
                   <div role="tabpanel" class="tab-pane fade" id="Section3">
@@ -323,7 +340,7 @@
                   </div>
                 </div>
               </div>
-              
+
 
             </div>
           </div>
@@ -338,7 +355,7 @@
           color: #000000;
           font-size: 28px;
         }
-        
+
         .products-catagory-bt .products-catagory-name h1 {
           color: #000000;
           font-size: 36px;
@@ -516,7 +533,7 @@
             $(".product-hide-6").css("display", "none");
           });
         });
-        
+
       </script>
       <style type="text/css">
         .product-hide-1 {
@@ -540,42 +557,239 @@
       </style>
       <div class="section" id="section3">
         <div class="intro">
-          <h1>Enjoy it</h1>
+
         </div>
       </div>
+
       <div class="section" id="section4">
         <div class="intro">
-          <h1>Enjoy it</h1>
+          <div class="detail-news">
+            <h2>ข่าวสารและกิจกรรม</h3>
+              <p>ข่าวสารน่าสนใจและกิจกรรมภายในของ บริษัท กุลธร จำกัด</p>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div class="owl-carousel owl-theme owl-carousel-4">
+                    <div class="item">
+                      <div class="news">
+                        <a href="#"><img src="<?= base_url()?>assets/img/news-1.png"></a>
+                        <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
+                        <span>
+                          เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                        </span>
+                        <p class="p-news-detail">
+                          Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="news">
+                        <a href="#"><img src="<?= base_url()?>assets/img/news-2.png"></a>
+                        <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
+                        <span>
+                          เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                        </span>
+                        <p class="p-news-detail">
+                          Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="news">
+                        <a href="#"><img src="<?= base_url()?>assets/img/news-3.png"></a>
+                        <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
+                        <span>
+                          เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                        </span>
+                        <p class="p-news-detail">
+                          Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="news">
+                        <a href="#"><img src="<?= base_url()?>assets/img/news-4.png"></a>
+                        <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
+                        <span>
+                          เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                        </span>
+                        <p class="p-news-detail">
+                          Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="news">
+                        <a href="#"><img src="<?= base_url()?>assets/img/news-4.png"></a>
+                        <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
+                        <span>
+                          เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                        </span>
+                        <p class="p-news-detail">
+                          Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
-      <div class="section" id="section5">
-        <div class="intro">
-          <h1>Enjoy it</h1>
+
+        <script>
+          $(document).ready(function() {
+            var owl = $('.owl-carousel-4');
+            owl.owlCarousel({
+              margin: 10,
+              loop: true,
+              responsive: {
+                0: {
+                  items: 2
+                },
+                600: {
+                  items: 2
+                },
+                1000: {
+                  items: 4
+                }
+              }
+            })
+          })
+        </script>
+
+
+        <div class="section" id="section5">
+          <div class="intro">
+            <div class="detail-join">
+              <h2>ร่วมงานกับเรา</h2>
+              <p>ร่วมงานกับเรา สามารถส่ง Email มาได้ที่  info@kulthorn.com</p>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="top-table">
+                    <table width="100%">
+                      <thead>
+                        <tr class="head-join">
+                          <td class="text-position">ตำแหน่ง</td>
+                          <td class="text-count">จำนวน</td>
+                          <td class="text-detail">รายละเอียด</td>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
         </div>
-      </div>
-      <div class="section" id="section6">
-        <div class="intro">
-          <h1>Enjoy it</h1>
+
+
+
+
+        <div class="section" id="section6">
+          <div class="intro">
+            <div class="detail-contact">
+              <h2>
+                ติดต่อเรา
+              </h2>
+              <p class="p-contact">
+                ท่านสามารถสอบถามสินค้าเพิ่มเติมได้ที่
+              </p>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1918.8728020035055!2d100.51097352290495!3d13.756599299480568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2993f1660da53%3A0x3875632c3e996850!2z4LiB4Li44Lil4LiY4Lij!5e0!3m2!1sth!2sth!4v1616649400590!5m2!1sth!2sth" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="text-contact">
+                      <h2>
+                        บริษัท กุลธร จำกัด
+                      </h2>
+                      <ul class="ul-contact">
+                        <li style="font-size: 26px;">
+                         237-237/1-4 ถนน หลานหลวง แขวงวัดโสมนัส เขตป้อมปราบศัตรูพ่าย กรุงเทพมหานคร 10100
+                       </li>
+                       <li>
+                        <h3 style="color: #FFF;">เบอร์โทรศัพท์ : &nbsp;</h3> <a href="tel:+662-282-2151"> +662-282-2151</a>
+                      </li>
+                      <li>
+                        <h3 style="color: #FFF;">อีเมล : &nbsp;</h3>bkksales@kulthorn.com , kcsales@kulthorn.co.th 
+                      </li>
+                    </ul>
+                    <hr style="border :2px dashed #FFF;">
+
+
+                  </div>
+                  <h2>แบบฟอร์มติดต่อ</h2><br>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6 col-6">
+                       <input name="name" placeholder="ชื่อผู้ติดต่อ" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
+                     </div>
+                     <div class="col-md-6 col-6">
+                      <input name="lastname" placeholder="นามสกุล" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
+                    </div>
+                    <div class="col-md-6 col-6">
+                     <input name="tel" placeholder="เบอร์โทรศัพท์" type="tel" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
+                   </div>
+                   <div class="col-md-6 col-6">
+                    <input name="email" placeholder="อีเมล" type="email" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea name="email" placeholder="ข้อความ" type="email" style="background: #ffffff;border: 1px solid #ebebeb; min-height: 50px; font-size: 24px;"></textarea>
+                  </div>
+                </div>
+                <button class="btn-sent-email" type="submit">ส่งข้อความ</button>
+              </form>
+
+            </div>
+
+          </div>
         </div>
+
+        <footer>
+          <div class="col-md-12 copyright">
+            <div class="detail-copy">
+              © Copyright 2020. All Rights Reserved.
+            </div>
+          </div>
+        </footer>
+
+
       </div>
+
+
     </div>
-    <script src="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<?=base_url()?>assets/fullpage/scrolloverflow.js"></script>
-    <script type="text/javascript" src="<?=base_url()?>assets/fullpage/fullpage.js"></script>
-    <script type="text/javascript" src="<?=base_url()?>assets/fullpage/examples.js"></script>
-    <script src="<?=base_url()?>assets/owlcarousel/highlight.js"></script>
-    <script src="<?=base_url()?>assets/owlcarousel/app.js"></script>
-    <script type="text/javascript">
-      var myFullpage = new fullpage('#fullpage', {
-          anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage'],
-          navigation: true,
-          verticalCentered: true,
-          slidesNavigation: true,
-          navigationTooltips: ['01.กุลธร', '02.เกี่ยวกับเรา', '03.สินค้าและบริการ', '04.เกร็ดความรู้', '05.ข่าวสารและกิจกรรม', '06.ร่วมงานกับเรา', '07.ติดต่อเรา'],
-          showActiveTooltip: true,
-          menu: '#menu',
-          scrollOverflow: true
-      });
-    </script>
-  </body>
+  </div>
+</div>
+<script src="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/fullpage/scrolloverflow.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/fullpage/fullpage.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/fullpage/examples.js"></script>
+<script src="<?=base_url()?>assets/owlcarousel/highlight.js"></script>
+<script src="<?=base_url()?>assets/owlcarousel/app.js"></script>
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage'],
+    navigation: true,
+    verticalCentered: true,
+    slidesNavigation: true,
+    navigationTooltips: ['01.กุลธร', '02.เกี่ยวกับเรา', '03.สินค้าและบริการ', '04.เกร็ดความรู้', '05.ข่าวสารและกิจกรรม', '06.ร่วมงานกับเรา', '07.ติดต่อเรา'],
+    showActiveTooltip: true,
+    menu: '#menu',
+    scrollOverflow: true
+  });
+</script>
+</body>
 </html>

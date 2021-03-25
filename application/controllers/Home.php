@@ -12,7 +12,7 @@ class Home extends CI_Controller {
 	public function index()
 	{	
 		$data = array();
-		$this->load->view('2021_theme_1/index',$data);	
+		$this->load->view('2021_theme_1/index2',$data);	
 
 	}
 }

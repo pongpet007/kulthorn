@@ -40,6 +40,36 @@
 	.drop-new {
 		font-size: 20px;
 	}
+	#section3 {
+		background : url(<?= base_url()?>assets/img/bg-know.png) center center;
+		background-size: cover
+	}	
+	.detail-know {
+		margin-bottom: 40px;
+	}
+	.detail-know h2{
+		font-size: 35px;
+		color: #FFF;
+	}
+	.know h2 {
+		font-size: 30px;
+		color: #FFF;
+		padding-top: 20px;
+	}
+	.know span {
+		font-size: 26px;
+		color: #FFF;
+		margin-bottom: 20px;
+	}
+	.know a h2:hover {
+		color: #EEE000;
+	}
+	.know a img:hover {
+		opacity: 0.8;
+		transition: 0.5s ;
+	}
+
+
 	#section4 {
 		background : url(<?=base_url()?>/assets/img/bg-news.png) center center;
 		background-size: cover;
@@ -53,7 +83,7 @@
 		font-size: 24px;
 		width: 100%;
 		line-height: 28.8px;
-		/*padding-top: 47px;*/
+		padding-top: 45px;
 	}
 	.detail-contact h2 {
 		font-size: 35px;
@@ -153,26 +183,67 @@
 	.top-table {
 		max-width: 100%;
 	}
-	.text-position {
+	.text-position h3{
 		text-align: center;
-		width: 20%;
-		font-size: 25px;
+		font-size: 28px;
+		color: #FFF;
+		font-weight: bold
 	}
-	.text-count {
+	.text-count h3{
 		text-align: center;
-		width: 20%;
-		font-size: 25px;
+		font-size: 28px;
+		color: #FFF;
+		font-weight: bold
 	}
-	.text-detail {
+	.text-detail h3{
 		text-align: right;
-		width: 60%;
+		padding-right: 20px;
+		font-size: 28px;
+		color: #FFF;
+		font-weight: bold
+	}
+	.head-join td{
+		background-color: #00000082;
+	}
+	
+	table.table-join thead tr td {
+		padding: 1.5rem 0.625rem 1.5rem;
+	}
+	table.table-join {
+		background : none;
+		border: none;
+	}
+	table.table-join thead {
+		background: none;
+	}
+	.name-job h3{
+		text-align: center;
 		font-size: 25px;
+		color: #FFF;
 	}
-	.head-join {
-		background-color: #1d256de0;
-		opacity: .8;
+	.count-job h3{
+		text-align: center;
+		font-size: 25px;
+		color: #FFF;
+	}
+	.detail-job h3 a{
+		color: #FFF;
+	}
+	.detail-job h3{
+		text-align: right;
+		padding-right: 20px;
+		font-size: 25px;
+		color: #FFF;
+		text-decoration: underline;
+	}
+	table tr.job-detail-tr-1 {
+		background : #6a6b6da6;
+	}
+	table tr.job-detail-tr-2 {
+		background-color: #00000082;
+	}
 
-	}
+
 
 	/* ////////////////////////// Responsive ////////////////////////// */
 	@media (max-width: 500px) and (min-width: 300px) {
@@ -183,7 +254,7 @@
 			width: 0;
 		}
 		.navbar-expand-lg .navbar-nav .nav-link-new  {
-			background-color : #1d256de0;
+			background-color : #1d256da3;
 		}
 		.nav-link-new {
 			padding: 0;

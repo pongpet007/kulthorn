@@ -557,9 +557,112 @@
       </style>
       <div class="section" id="section3">
         <div class="intro">
+          <div class="detail-know">
+            <h2>เกร็ดความรู้</h2>
+            <p>เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรทำ</p>
+          </div>
+          <div class="container">
+            <div class="row">
 
+              <div class="col-md-12">
+                <div class="owl-carousel owl-theme owl-carousel-3">
+
+                  <div class="item">
+                    <div class="know">
+                      <a href="#"><img src="<?= base_url()?>assets/img/know-1.png"></a>
+                      <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
+                      <span>
+                        เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                      </span>
+                      <p class="p-news-detail">
+                        Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="know">
+                      <a href="#"><img src="<?= base_url()?>assets/img/know-2.png"></a>
+                      <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
+                      <span>
+                        เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                      </span>
+                      <p class="p-news-detail">
+                        Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="know">
+                      <a href="#"><img src="<?= base_url()?>assets/img/know-3.png"></a>
+                      <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
+                      <span>
+                        เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                      </span>
+                      <p class="p-news-detail">
+                        Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="know">
+                      <a href="#"><img src="<?= base_url()?>assets/img/know-4.png"></a>
+                      <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
+                      <span>
+                        เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                      </span>
+                      <p class="p-news-detail">
+                        Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="know">
+                      <a href="#"><img src="<?= base_url()?>assets/img/know-2.png"></a>
+                      <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
+                      <span>
+                        เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                      </span>
+                      <p class="p-news-detail">
+                        Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                      </p>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
+
+
+      <script>
+        $(document).ready(function() {
+          var owl = $('.owl-carousel-3');
+          owl.owlCarousel({
+            margin: 10,
+            loop: true,
+            responsive: {
+              0: {
+                items: 2
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 4
+              }
+            }
+          })
+        })
+      </script>
+
 
       <div class="section" id="section4">
         <div class="intro">
@@ -675,13 +778,40 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="top-table">
-                    <table width="100%">
+                    <table class="table-join"  width="100%">
                       <thead>
                         <tr class="head-join">
-                          <td class="text-position">ตำแหน่ง</td>
-                          <td class="text-count">จำนวน</td>
-                          <td class="text-detail">รายละเอียด</td>
+                          <td class="text-position"><h3>ตำแหน่ง</h3></td>
+                          <td class="text-count"><h3>จำนวน</h3></td>
+                          <td class="text-detail"><h3>รายละเอียด</h3></td>
                         </tr>
+
+
+                        <!-- Wait code Loop -->
+                        <tr class="job-detail-tr-1">
+                          <td class="name-job">
+                            <h3>คอมพิวเตอร์กราฟฟิก</h3>
+                          </td>
+                          <td class="count-job">
+                            <h3> 2 อัตรา</h3>
+                          </td>
+                          <td class="detail-job">
+                            <h3><a href="#">คุณสมบัติ</a></h3>
+                          </td>
+                        </tr>
+                        <tr class="job-detail-tr-2">
+                          <td class="name-job">
+                            <h3>ผู้จัดการโตรงการ</h3>
+                          </td>
+                          <td class="count-job">
+                            <h3>2 อัตรา</h3>
+                          </td>
+                          <td class="detail-job">
+                            <h3><a href="#">คุณสมบัติ</a></h3>
+                          </td>
+                        </tr>
+                        <!-- End Loop -->
+
                       </thead>
                     </table>
                   </div>

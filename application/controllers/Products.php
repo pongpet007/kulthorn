@@ -22,7 +22,7 @@ class Products extends CI_Controller {
 		$this->load->model('cms/Menu_model');
 
 	}
- 
+
 	public function uset($langu="",$pro_id=0){
 		if ($pro_id>=0) {
 			unset($_SESSION["brand"][$pro_id]);
@@ -63,9 +63,9 @@ class Products extends CI_Controller {
 
 		
 		// if(strlen($params)>0 ){
-			
+
 		// 	list($name) = explode(':', $params);
-			
+
 		// 	if($name=='cid'){
 		// 		list($name,$id) = explode(':', $params);
 		// 		$cat_id = $id;
@@ -110,7 +110,7 @@ class Products extends CI_Controller {
 		// $tag = $this->input->get('tag');
 		// if (isset($tag)) {
 		// 	$tagsquery = $this->Products_model->getAllcheckdata($tag,$this->session->userdata('site_lang'));
-			
+
 		// 	if($this->session->userdata('tag')!=$tag)
 		// 	{
 		// 		$couttag = $tagsquery[0]->count+1;
@@ -201,7 +201,7 @@ class Products extends CI_Controller {
 
 		// 		unset($_SESSION["bid"]);
 		// 		if ( array_key_exists($brand_id ,$_SESSION["brand"]) ){
-					
+
 
 		// 		}else{
 		// 			$_SESSION["brand"][$brand_id] = $brand_id ;
@@ -286,112 +286,120 @@ class Products extends CI_Controller {
 
 		$this->load->view('2021_theme_1/products',$data);
 
- 
+
 	}
 
 
-	public function detail($langu="",$pro_id){
+	public function detail(){
+		// $langu="",$pro_id
+
+		// $data['site_lang_name'] = $this->session->userdata('site_lang_name');
+
+		// if ($data['lang']=221) {
+		// 	$data['language'] = "เปลี่ยนภาษา";
+		// }else{
+		// 	$data['language'] = "Change Language";
+		// }
 		
-
-		$data['site_lang_name'] = $this->session->userdata('site_lang_name');
-
-		if ($data['lang']=221) {
-			$data['language'] = "เปลี่ยนภาษา";
-		}else{
-			$data['language'] = "Change Language";
-		}
-		
-		$data['counter'] = $this->Counter_model->count();
-		$data["categorys"] = $this->Category_model->getAll();
-		$company = $this->Company_model->getOne(1);		
-		$data['companyData'] = $company;
+		// $data['counter'] = $this->Counter_model->count();
+		// $data["categorys"] = $this->Category_model->getAll();
+		// $company = $this->Company_model->getOne(1);		
+		// $data['companyData'] = $company;
 		
 		
-		$theme_path = $company->theme_path;
-		$data['theme_path'] = $theme_path;
-		$data["theme_assets_path"] = $company->theme_assets_path;
+		// $theme_path = $company->theme_path;
+		// $data['theme_path'] = $theme_path;
+		// $data["theme_assets_path"] = $company->theme_assets_path;
 
-		$menus = $this->Menu_model->getMain();
-		// echo $this->db->last_query();
-		// exit();
+		// $menus = $this->Menu_model->getMain();
+		// // echo $this->db->last_query();
+		// // exit();
 
-		foreach ($menus as $menu) {
-			$menu->submenu = $this->Menu_model->getsub($menu->menu_id);
-		}
-		$data['menus'] = $menus ;		
-		$data['countrys'] = $this->Country_model->getAll();
+		// foreach ($menus as $menu) {
+		// 	$menu->submenu = $this->Menu_model->getsub($menu->menu_id);
+		// }
+		// $data['menus'] = $menus ;		
+		// $data['countrys'] = $this->Country_model->getAll();
 
-		$data['lang'] = $this->session->userdata('site_lang');
-		// $data['config'] = $this->Config_model->getConfig();
-		$data['footer_newss'] = $this->News_model->getAll(4,0,array('news_type_id'=>0));
-		$image_group_id = 1;
-		$product  = $this->Products_model->getOne($pro_id);
-		$product->images = $this->Image_manage_model->getinuseProduct($image_group_id,$product->pro_id);
-
-		
-		$data['meta_title'] = $product->meta_title;
-		$data['meta_keyword'] = $product->meta_keyword;
-		$data['meta_description'] = $product->meta_description;
-
-		$cat_id = $product->cat_id?$product->cat_id:0;
-
-		$brand_id = $product->brand_id?$product->brand_id:0;
-		$promotion_id = $product->promotion_id?$product->promotion_id:0;
-
-		$data['category'] = $this->Category_model->getOne($cat_id);		
-		
-		$data['brand'] = $this->Brand_model->getOne($brand_id);
-		$data['promotion'] = $this->Promotion_model->getOne($promotion_id);
-		$data['product'] = $product;
-
-		$data['categorys'] = $this->Category_model->getAll();
-
-		$realatedproducts = $this->Products_model->getAll2(20, 0,array('cat_id'=>$cat_id),'rand()');
-		$image_group_id = 1;
-		foreach ($realatedproducts as $product) { 
-			$product->images = $this->Image_manage_model->getinuseProduct($image_group_id,$product->pro_id);
-		}
-		
-		$data['realatedproducts'] = $realatedproducts;
-		$countrealatedproducts = 0;
-		foreach ($realatedproducts as $key => $realatedproductss) {
-			$countrealatedproducts = $countrealatedproducts+1;
-		}
-		$data['realatedproductscount'] = $countrealatedproducts;
-		
-		$data['leftpro'] = $this->Products_model->getAll(20, 0,array(),'rand()');
-		
-		$data['rightpro'] = $this->Products_model->getAll(20, 0,array(),'rand()');
+		// $data['lang'] = $this->session->userdata('site_lang');
+		// // $data['config'] = $this->Config_model->getConfig();
+		// $data['footer_newss'] = $this->News_model->getAll(4,0,array('news_type_id'=>0));
+		// $image_group_id = 1;
+		// $product  = $this->Products_model->getOne($pro_id);
+		// $product->images = $this->Image_manage_model->getinuseProduct($image_group_id,$product->pro_id);
 
 		
+		// $data['meta_title'] = $product->meta_title;
+		// $data['meta_keyword'] = $product->meta_keyword;
+		// $data['meta_description'] = $product->meta_description;
 
-		$data['pro_id'] = $pro_id;
+		// $cat_id = $product->cat_id?$product->cat_id:0;
 
-		$pictures = $this->Products_picture_model->getAll($pro_id);
-		
-		$count_pic = 0;
-		foreach ($pictures as $key => $pictures_new) {
-			$count_pic = $count_pic + 1;
-		}
-		$data['pictures'] = $pictures;
+		// $brand_id = $product->brand_id?$product->brand_id:0;
+		// $promotion_id = $product->promotion_id?$product->promotion_id:0;
 
-		$data['count_pic'] = $count_pic;
+		// $data['category'] = $this->Category_model->getOne($cat_id);		
 		
-		$data['colors'] = $this->Products_picture_model->getAllColor($pro_id);
-		
-		$data['menuactive'] = 2;
-		$data['pages'] = "product/detail";
-		
-		/////////////////////// get products /////////////////////////////
-		
-		$cartarr = array();
-		foreach ($this->cart->contents() as $carts) {
-			$cartarr[]  = array($this->Products_model->getOne($carts['id']),$carts['qty'],$carts['rowid']);
-		}
-		$data['cartarr'] = $cartarr;
+		// $data['brand'] = $this->Brand_model->getOne($brand_id);
+		// $data['promotion'] = $this->Promotion_model->getOne($promotion_id);
+		// $data['product'] = $product;
 
+		// $data['categorys'] = $this->Category_model->getAll();
 
-		$this->load->view($theme_path.'/product_detail',$data);
+		// $realatedproducts = $this->Products_model->getAll2(20, 0,array('cat_id'=>$cat_id),'rand()');
+		// $image_group_id = 1;
+		// foreach ($realatedproducts as $product) { 
+		// 	$product->images = $this->Image_manage_model->getinuseProduct($image_group_id,$product->pro_id);
+		// }
+		
+		// $data['realatedproducts'] = $realatedproducts;
+		// $countrealatedproducts = 0;
+		// foreach ($realatedproducts as $key => $realatedproductss) {
+		// 	$countrealatedproducts = $countrealatedproducts+1;
+		// }
+		// $data['realatedproductscount'] = $countrealatedproducts;
+		
+		// $data['leftpro'] = $this->Products_model->getAll(20, 0,array(),'rand()');
+		
+		// $data['rightpro'] = $this->Products_model->getAll(20, 0,array(),'rand()');
+
+		
+
+		// $data['pro_id'] = $pro_id;
+
+		// $pictures = $this->Products_picture_model->getAll($pro_id);
+		
+		// $count_pic = 0;
+		// foreach ($pictures as $key => $pictures_new) {
+		// 	$count_pic = $count_pic + 1;
+		// }
+		// $data['pictures'] = $pictures;
+
+		// $data['count_pic'] = $count_pic;
+		
+		// $data['colors'] = $this->Products_picture_model->getAllColor($pro_id);
+		
+		// $data['menuactive'] = 2;
+		// $data['pages'] = "product/detail";
+		
+		// /////////////////////// get products /////////////////////////////
+		
+		// $cartarr = array();
+		// foreach ($this->cart->contents() as $carts) {
+		// 	$cartarr[]  = array($this->Products_model->getOne($carts['id']),$carts['qty'],$carts['rowid']);
+		// }
+		// $data['cartarr'] = $cartarr;
+		$data = array();
+
+		$this->load->view('2021_theme_1/product-detail',$data);
+		// $this->load->view($theme_path.'/product-detail',$data);
+
+	}
+
+	public function compare() {
+		$data = array();
+
+		$this->load->view('2021_theme_1/product-compare',$data);
 
 	}
 
@@ -454,8 +462,8 @@ class Products extends CI_Controller {
 		$data['qtybutton'] = $qtybutton;
 
 		$data['widget'] = $this->recaptcha->getWidget();
-        $data['script'] = $this->recaptcha->getScriptTag();  
-        
+		$data['script'] = $this->recaptcha->getScriptTag();  
+
 		$data['lang'] = $this->session->userdata('site_lang');
 		$data['config'] = $this->Config_model->getConfig();
 		$data['footer_newss'] = $this->News_model->getAll(4,0,array('news_type_id'=>0));
@@ -484,127 +492,127 @@ class Products extends CI_Controller {
 	public function sentquotation(){
 
 			// foreach ($this->input->post() as $key => $value) {
-				
+
 			// 	echo '$'.$key.' = $this->input->post(\''.$key.'\');<br>';
 			// }
 			// exit();
 
-			$grecaptcharesponse = $this->input->post('g-recaptcha-response');
-			
+		$grecaptcharesponse = $this->input->post('g-recaptcha-response');
 
 
-			$pro_id = $this->input->post('pro_id');
 
-			if(!$grecaptcharesponse){
-				$this->session->set_flashdata('errors', 'Recaptcha Error');	
-				redirect("Products/quotation/$pro_id");
-			}
-			
-			
-			$fullname = $this->input->post('fullname');
-			$company_name = $this->input->post('company_name');
-			$email = $this->input->post('email');
-			$telephone = $this->input->post('telephone');
-			$detail = $this->input->post('detail');
-			
+		$pro_id = $this->input->post('pro_id');
 
-			$product = $this->Products_model->getOne($pro_id);
-			$company = $this->Config_model->getConfig();
+		if(!$grecaptcharesponse){
+			$this->session->set_flashdata('errors', 'Recaptcha Error');	
+			redirect("Products/quotation/$pro_id");
+		}
 
-			
+
+		$fullname = $this->input->post('fullname');
+		$company_name = $this->input->post('company_name');
+		$email = $this->input->post('email');
+		$telephone = $this->input->post('telephone');
+		$detail = $this->input->post('detail');
+
+
+		$product = $this->Products_model->getOne($pro_id);
+		$company = $this->Config_model->getConfig();
+
+
 
 		$ref = 'http://coldroom-freezerroom.com/products/detail/$pro_id';
 
-			$body = "
-					<table width='100%' border='0' cellpadding='0' cellspacing='0' style='font-size:11pt;font-family:Calibri,sans-serif;'>
-					<tr>
-					<td></td>					
-					<td><b>สินค้า</b></td>
-					</tr>
+		$body = "
+		<table width='100%' border='0' cellpadding='0' cellspacing='0' style='font-size:11pt;font-family:Calibri,sans-serif;'>
+		<tr>
+		<td></td>					
+		<td><b>สินค้า</b></td>
+		</tr>
 
-					<tr>
-					<td><img src='http://coldroom-freezerroom.com/images/product_new/pro_{$pro_id}01.jpg' width='100' style='width:100px;height:auto;'></td>
-					<td>{$product->pro_name_th}</td>
-					</tr>
+		<tr>
+		<td><img src='http://coldroom-freezerroom.com/images/product_new/pro_{$pro_id}01.jpg' width='100' style='width:100px;height:auto;'></td>
+		<td>{$product->pro_name_th}</td>
+		</tr>
 
-					</table>					
-					 <br><br>
-					 <h4>รายละเอียดเพิ่มเติม</h4>					 
-					 $detail<br>
+		</table>					
+		<br><br>
+		<h4>รายละเอียดเพิ่มเติม</h4>					 
+		$detail<br>
 
-					 
-					 <h4>ข้อมูลลูกค้าเพื่อติดต่อกลับ</h4>
 
-					Name = $fullname <br>
-					Company = $company_name <br>
-					E-mail = $email <br>
-					Telephone = $telephone <br>
-								 
-					 ";
-			
+		<h4>ข้อมูลลูกค้าเพื่อติดต่อกลับ</h4>
 
-$x = '<table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
-<tbody><tr>
-<td style="background-color:#EFEFEF;padding:7.5pt;"><span style="background-color:#EFEFEF;">
+		Name = $fullname <br>
+		Company = $company_name <br>
+		E-mail = $email <br>
+		Telephone = $telephone <br>
 
-<div style="margin:0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;">&nbsp;</span></font></div>
+		";
 
-<div align="center">
-<table width="875" border="0" cellspacing="0" cellpadding="0" style="width:525pt;">
-<tbody><tr>
-<td style="background-color:white;padding:29.25pt;border:1pt solid #D9D9D9;"><span style="background-color:white;">
-<table width="775" border="0" cellspacing="0" cellpadding="0" style="width:465pt;background-color:white;">
-<tbody><tr>
-<td style="padding:0;">
-<table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
-<tbody><tr>
-<td style="padding:7.5pt;">
-<div style="margin:0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;"><font face="Arial,sans-serif" size="4" color="red"><span style="font-size:15pt;"><b>
 
-ใบร้องขอราคา จากลูกค้า เวิด์ล คูล เอ็นจิเนียริ่ง บจก.
-</b></span></font></span></font></div>
-</td>
-</tr>
-<tr>
-<td style="padding:7.5pt;">
-<div><font face="Arial,sans-serif" size="2" color="black"><span style="font-size:9pt; font-weight:bold;">
-เรียน  ผู้เกี่ยวข้อง
-</span></font></div>
+		$x = '<table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+		<tbody><tr>
+		<td style="background-color:#EFEFEF;padding:7.5pt;"><span style="background-color:#EFEFEF;">
 
-<div style="margin-top:14pt;margin-bottom:14pt;">
-<font face="Arial,sans-serif" size="2" color="black">
-<span style="font-size:9pt;">
+		<div style="margin:0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;">&nbsp;</span></font></div>
 
-เนื่องจากได้มีลูกค้าของเราสนใจสินค้าในเว็ปไซต์ของท่านตามรายละเอียดดังนี้ :<br><br><br><br>
+		<div align="center">
+		<table width="875" border="0" cellspacing="0" cellpadding="0" style="width:525pt;">
+		<tbody><tr>
+		<td style="background-color:white;padding:29.25pt;border:1pt solid #D9D9D9;"><span style="background-color:white;">
+		<table width="775" border="0" cellspacing="0" cellpadding="0" style="width:465pt;background-color:white;">
+		<tbody><tr>
+		<td style="padding:0;">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+		<tbody><tr>
+		<td style="padding:7.5pt;">
+		<div style="margin:0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;"><font face="Arial,sans-serif" size="4" color="red"><span style="font-size:15pt;"><b>
 
-'.$body.'
-</span></font>
-</div>
-</td>
-</tr>
-</tbody></table>
-<div style="margin:0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;">&nbsp;</span></font></div>
-<table border="0" cellspacing="0" cellpadding="0" style="margin-left:7.5pt;">
-<tbody><tr height="43" style="height:26.25pt;">
-<td width="312" style="width:187.5pt;height:26.25pt;background-color:red;padding:0;border:1pt solid #FF9001;">
-<span style="background-color:red;">
+		ใบร้องขอราคา จากลูกค้า เวิด์ล คูล เอ็นจิเนียริ่ง บจก.
+		</b></span></font></span></font></div>
+		</td>
+		</tr>
+		<tr>
+		<td style="padding:7.5pt;">
+		<div><font face="Arial,sans-serif" size="2" color="black"><span style="font-size:9pt; font-weight:bold;">
+		เรียน  ผู้เกี่ยวข้อง
+		</span></font></div>
 
-<div align="center" style="text-align:center;margin:0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;"><a href="'.$ref.'" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" id="LPlnk185225"><font face="Arial,sans-serif" size="3" color="white"><span style="font-size:12pt;"><b>กดดูข้อมูลอ้างอิง</b></span></font></a></span></font></div>
+		<div style="margin-top:14pt;margin-bottom:14pt;">
+		<font face="Arial,sans-serif" size="2" color="black">
+		<span style="font-size:9pt;">
 
-</span></td>
-</tr>
-</tbody></table>
-<div style="margin:0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;">&nbsp;</span></font></div>
-<table border="0" cellspacing="0" cellpadding="0">
-<tbody><tr>
-<td style="padding:7.5pt;">
-<div style="margin:9.75pt 0 0 0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;"><font face="Arial,sans-serif" size="2" color="black"></font></span></font></div>
+		เนื่องจากได้มีลูกค้าของเราสนใจสินค้าในเว็ปไซต์ของท่านตามรายละเอียดดังนี้ :<br><br><br><br>
 
-</td>
-</tr>
-</tbody></table>
-</div>
-';
+		'.$body.'
+		</span></font>
+		</div>
+		</td>
+		</tr>
+		</tbody></table>
+		<div style="margin:0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;">&nbsp;</span></font></div>
+		<table border="0" cellspacing="0" cellpadding="0" style="margin-left:7.5pt;">
+		<tbody><tr height="43" style="height:26.25pt;">
+		<td width="312" style="width:187.5pt;height:26.25pt;background-color:red;padding:0;border:1pt solid #FF9001;">
+		<span style="background-color:red;">
+
+		<div align="center" style="text-align:center;margin:0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;"><a href="'.$ref.'" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" id="LPlnk185225"><font face="Arial,sans-serif" size="3" color="white"><span style="font-size:12pt;"><b>กดดูข้อมูลอ้างอิง</b></span></font></a></span></font></div>
+
+		</span></td>
+		</tr>
+		</tbody></table>
+		<div style="margin:0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;">&nbsp;</span></font></div>
+		<table border="0" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+		<td style="padding:7.5pt;">
+		<div style="margin:9.75pt 0 0 0;"><font face="Calibri,sans-serif" size="2"><span style="font-size:11pt;"><font face="Arial,sans-serif" size="2" color="black"></font></span></font></div>
+
+		</td>
+		</tr>
+		</tbody></table>
+		</div>
+		';
 		
 		//Username:	sendmail@spprubberparts.com
 		// Password:	eMm7FMA3cP
@@ -612,52 +620,52 @@ $x = '<table width="100%" border="0" cellspacing="0" cellpadding="0" style="widt
 		// Smtp Server:	mail.spprubberparts.com
 
 		$params = array();
-	        $params["cdate"] =date('Y-m-d h:i:s');  
-	        $params["com_id"] = 1;  
-	        $params["pro_id"] = $pro_id;  
-	        $params["fullname"] = $fullname;  
-	        $params["company"] = $company_name;  
-	        $params["email"] = $email;  
+		$params["cdate"] =date('Y-m-d h:i:s');  
+		$params["com_id"] = 1;  
+		$params["pro_id"] = $pro_id;  
+		$params["fullname"] = $fullname;  
+		$params["company"] = $company_name;  
+		$params["email"] = $email;  
 	        // $params["lineid"] = $lineid;  
-	        $params["phone"] = $telephone;  
-	        $params["fax"] = $fax;  
-	        $params["message"] = $detail;  
-	        $params["msg_email"] = $x;  
-        
-        
-        	$this->db->insert('quotation',$params);
+		$params["phone"] = $telephone;  
+		$params["fax"] = $fax;  
+		$params["message"] = $detail;  
+		$params["msg_email"] = $x;  
+
+
+		$this->db->insert('quotation',$params);
 
 		$config['protocol']    = 'smtp';
-        $config['smtp_host']    = 'mail.brandexdirectory.com';
-        $config['smtp_port']    = '587';
-        $config['smtp_timeout'] = '7';
-        $config['smtp_user']    = 'pongpet@brandexdirectory.com';
-        $config['smtp_pass']    = '12345678af';
-        $config['charset']    = 'utf-8';
-        $config['newline']    = "\r\n";
+		$config['smtp_host']    = 'mail.brandexdirectory.com';
+		$config['smtp_port']    = '587';
+		$config['smtp_timeout'] = '7';
+		$config['smtp_user']    = 'pongpet@brandexdirectory.com';
+		$config['smtp_pass']    = '12345678af';
+		$config['charset']    = 'utf-8';
+		$config['newline']    = "\r\n";
         $config['mailtype'] = 'html'; // text or html
         $config['validation'] = TRUE; // bool whether to validate email or not
-		
-		$company = $this->Config_model->getConfig();
-		
-   		$this->email->initialize($config);
-   		$this->email->from("no-reply@system.com");
-   		$to = $company->com_email;
+
+        $company = $this->Config_model->getConfig();
+
+        $this->email->initialize($config);
+        $this->email->from("no-reply@system.com");
+        $to = $company->com_email;
    		// $to = "korn@brandexdirectory.com";
-   		$this->email->to($to);   		
-   		$this->email->subject('ร้องขอใบเสนอราคา จาก ' .$fullname. ' '.date('d M F h:i:s a'));
-   		$this->email->message($x);
-   		
-   		if($this->email->send()){
+        $this->email->to($to);   		
+        $this->email->subject('ร้องขอใบเสนอราคา จาก ' .$fullname. ' '.date('d M F h:i:s a'));
+        $this->email->message($x);
+
+        if($this->email->send()){
      		// echo "Send OK";
-     		redirect("Products/sendenquiry_complete");
-   		}
-   		else{
-    		echo "Send error";
-   		}
+        	redirect("Products/sendenquiry_complete");
+        }
+        else{
+        	echo "Send error";
+        }
 			// $this->session->set_flashdata('msg','Submit Complete');
 
 			// echo "<script>alert('saved');window.opener.location.reload();window.close();</script>";
 
-	}
+    }
 }

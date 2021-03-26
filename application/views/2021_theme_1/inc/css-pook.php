@@ -3,6 +3,14 @@
 		color: #FFF !important;
 		font-size: 28px;
 	}
+	
+	<?php
+// 	$urlhome = $this->uri->segment(1);
+// 	if  {
+// 		# code...
+// 	}
+	?>
+
 	.navbar-light .navbar-toggler {
 		background-color: #FFF;
 	}
@@ -243,6 +251,8 @@
 		background-color: #00000082;
 	}
 
+	/* ------------------------------------         Products       ---------------------------------------  */
+	
 
 
 	/* ////////////////////////// Responsive ////////////////////////// */

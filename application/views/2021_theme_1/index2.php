@@ -23,6 +23,7 @@
 
 </head>
 <body>
+    <?php print_r(($this->uri->segment(2)))?>
   <div id="header">
       <!-- <ul id="menu">
         <li data-menuanchor="firstPage" class="active"><a href="#firstPage">01.กุลธร</a></li>

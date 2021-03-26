@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- <link rel="stylesheet" href="<?=base_url()?>assets/owlcarousel/docs.theme.min.css"> -->
-  
+
   <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/fontawesome-free/css/all.min.css">
   
@@ -52,6 +52,9 @@
   <div class="compare">
     <button type="button" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
       <i class="fas fa-sync-alt"></i>
+      <span class="count-compare">
+        2
+      </span>
     </button>
   </div>
 

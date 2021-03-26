@@ -45,6 +45,9 @@
     <div class="compare">
         <button type="button" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
             <i class="fas fa-sync-alt"></i>
+            <span class="count-compare">
+                2
+            </span>
         </button>
     </div>
 

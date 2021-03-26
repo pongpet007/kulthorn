@@ -3,6 +3,21 @@
 		font-family: PSLDISPLAYPRO;
 		font-size: 23px;
 	}
+	span.count-compare {
+		background-color: #FF0000;
+		border-radius: 100%;
+		position: fixed;
+		font-size: 12px;
+		font-weight: 400;
+		height: 26px;
+		left: 30px;
+		line-height: 26px;
+		position: absolute;
+		top: -13px;
+		width: 26px;
+		color: #FFF;
+	}
+
 	.compare{
 		position: fixed;
 		left: 10px;
@@ -291,7 +306,7 @@
 
 	.picture-product .overlay-img-4 {
 		position: absolute;
-		bottom: 225px;
+		bottom: 280px;
 		background: #4030F0;
 		color: #f1f1f1;
 		left: 15px;
@@ -387,7 +402,7 @@
 			bottom: 170px;
 		}
 		.picture-product .overlay-img-4 {
-			bottom: 295px;	
+			bottom: 380px;	
 		}
 	}
 	@media (max-width: 992px) and (min-width: 768px) {
@@ -401,7 +416,7 @@
 			bottom: 170px;
 		}
 		.picture-product .overlay-img-4 {
-			bottom: 295px;	
+			bottom: 380px;	
 		}
 	}
 	@media (min-width: 1400px) {

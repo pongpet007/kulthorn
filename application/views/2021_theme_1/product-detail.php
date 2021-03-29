@@ -24,7 +24,7 @@
   ?>
   <?php 
   $this->load->view('2021_theme_1/inc/css-products');
-   ?>
+  ?>
   <?php $this->load->view('2021_theme_1/inc/css'); ?>
   
   <title>Products detail</title>
@@ -40,8 +40,8 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item color-menu"><a href="#">หน้าแรก</a></li>
-            <li class="breadcrumb-item color-menu" aria-current="page">สินค้าและบริการ</li>
-            <li class="breadcrumb-item color-menu" aria-current="page">อุปกรณ์ทำความเย็น</li>
+            <li class="breadcrumb-item color-menu" aria-current="page"><a href="#">สินค้าและบริการ</a></li>
+            <li class="breadcrumb-item color-menu" aria-current="page"><a href="#">หมวดสินค้า</a></li>
             <li class="breadcrumb-item  color-menu-active active" aria-current="page">ฟิลเตอร์ ไดเออร์</li>
           </ol>
         </nav>
@@ -58,13 +58,14 @@
 
   <!-- Button Compare -->
   <div class="compare">
-    <button type="button" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
-      <i class="fas fa-sync-alt"></i>
-      <span class="count-compare">
-        2
-      </span>
-    </button>
+      <button type="button" onclick="window.location.href='<?= base_url()?>Products/compare';" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
+        <i class="fas fa-sync-alt"></i>
+        <span class="count-compare">
+          2
+        </span>
+      </button>
   </div>
+
 
 
   <div class="container mt-3 all-product">

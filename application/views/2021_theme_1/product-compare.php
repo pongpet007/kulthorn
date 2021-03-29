@@ -16,10 +16,10 @@
     <title>Products Compare</title>
 </head>
 <body>
-   <?
-   $this->load->view('2021_theme_1/inc/header1/header3')
-   ?>
-   <div class="container">
+ <?
+ $this->load->view('2021_theme_1/inc/header1/header3')
+ ?>
+ <div class="container">
     <div class="row">
         <div class="col-lg-7 col-sm-6">
 
@@ -40,16 +40,16 @@
     
 </div><!--/////breadcrumb -->
 
-<!-- Button Compare -->
-<div class="compare">
-    <button type="button" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
+ <!-- Button Compare -->
+  <div class="compare">
+      <button type="button" onclick="window.location.href='<?= base_url()?>Products/compare';" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
         <i class="fas fa-sync-alt"></i>
         <span class="count-compare">
-            2
+          2
         </span>
-    </button>
-    
-</div>
+      </button>
+  </div>
+
 
 
 
@@ -68,9 +68,9 @@
 
             <div class="compare-product-new">
                 <h3>
-                 <a href="#" style="color: #000000;">เครื่องทำความเย็น / CONDENSING UNIT</a>
-             </h3>
-             <p>
+                   <a href="#" style="color: #000000;">เครื่องทำความเย็น / CONDENSING UNIT</a>
+               </h3>
+               <p>
                 บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
             </p>
             <h4>

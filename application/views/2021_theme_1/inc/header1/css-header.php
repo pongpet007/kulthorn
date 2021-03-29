@@ -3,7 +3,9 @@
 		color: #000 !important;
 		font-size: 28px;
 	}
-
+	.nav-link-new:hover {
+		color: #555555;
+	}
 	.navbar-light .navbar-toggler {
 		background-color: #FFF;
 	}

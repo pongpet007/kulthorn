@@ -7,9 +7,7 @@
           <a href="<?=base_url()?>">
             <img src="<?= base_url()?>/assets/img/logo-kul.png">
           </a>
-          
         </div>
-
       </div>
 
       <div class="col-lg-11 col-sm-10 col-8 ">

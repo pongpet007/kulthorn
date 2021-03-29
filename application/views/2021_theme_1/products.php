@@ -21,13 +21,14 @@
 
     <!-- Button Compare -->
     <div class="compare">
-        <button type="button" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
+        <button type="button" onclick="window.location.href='<?= base_url()?>Products/compare';" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
             <i class="fas fa-sync-alt"></i>
             <span class="count-compare">
                 2
             </span>
         </button>
     </div>
+
 
     <div class="container header-top">
         <div class="row">
@@ -51,16 +52,16 @@
 
             </div>
         </div>
-        
+
     </div><!--/////breadcrumb -->
 
-  
+
 
     <div class="container mt-3 all-product">
         <div class="row">
             <div class="col-lg-3 order-2 order-md-1">
-             <h3><b>หมวดสินค้าทั้งหมด</b></h3>
-             <nav class="nav flex-column">
+               <h3><b>หมวดสินค้าทั้งหมด</b></h3>
+               <nav class="nav flex-column">
                 <a class="nav-link active" href="#"><i class="fas fa-chevron-right icon-cate"></i>วาล์ว</a>
                 <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>คอมเพรสเซอร์</a>
                 <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>อุปกรณ์ทำความเย็น</a>

@@ -49,7 +49,7 @@
               <button class="navbar-toggler nav-color-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse scrollbar" id="navbarNav">
+              <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav navbar-nav-new">
                   <li class="nav-item nav-item-new nav-1">
                     <a class="nav-link nav-link-new" href="#firstPage"><span class="number-page-1">01.</span>หน้าหลัก</a>
@@ -254,9 +254,12 @@
                               items: 1
                             },
                             600: {
-                              items: 3
+                              items: 1
                             },
                             1000: {
+                              items: 2
+                            },
+                            1300: {
                               items: 2
                             }
                           }
@@ -651,10 +654,10 @@
             loop: true,
             responsive: {
               0: {
-                items: 2
+                items: 1
               },
               600: {
-                items: 2
+                items: 1
               },
               1000: {
                 items: 4
@@ -754,10 +757,10 @@
               loop: true,
               responsive: {
                 0: {
-                  items: 2
+                  items: 1
                 },
                 600: {
-                  items: 2
+                  items: 1
                 },
                 1000: {
                   items: 4

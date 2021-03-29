@@ -18,8 +18,7 @@
 		font-size: 20px;
 	}
 	.navbar-expand-lg .navbar-nav .nav-link-new {
-		padding-right: 15px;
-		padding-left: 15px;
+		padding: 20px;
 	}
 	.nav-1 , .nav-2 , .nav-3 , .nav-4 , .nav-5 , .nav-6 ,  .nav-8  {
 		position: relative;
@@ -36,14 +35,16 @@
 	}
 	.nav-color {
 		/*padding-left: 340px;*/
-		float: right;
+		/*float: right;*/
+		text-align: left;
 	}
 	.changlang {
 		padding-top: 5px;
 		padding-right: 15px;
 	}
 	.nav-link-new:hover {
-		color: #73857A !important;
+		color: #a6acb1 !important;
+		transition: all 0.4s;
 	}
 	.drop-new {
 		font-size: 20px;
@@ -129,7 +130,7 @@
 
 	}
 	.img-logo img {
-		width: 50%;
+		width: 40%;
 	}
 	#section6 {
 		background : url(<?=base_url()?>assets/img/bg-contact.png) center center;
@@ -265,9 +266,8 @@
 		}
 		.navbar-expand-lg .navbar-nav .nav-link-new  {
 			background-color : #1d256da3;
-		}
-		.nav-link-new {
-			padding: 0;
+			/*padding: 0;*/
+			height: 100%;
 		}
 		.img-logo img {
 			width: 50%;
@@ -279,6 +279,15 @@
 		.detail-copy {
 			/*margin-top: -40px;*/
 		}
+		.width33 {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.fp-tableCell {
+			padding: 10% 0px 0px;
+			vertical-align: none;
+		}
+
 	} 
 
 	@media (max-width: 991px) and (min-width: 501px) {
@@ -308,6 +317,10 @@
 		}
 		.img-logo img {
 			width: 30%;
+		}
+		.fp-tableCell {
+			padding: 10% 0px 0px;
+			vertical-align: none;
 		}
 
 	}

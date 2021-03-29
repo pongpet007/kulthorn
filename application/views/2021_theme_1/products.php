@@ -14,10 +14,24 @@
     <title>Products</title>
 </head>
 <body>
-    <div class="container">
+
+    <?
+    $this->load->view('2021_theme_1/inc/header1/header3')
+    ?>
+
+    <!-- Button Compare -->
+    <div class="compare">
+        <button type="button" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
+            <i class="fas fa-sync-alt"></i>
+            <span class="count-compare">
+                2
+            </span>
+        </button>
+    </div>
+
+    <div class="container header-top">
         <div class="row">
             <div class="col-lg-7 col-sm-6">
-
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item color-menu"><a href="#">หน้าแรก</a></li>
@@ -25,7 +39,6 @@
                         <li class="breadcrumb-item  color-menu-active active" aria-current="page">ชื่อหมวดสินค้า</li>
                     </ol>
                 </nav>
-
             </div>
             <div class="search-product col-lg-5 col-sm-6 pt-2 pb-1">
 
@@ -41,15 +54,7 @@
         
     </div><!--/////breadcrumb -->
 
-    <!-- Button Compare -->
-    <div class="compare">
-        <button type="button" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
-            <i class="fas fa-sync-alt"></i>
-            <span class="count-compare">
-                2
-            </span>
-        </button>
-    </div>
+  
 
     <div class="container mt-3 all-product">
         <div class="row">

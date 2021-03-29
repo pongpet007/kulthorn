@@ -403,6 +403,13 @@ class Products extends CI_Controller {
 
 	}
 
+	public function know_detail() {
+		$data = array();
+
+		$this->load->view('2021_theme_1/know-detail',$data);
+
+	}
+
 
 	public function sendenquiry_complete($pro_id=0)
 	{

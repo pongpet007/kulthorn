@@ -19,13 +19,21 @@
   <script src="<?=base_url()?>assets/owlcarousel/owl.carousel.js"></script>
 
 
-  <?php $this->load->view('2021_theme_1/inc/css-peck'); ?>
-  <?php $this->load->view('2021_theme_1/inc/css-products'); ?>
+  <?php 
+  $this->load->view('2021_theme_1/inc/css-peck');
+  ?>
+  <?php 
+  $this->load->view('2021_theme_1/inc/css-products');
+   ?>
   <?php $this->load->view('2021_theme_1/inc/css'); ?>
+  
   <title>Products detail</title>
 </head>
 <body>
-  <div class="container">
+  <?
+  $this->load->view('2021_theme_1/inc/header1/header3')
+  ?>
+  <div class="container header-top">
     <div class="row">
       <div class="col-lg-7 col-sm-6">
 
@@ -80,7 +88,48 @@
             <div class="category-menu-detail">&nbsp;SEO</div>
           </div>
 
-          <div class="row">
+          <ul class="ul-share">
+            <li>
+              <div class="breadcrumb-detail menu-pro-detail">แชร์&nbsp;</div>
+            </li>
+            <li>
+              <div class="share-face">
+                <a href="#">
+                  <i class="fab fa-facebook-square face-color"></i>&nbsp;&nbsp;<span>share</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="share-line">
+                <a href="#">
+                  <i class="fab fa-line line-color"></i>&nbsp;&nbsp;<span>share</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="share-twitter">
+                <a href="#">
+                  <i class="fab fa-twitter line-color"></i>&nbsp;&nbsp;<span>share</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="share-mail">
+                <a href="#">
+                  <i class="fas fa-envelope mail-color"></i>&nbsp;&nbsp;<span>share</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="share-print">
+                <a href="#">
+                  <i class="fas fa-print print-color"></i>&nbsp;&nbsp;<span>share</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- <div class="row">
             <div class="col-lg-12">
               <div class="row">
 
@@ -139,7 +188,7 @@
 
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div>
             <img  class="hr-product" src="<?=base_url()?>assets/img/line.png">
@@ -147,10 +196,13 @@
 
           <div class="breadcrumb-detail-pro">
             <div class="breadcrumb-detail menu-pro-detail">ป้ายกำกับสินค้า&nbsp;</div>
-
-            <div class="category-menu-detail">
-              <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
+            
+            <div class="scrollbar">
+              <div class="category-menu-detail">
+                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
+              </div>
             </div>
+
 
           </div>
 
@@ -164,8 +216,6 @@
           </div>
 
           <div class="about-tools">
-
-
             <div class="quotation">
               <a href="">
                 <i class="fas fa-th-list list-color"></i>
@@ -194,7 +244,6 @@
                 </div>
               </div>
             </div>
-
           </div>
 
 
@@ -237,11 +286,11 @@
                 <a href="#">
                   <img src="<?= base_url()?>assets/img/pro-about-1.png" style="width: 100%;">
                 </a>
-                <div class="overlay-img-3 pro-about">
+                <!-- <div class="overlay-img-3 pro-about">
                   <h3>
                     ชมรายละเอียดสินค้า
                   </h3>
-                </div>
+                </div> -->
               </div>
               <div class="detail-product">
                 <a href="#">
@@ -261,11 +310,11 @@
                 <a href="#">
                   <img src="<?= base_url()?>assets/img/pro-about-2.png" style="width: 100%;">
                 </a>
-                <div class="overlay-img-3 pro-about">
+                <!-- <div class="overlay-img-3 pro-about">
                   <h3>
                     ชมรายละเอียดสินค้า
                   </h3>
-                </div>
+                </div> -->
               </div>
               <div class="detail-product">
                 <a href="#">
@@ -285,11 +334,11 @@
                 <a href="#">
                   <img src="<?= base_url()?>assets/img/pro-about-3.png" style="width: 100%;">
                 </a>
-                <div class="overlay-img-3 pro-about">
+                <!-- <div class="overlay-img-3 pro-about">
                   <h3>
                     ชมรายละเอียดสินค้า
                   </h3>
-                </div>
+                </div> -->
               </div>
               <div class="detail-product">
                 <a href="#">
@@ -309,11 +358,11 @@
                 <a href="#">
                   <img src="<?= base_url()?>assets/img/pro-about-1.png" style="width: 100%;">
                 </a>
-                <div class="overlay-img-3 pro-about">
+                <!-- <div class="overlay-img-3 pro-about">
                   <h3>
                     ชมรายละเอียดสินค้า
                   </h3>
-                </div>
+                </div> -->
               </div>
               <div class="detail-product">
                 <a href="#">
@@ -333,11 +382,11 @@
                 <a href="#">
                   <img src="<?= base_url()?>assets/img/pro-about-3.png" style="width: 100%;">
                 </a>
-                <div class="overlay-img-3 pro-about">
+               <!--  <div class="overlay-img-3 pro-about">
                   <h3>
                     ชมรายละเอียดสินค้า
                   </h3>
-                </div>
+                </div> -->
               </div>
               <div class="detail-product">
                 <a href="#">

@@ -95,63 +95,65 @@ class News extends CI_Controller {
 	}
 	
 
-	public function detail($langu="",$news_id){
+	public function detail(){
 
-		$data['counter'] = $this->Counter_model->count();
-		$data["categorys"] = $this->Category_model->getAll();
- 		$company = $this->Company_model->getOne(1);		
-		$data['companyData'] = $company;
-		$data['meta_title'] = $company->meta_title;
-		$data['meta_keyword'] = $company->meta_keyword;
-		$data['meta_description'] = $company->meta_description;
+		// $data['counter'] = $this->Counter_model->count();
+		// $data["categorys"] = $this->Category_model->getAll();
+ 	// 	$company = $this->Company_model->getOne(1);		
+		// $data['companyData'] = $company;
+		// $data['meta_title'] = $company->meta_title;
+		// $data['meta_keyword'] = $company->meta_keyword;
+		// $data['meta_description'] = $company->meta_description;
 		
-		$theme_path = $company->theme_path;
-		$data['theme_path'] = $theme_path;
-		$data["theme_assets_path"] = $company->theme_assets_path;
+		// $theme_path = $company->theme_path;
+		// $data['theme_path'] = $theme_path;
+		// $data["theme_assets_path"] = $company->theme_assets_path;
  		
- 		$menus = $this->Menu_model->getMain();
-		// echo $this->db->last_query();
-		// exit();
+ 	// 	$menus = $this->Menu_model->getMain();
+		// // echo $this->db->last_query();
+		// // exit();
 
-		foreach ($menus as $menu) {
-			$menu->submenu = $this->Menu_model->getsub($menu->menu_id);
-		}
-		$data['menus'] = $menus ;		
-		$data['countrys'] = $this->Country_model->getAll();
+		// foreach ($menus as $menu) {
+		// 	$menu->submenu = $this->Menu_model->getsub($menu->menu_id);
+		// }
+		// $data['menus'] = $menus ;		
+		// $data['countrys'] = $this->Country_model->getAll();
 
-		$data['lang'] = $this->session->userdata('site_lang');
+		// $data['lang'] = $this->session->userdata('site_lang');
 
-		if ($data['lang']=221) {
-			$data['language'] = "เปลี่ยนภาษา";
-		}else{
-			$data['language'] = "Change Language";
-		}
-		$data['footer_newss'] = $this->News_model->getAll(4,0,array('news_type_id'=>0));
+		// if ($data['lang']=221) {
+		// 	$data['language'] = "เปลี่ยนภาษา";
+		// }else{
+		// 	$data['language'] = "Change Language";
+		// }
+		// $data['footer_newss'] = $this->News_model->getAll(4,0,array('news_type_id'=>0));
 		
-		// $data['config'] = $this->Config_model->getConfig();		
-		// $data['language'] = array('EN'=>'eng','TH'=>'ไทย');
-		// $data['menuactive'] = 3;
+		// // $data['config'] = $this->Config_model->getConfig();		
+		// // $data['language'] = array('EN'=>'eng','TH'=>'ไทย');
+		// // $data['menuactive'] = 3;
 
-		// $data['products']  = $this->Products_model->getAll(5,0,array(),' click desc ');	
-		//echo $this->db->last_query();
+		// // $data['products']  = $this->Products_model->getAll(5,0,array(),' click desc ');	
+		// //echo $this->db->last_query();
 		
-		$data['news'] = $this->News_model->getOne($news_id);
+		// $data['news'] = $this->News_model->getOne($news_id);
 		
-		// print_r($data['newss']);
-		// exit();
-		//echo $this->db->last_query();
-		//exit();
-		##################################################
+		// // print_r($data['newss']);
+		// // exit();
+		// //echo $this->db->last_query();
+		// //exit();
+		// ##################################################
 		
-		/////////////////////// get products /////////////////////////////
+		// /////////////////////// get products /////////////////////////////
 		
-		$cartarr = array();
-		foreach ($this->cart->contents() as $carts) {
-			$cartarr[]  = array($this->Products_model->getOne($carts['id']),$carts['qty'],$carts['rowid']);
-		}
-		$data['cartarr'] = $cartarr;
+		// $cartarr = array();
+		// foreach ($this->cart->contents() as $carts) {
+		// 	$cartarr[]  = array($this->Products_model->getOne($carts['id']),$carts['qty'],$carts['rowid']);
+		// }
+		// $data['cartarr'] = $cartarr;
 
-		$this->load->view($theme_path.'/news_detail',$data);
+		// $this->load->view($theme_path.'/news_detail',$data);
+
+		$this->load->view('2021_theme_1/news-detail');
 
 	}
 

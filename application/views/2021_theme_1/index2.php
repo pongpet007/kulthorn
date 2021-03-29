@@ -36,14 +36,14 @@
       </ul> -->
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-1 col-sm-4 col-4">
+          <div class="col-lg-1 col-sm-2 ">
             <div class="img-logo">
               <img src="<?= base_url()?>/assets/img/logo-kul.png">
             </div>
 
           </div>
 
-          <div class="col-md-11 col-sm-8 col-8">
+          <div class="col-lg-11 col-sm-10 ">
             <nav class="navbar navbar-expand-lg navbar-light /*bg-light*/ nav-color">
               <a class="navbar-brand" href="#"> </a>
               <button class="navbar-toggler nav-color-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -851,10 +851,10 @@
 
               <div class="container">
                 <div class="row">
-                  <div class="col-md-6 col-12">
+                  <div class="col-12  col-lg-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1918.8728020035055!2d100.51097352290495!3d13.756599299480568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2993f1660da53%3A0x3875632c3e996850!2z4LiB4Li44Lil4LiY4Lij!5e0!3m2!1sth!2sth!4v1616649400590!5m2!1sth!2sth" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   </div>
-                  <div class="col-md-6 col-12">
+                  <div class="col-12  col-lg-6">
                     <div class="text-contact">
                       <h2>
                         บริษัท กุลธร จำกัด
@@ -878,19 +878,19 @@
                   <form>
                     <div class="row">
                       <div class="col-lg-6 col-md-6 col-sm-12">
-                       <input name="name" placeholder="ชื่อผู้ติดต่อ" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
+                       <input name="name" class="input-contact" placeholder="ชื่อผู้ติดต่อ" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; ">
                      </div>
                      <div class="col-lg-6 col-md-6 col-sm-12">
-                      <input name="lastname" placeholder="นามสกุล" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
+                      <input name="lastname" class="input-contact" placeholder="นามสกุล" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; ">
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
-                     <input name="tel" placeholder="เบอร์โทรศัพท์" type="tel" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
+                     <input name="tel" class="input-contact"  placeholder="เบอร์โทรศัพท์" type="tel" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; ">
                    </div>
                    <div class="col-lg-6 col-md-6 col-12">
-                    <input name="email" placeholder="อีเมล" type="email" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
+                    <input name="email" class="input-contact" placeholder="อีเมล" type="email" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; ">
                   </div>
                   <div class="col-md-12">
-                    <textarea name="email" placeholder="ข้อความ" type="email" style="background: #ffffff;border: 1px solid #ebebeb; min-height: 50px; font-size: 24px;"></textarea>
+                    <textarea name="email" class="input-contact" placeholder="ข้อความ" type="email" style="background: #ffffff;border: 1px solid #ebebeb; min-height: 50px; "></textarea>
                   </div>
                 </div>
                 <button class="btn-sent-email" type="submit">ส่งข้อความ</button>

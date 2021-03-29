@@ -245,6 +245,9 @@
 	.navbar-expand-lg .navbar-nav .nav-link-new {
 		padding: 25px;
 	}
+	li.address-text {
+		font-size: 26px;
+	}
 
 	/* ------------------------------------         Products       ---------------------------------------  */
 	
@@ -289,6 +292,20 @@
 				padding: 5px;
 				font-size: 60px;
 			}
+
+			.nav-1:before , .nav-2:before , .nav-3:before , .nav-4:before , .nav-5:before , .nav-6:before , .nav-8:before {
+				width: 0;
+			}
+			
+			.navbar-nav-new {
+				background-color : #0d176feb;
+			}
+
+			.width33 {
+				width: 100% !important;
+				margin-bottom: 10px;
+			}
+
 			
 			.detail-join h2 {
 				font-size: 60px;
@@ -317,20 +334,112 @@
 				font-size: 50px;
 			}
 
+			.fp-tableCell {
+				padding: 10% 0px 0px;
+				vertical-align: unset;
+			}
+
+			.space-his {
+				margin-top: 50px;
+			}
+			.tab .nav-tabs li a {
+				font-size: 55px;
+			}
+			p.aboutnew span {
+				font-size: 50px !important;
+			}
+			.MISSIONH1 {
+				font-size: 70px !important;
+			}
+			.MISSIONP  {
+				font-size: 60px !important;
+				line-height: 40px !important;
+			}
+			p.aboutnew-2 {
+				font-size: 60px !important;
+				line-height: 50px !important;
+			}
+			h1.section-products {
+				font-size: 100px !important;
+			}
+
+			p.section-products {
+				font-size: 65px !important;
+			}
+			.products-catagory-bt.active .products-catagory-name h1 {
+				font-size: 45px !important;
+			}
+			.products-catagory-bt.active .products-catagory-name h2 {
+				font-size: 45px !important;
+			}
+			.products-catagory-bt .products-catagory-name h1 {
+				font-size: 45px !important;
+			}
+			.products-catagory-bt .products-catagory-name h2 {
+				font-size: 45px !important;
+			}
+			.detail-know h2 {
+				font-size: 70px;
+			}
+			.intro p {
+				font-size: 55px;
+			}
+			.know h2 {
+				font-size: 55px;
+			}
+			.know span {
+				font-size: 50px;
+			}
+			.intro p.p-news-detail {
+				font-size: 60px;
+				line-height: 40.8px;
+			}
+			.detail-news h2 {
+				font-size: 70px; 
+			}
+			.news h2 {
+				font-size: 55px; 
+			}
+			.news span {
+				font-size: 50px;
+			}
+			.detail-contact h2 {
+				font-size: 65px;
+			}
+			.intro p.p-contact {
+				font-size: 55px;
+			}
+			ul li.address-text {
+				font-size: 50px;
+				line-height: 40px;
+				text-align: left;
+			}
+			.text-contact ul li {
+				font-size: 48px;
+			}
 		} 
 
-		@media (max-width: 1023px)  and  (min-width: 768px) {
+		@media (max-device-width: 1023px)  and  (min-device-width: 768px) {
 			.navbar-expand-lg .navbar-nav .nav-link-new {
 				padding: 10px;
 				font-size: 30px;
 			}
-			
+
+			.tab .nav-tabs li a {
+				padding: 10px 5px;
+				font-size: 25px; 
+			}
+
+			p.aboutnew span {
+				font-size: 30px;
+			}
+
 
 
 			.nav-1:before , .nav-2:before , .nav-3:before , .nav-4:before , .nav-5:before , .nav-6:before , .nav-8:before {
 				width: 0;
 			}
-			
+
 			.navbar-nav-new {
 				background-color : #0d176feb;
 			}
@@ -356,7 +465,7 @@
 				vertical-align: unset;
 			}
 			.width33 {
-				width: 100% !important;
+				width: 100% ;
 				margin-bottom: 10px;
 			}
 
@@ -364,6 +473,10 @@
 		@media (max-width: 1359px) and (min-width: 1024px) {
 			p.aboutnew span {
 				font-size: 28px;
+			}
+
+			.img-logo img {
+				width: 100%;
 			}
 
 			.nav-1:before , .nav-2:before , .nav-3:before , .nav-4:before , .nav-5:before , .nav-6:before , .nav-8:before {
@@ -393,7 +506,7 @@
 
 		}
 		@media (min-width: 1401px) {
-			
+
 		}
 
 	</style>

@@ -164,7 +164,7 @@
       <div class="section" id="section1" style="background-image: url('assets/img/bg-banner-3.jpg');">
         <div class="container">
           <div class="row">
-            <div id="demos" class="large-12 columns">
+            <div id="demos" class="large-12 columns space-his">
               <div class="tab" role="tabpanel">
                 <!-- Nav tabs -->
                 <style type="text/css">
@@ -332,7 +332,7 @@
                               items: 1
                             },
                             600: {
-                              items: 3
+                              items: 1
                             },
                             1000: {
                               items: 3
@@ -419,9 +419,9 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12">
               <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                   <div class="row">
                     <div class="col-lg-12 products-catagory-bt active" onclick="" id="products-catagory-1" style="padding-bottom: 30px;">
                       <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
@@ -473,7 +473,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-md-8">
                   <div class="product-hide-1">
                     <img style="" src="<?=base_url()?>image_new/product1.jpg">
                   </div>
@@ -656,7 +656,10 @@
               0: {
                 items: 1
               },
-              600: {
+              500: {
+                items: 1
+              },
+              700: {
                 items: 1
               },
               1000: {
@@ -759,8 +762,14 @@
                 0: {
                   items: 1
                 },
+                400: {
+                  items: 1
+                },
                 600: {
                   items: 1
+                },
+                700: {
+                  items: 2
                 },
                 1000: {
                   items: 4
@@ -851,7 +860,7 @@
                         บริษัท กุลธร จำกัด
                       </h2>
                       <ul class="ul-contact">
-                        <li style="font-size: 26px;">
+                        <li class="address-text">
                          237-237/1-4 ถนน หลานหลวง แขวงวัดโสมนัส เขตป้อมปราบศัตรูพ่าย กรุงเทพมหานคร 10100
                        </li>
                        <li>
@@ -868,16 +877,16 @@
                   <h2>แบบฟอร์มติดต่อ</h2><br>
                   <form>
                     <div class="row">
-                      <div class="col-md-6 col-6">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
                        <input name="name" placeholder="ชื่อผู้ติดต่อ" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
                      </div>
-                     <div class="col-md-6 col-6">
+                     <div class="col-lg-6 col-md-6 col-sm-12">
                       <input name="lastname" placeholder="นามสกุล" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
                     </div>
-                    <div class="col-md-6 col-6">
+                    <div class="col-lg-6 col-md-6 col-12">
                      <input name="tel" placeholder="เบอร์โทรศัพท์" type="tel" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
                    </div>
-                   <div class="col-md-6 col-6">
+                   <div class="col-lg-6 col-md-6 col-12">
                     <input name="email" placeholder="อีเมล" type="email" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; font-size: 24px;">
                   </div>
                   <div class="col-md-12">

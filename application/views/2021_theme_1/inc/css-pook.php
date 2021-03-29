@@ -251,7 +251,7 @@
 
 
 	/* ////////////////////////// Responsive ////////////////////////// */
-	@media (max-width: 767px) and (min-width: 200px) {
+	@media only screen and (max-device-width: 480px) {
 		/*.nav-color-toggle {
 			background-color: #FFF;
 		}
@@ -285,24 +285,52 @@
 			.img-logo img {
 				width: 100%;
 			}
-			.text-position h3 {
+			.navbar-expand-lg .navbar-nav .nav-link-new {
+				padding: 5px;
 				font-size: 60px;
+			}
+			
+			.detail-join h2 {
+				font-size: 60px;
+				margin-top : 80px;
+			}
+
+			.detail-join p {
+				font-size: 55px;
+			}
+			.text-position h3 {
+				font-size: 55px;
+			}
+			.text-count h3 {
+				font-size: 55px;
+			}
+			.text-detail h3 {
+				font-size: 55px;
+			}
+			.name-job h3 {
+				font-size: 50px;
+			}
+			.count-job h3 {
+				font-size: 50px;
+			}
+			.detail-job h3 a {
+				font-size: 50px;
 			}
 
 		} 
 
-		@media (max-width: 1023px) and (min-width: 768px) {
-			.detail-join h2 {
-				font-size: 60px;
+		@media (max-width: 1023px)  and  (min-width: 768px) {
+			.navbar-expand-lg .navbar-nav .nav-link-new {
+				padding: 10px;
+				font-size: 30px;
 			}
+			
+
+
 			.nav-1:before , .nav-2:before , .nav-3:before , .nav-4:before , .nav-5:before , .nav-6:before , .nav-8:before {
 				width: 0;
 			}
-			.navbar-expand-lg .navbar-nav .nav-link-new {
-				padding: 5px;
-				font-size: 30px;
-
-			}
+			
 			.navbar-nav-new {
 				background-color : #0d176feb;
 			}

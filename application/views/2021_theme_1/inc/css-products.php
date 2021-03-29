@@ -16,6 +16,7 @@
 		top: -13px;
 		width: 26px;
 		color: #FFF;
+		z-index: 99999;
 	}
 
 	.compare{
@@ -255,7 +256,7 @@
 	
 	.picture-product .overlay-img-3 {
 		position: absolute;
-		bottom: 98px;
+		bottom: 113px;
 		background: #4030F0;
 		color: #f1f1f1;
 		left: 15px;
@@ -399,7 +400,7 @@
 	}
 	@media (max-width: 767px) and (min-width: 300px) {
 		.picture-product .overlay-img-3 {
-			bottom: 170px;
+			bottom: 185px;
 		}
 		.picture-product .overlay-img-4 {
 			bottom: 380px;	
@@ -407,13 +408,21 @@
 	}
 	@media (max-width: 992px) and (min-width: 768px) {
 		.picture-product .overlay-img-3 {
-			bottom: 98px;
+			bottom: 185px;
 		}
 
 	}
-	@media (max-width: 1399px) and (min-width: 993px) {
+	@media (max-width: 1199px) and (min-width: 993px) {
 		.picture-product .overlay-img-3 {
-			bottom: 170px;
+			bottom: 185px;
+		}
+		.picture-product .overlay-img-4 {
+			bottom: 380px;	
+		}
+	}
+	@media (max-width: 1399px) and (min-width: 1200px) {
+		.picture-product .overlay-img-3 {
+			bottom: 115px;
 		}
 		.picture-product .overlay-img-4 {
 			bottom: 380px;	

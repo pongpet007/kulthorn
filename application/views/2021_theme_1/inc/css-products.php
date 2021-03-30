@@ -82,6 +82,8 @@
 	}
 	.breadcrumb-detail-pro {
 		display: flex;
+		padding-bottom: 10px;
+		padding-top: 10px;
 	}
 	.breadcrumb-detail:after {
 		content: ':';
@@ -94,11 +96,19 @@
 		font-size: 28px;
 		font-weight: bold;
 		line-height: 35px;
+		
 	}
 	.category-menu-detail {
 		font-size: 28px;
 		line-height: 35px;
 		color: #666666;
+		
+	}
+	.tags-products {
+		display: inline-block;
+	}
+	.category-menu-detail {
+		display: inline-block;
 	}
 
 	/*Share Face*/
@@ -442,6 +452,17 @@
 	}
 	img.knowledge-detail-img {
 		width: 100%;
+	}
+	.scrollbar {
+		overflow-y: auto;
+		max-height: 130px;
+	}
+	#tags::-webkit-scrollbar {
+		width: 4px;
+		background-color: #EEE;
+	}
+	#tags::-webkit-scrollbar-thumb {
+		background-color: #524c92;
 	}
 
 

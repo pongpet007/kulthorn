@@ -1,11 +1,40 @@
 <style type="text/css">
 
-	
+
 	.nav-link-new{
 		color: #FFF !important;
 		font-size: 28px;
 	}
 
+	.fp-controlArrow.fp-prev {
+		left: 60px;
+	}
+	.fp-controlArrow.fp-next {
+		right: 60px;
+	}
+	.chcolor .nav-link-new {
+		color: #000 !important ;
+		
+	}
+	.before-color {
+		position: relative;
+	}
+	.before-color:before {
+		content: '';
+		height: 50%;
+		width: 2px;
+		position: absolute;
+		right: 0;
+		top: 10px;
+		background-color: #000 !important;
+	}
+
+	.border-header {
+		border-bottom: 1px solid #EEE;
+	}
+	.changlang-color .button-color {
+		color: #000 !important ;
+	}
 	.navbar-light .navbar-toggler {
 		background-color: #FFF;
 	}
@@ -30,6 +59,13 @@
 		right: 0;
 		top: 10px;
 		background-color: #FFF;
+	}
+	.header-thirdPage {
+		background-color: #2151ffe3;
+		width: 100%;
+		height: 60px;
+		position: absolute;
+		top: 10px;
 
 	}
 	.nav-color {
@@ -410,6 +446,11 @@
 			font-size: 35px !important;
 		}
 
+
+
+
+
+
 		p.section-products {
 			font-size: 25px !important;
 			line-height: 20px;
@@ -646,7 +687,7 @@
 			font-size: 28px;
 		}
 		.copyright {
-			bottom: 40px;
+			bottom: 20px;
 			position: relative;
 			padding: 10px 0;
 		}

@@ -22,6 +22,8 @@
   <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
   <script src="<?=base_url()?>assets/owlcarousel/owl.carousel.js"></script>
 
+  <link href="<?=base_url()?>assets/aos-master/dist/aos.css" rel="stylesheet">
+
   <?php
   // $base_web = base_url('#fourthPage');
   // // echo $base_web; 
@@ -55,15 +57,18 @@
         <li data-menuanchor="seventhPage"><a href="#seventhPage">07.ติดต่อเรา</a></li>
       </ul> -->
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-1 col-sm-2 col-2 ">
-            <div class="img-logo">
-              <img src="<?= base_url()?>/assets/img/logo-bg-white.png" style="">
+        <div class="row" id="row-header">
+          <div class="col-lg-1 col-sm-2 col-3">
+
+            <div data-aos="flip-left"   data-aos-easing="ease-out-cubic"    data-aos-duration="2000">
+              <div class="img-logo">
+                <img src="<?= base_url()?>/assets/img/logo-bg-white.png" style="">
+              </div>
             </div>
 
           </div>
 
-          <div class="col-lg-11 col-sm-10 col-10 ">
+          <div class="col-lg-11 col-sm-10 col-9 "data-aos="fade-left"data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
             <nav class="navbar navbar-expand-lg navbar-light /*bg-light*/ nav-color">
               <a class="navbar-brand" href="#"> </a>
               <button class="navbar-toggler nav-color-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,30 +76,30 @@
               </button>
               <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav navbar-nav-new">
-                  <li class="nav-item nav-item-new nav-1">
+                  <li class="nav-item nav-item-new nav-1 " id="nav-color-1">
                     <a class="nav-link nav-link-new" href="#firstPage"><span class="number-page-1">01.</span>หน้าหลัก</a>
                   </li>
-                  <li class="nav-item  nav-item-new nav-2">
+                  <li class="nav-item  nav-item-new nav-2 " id="nav-color-2">
                     <a class="nav-link nav-link-new" href="#secondPage"><span class="number-page-2">02.</span>เกี่ยวกับเรา</a>
                   </li>
-                  <li class="nav-item nav-item-new nav-3">
+                  <li class="nav-item nav-item-new nav-3" id="nav-color-3">
                     <a class="nav-link nav-link-new" href="#thirdPage"><span class="number-page-3">03.</span>สินค้าและบริการ</a>
                   </li>
-                  <li class="nav-item nav-item-new nav-4">
+                  <li class="nav-item nav-item-new nav-4" id="nav-color-4">
                     <a class="nav-link nav-link-new" href="#fourthPage"><span class="number-page-4">04.</span>เกร็ดความรู้</a>
                   </li>
-                  <li class="nav-item nav-item-new nav-5">
+                  <li class="nav-item nav-item-new nav-5" id="nav-color-5">
                     <a class="nav-link nav-link-new" href="#fifthPage"><span class="number-page-5">05.</span>ข่าวสารและกิจกรรม</a>
                   </li>
-                  <li class="nav-item nav-item-new nav-6">
+                  <li class="nav-item nav-item-new nav-6" id="nav-color-6">
                     <a class="nav-link nav-link-new" href="#sixthPage"><span class="number-page-6">06.</span>ร่วมงานกับเรา</a>
                   </li>
-                  <li class="nav-item nav-item-new nav-6">
+                  <li class="nav-item nav-item-new nav-6" id="nav-color-7">
                     <a class="nav-link nav-link-new" href="#seventhPage"><span class="number-page-6">07.</span>ติดต่อเรา</a>
                   </li>
-                  
-                  <li class="nav-item  nav-8">
-                    <div class="dropdown nav-link-new show changlang">
+
+                  <li class="nav-item  nav-8" id="nav-color-8">
+                    <div class="dropdown nav-link-new show changlang" id="changlang">
                       <a class="btn btn-secondary dropdown-toggle button-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="<?= base_url()?>assets/img/thai-flag.png" style="margin-top: -5px;"> ภาษาไทย
                       </a>
@@ -128,16 +133,27 @@
         <div class="slide" id="slide1" style="background-image: url('assets/img/bg-banner-1.jpg');">
           <div class="container">
             <div class="row">
-              <div class="col-lg-4">
-                <img class="img-headerslide-1" src="<?=base_url()?>assets/img/baanner-1-1.png">
+              <div class="col-lg-4">      
+                <img class="img-headerslide-1 "
+                data-aos="fade-down"             
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                src="<?=base_url()?>assets/img/baanner-1-1.png">
               </div>
               <div class="col-lg-8">
                 <div class="row">
                   <div class="col-lg-12">
-                    <img class="img-headerslide" src="<?=base_url()?>assets/img/baanner-1-2.png" >
+                    <img class="img-headerslide" 
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    src="<?=base_url()?>assets/img/baanner-1-2.png" >
                   </div>
                   <div class="col-lg-12">
-                    <img class="img-headerslide" src="<?=base_url()?>assets/img/baanner-1-3.png">
+                    <img class="img-headerslide" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" 
+                    src="<?=base_url()?>assets/img/baanner-1-3.png">
                   </div>
                 </div>
               </div>
@@ -169,7 +185,7 @@
               <div class="col-lg-12">
                 <div class="row">
                   <div class="col-lg-12">
-                    <img class="img-slide-2" src="<?=base_url()?>assets/img/baanner-3-1.png" >
+                    <img class="img-slide-2" data-aos="zoom-out-left" src="<?=base_url()?>assets/img/baanner-3-1.png" >
                   </div>
                 </div>
               </div>
@@ -177,10 +193,10 @@
           </div>
         </div>
       </div>
-      <div class="section" id="section1" style="background-image: url('assets/img/bg-banner-3.jpg');">
+      <div class="section" id="section1" style="background : url('<?=base_url()?>assets/img/bg-banner-3.jpg')center center; background-size: cover; " >
         <div class="container">
           <div class="row">
-            <div id="demos" class="large-12 columns space-his">
+            <div id="demos" class="large-12 columns space-his" >
               <div class="tab section-2-space" role="tabpanel">
                 <!-- Nav tabs -->
                 <style type="text/css">
@@ -234,434 +250,574 @@
 
                 </style>
                 <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="width33"><a class="active" href="#Section1" aria-controls="home" role="tab" data-toggle="tab">ประวัติความเป็นมาของ กุลธร</a></li>
-                  <li role="presentation" class="width33"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">วิสัยทัศน์และพันธกิจ</a></li>
-                  <li role="presentation" class="width33"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">บริษัทในเครือของ กุลธร</a></li>
-                </ul>
-                <!-- Tab panes -->
-                <div class="tab-content tabs">
-                  <div role="tabpanel" class="tab-pane fade in active show" id="Section1">
-                    <div class="owl-carousel owl-theme owl-carousel-1">
-                      <div class="item">
-                        <img src="<?=base_url()?>/image_new/About1.jpg">
-                        <p class="about-year">2508<span>
-                        </span></p>
-                        <p class="aboutnew">
-                          <span>ก่อนเปิดร้านกุลธร คุณสุเมธ ทำงานขายอะไหล่เครื่องเย็น  และมอเตอร์ไซค์ อยู่ที่ร้านในเยาวราช มีความรู้ในเรื่องเครื่องกลดี  เพราะเคยฝึกงานในโรงกลึงมาก่อน เมื่ออายุราว 27 ปี ตัดสินใจที่จะมีกิจการของตัวเอง จัดตั้ง กุลธรเอนจิเนียริ่ง ในปี 2508</span>
-                        </p>
-                      </div>
-                      <div class="item">
-                        <img src="<?=base_url()?>/image_new/About2.jpg">
-                        <p class="about-year">2510<span>
-                        </span></p>
-                        <p class="aboutnew">
-                          <span>กุลธร เมื่อตอนเริิิ่มต้น ประมาณก่อนปี 2510 </span>
-                        </p>
-                      </div>
-                    </div>
-                    <script>
-                      $(document).ready(function() {
-                        var owl = $('.owl-carousel-1');
-                        owl.owlCarousel({
-                          margin: 10,
-                          loop: true,
-                          responsive: {
-                            0: {
-                              items: 1
-                            },
-                            600: {
-                              items: 2
-                            },
-                            1000: {
-                              items: 2
-                            },
-                            1300: {
-                              items: 2
-                            }
-                          }
-                        })
-                      })
-                    </script>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="Section2">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="row">
-                          <div class="col-lg-6">
-                            <img src="<?=base_url()?>/image_new/About3.jpg">
-                          </div>
-                          <div class="col-lg-6 pt-60">
-                            <h1 class="MISSIONH1">OUR MISSION</h1>
-                            <p class="MISSIONP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
-                          </div>
-                        </div>
-                      </div>
+                  <li role="presentation" class="width33"        >
 
+                  <a class="active" href="#Section1" aria-controls="home" role="tab" data-toggle="tab"   >ประวัติความเป็นมาของ กุลธร</a>
+                </li>
+                <li role="presentation" class="width33">
+                  <a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">วิสัยทัศน์และพันธกิจ</a>
+                </li>
+                <li role="presentation" class="width33">
+                  <a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">บริษัทในเครือของ กุลธร</a>
+                </li>
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content tabs">
+                <div role="tabpanel" class="tab-pane fade in active show" id="Section1">
+                  <div class="owl-carousel owl-theme owl-carousel-1">
+                    <div class="item">
+                      <img src="<?=base_url()?>/image_new/About1.jpg">
+                      <p class="about-year">2508<span>
+                      </span></p>
+                      <p class="aboutnew">
+                        <span>ก่อนเปิดร้านกุลธร คุณสุเมธ ทำงานขายอะไหล่เครื่องเย็น  และมอเตอร์ไซค์ อยู่ที่ร้านในเยาวราช มีความรู้ในเรื่องเครื่องกลดี  เพราะเคยฝึกงานในโรงกลึงมาก่อน เมื่ออายุราว 27 ปี ตัดสินใจที่จะมีกิจการของตัวเอง จัดตั้ง กุลธรเอนจิเนียริ่ง ในปี 2508</span>
+                      </p>
                     </div>
-                    <div class="row" style="margin-top: 30px;">
-                      <div class="col-lg-12">
-                        <div class="row">
-                          <div class="col-lg-6 pt-60">
-                            <h1 class="MISSIONH1">OUR VISION</h1>
-                            <p class="MISSIONP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
-                          </div>
-                          <div class="col-lg-6">
-                            <img src="<?=base_url()?>/image_new/About4.jpg">
-                          </div>
-                        </div>
-                      </div>
-
+                    <div class="item">
+                      <img src="<?=base_url()?>/image_new/About2.jpg">
+                      <p class="about-year">2510<span>
+                      </span></p>
+                      <p class="aboutnew">
+                        <span>กุลธร เมื่อตอนเริิิ่มต้น ประมาณก่อนปี 2510 </span>
+                      </p>
                     </div>
                   </div>
-                  <div role="tabpanel" class="tab-pane fade" id="Section3">
-                    <div class="owl-carousel owl-theme owl-carousel-2">
-                      <div class="item">
-                        <img src="<?=base_url()?>/image_new/About5.jpg">
-                        <img src="<?=base_url()?>/image_new/About6.png">
-                        <p class="aboutnew-2">
-                          <span style="overflow: hidden;text-overflow: ellipsis;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 3;
-                          -webkit-box-orient: vertical;">Kulthorn International Co., Ltd.กุลธรเริ่มเปิดตลาดต่างประเทศ ในปี ๒๕๒๓ จึงได้ตั้งบริษัท กุลธรอินเตอร์เนชั่นแนล เพื่อดูแลงานขายต่างประเทศ ควบคู่กับการขายสินค้าหมวดเครื่องยนต์ ปั๊มน้ำ รถตัดหญ้าบริษัท กุลธรอินเตอร์เนชั่นแนล จำกัด</span>
-                        </p>
-                      </div>
-                      <div class="item">
-                        <img src="<?=base_url()?>/image_new/About7.jpg">
-                        <img src="<?=base_url()?>/image_new/About8.png">
-                        <p class="aboutnew-2">
-                          <span style="overflow: hidden;text-overflow: ellipsis;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 3;
-                          -webkit-box-orient: vertical; ">บริษัท กุลธรเคอร์บี้เฟาน์ดรี้ จำกัดปี ๒๕๓๒ กุลธรจัดตั้งโรงหล่อเหล็ก เพื่อผลิตชิ้นงานเหล็กหล่อคุณภาพป้อนโรงงานในเครือ และส่งขายให้ลูกค้าอื่นๆในอุตสาหกรรมเดียวกัน  การที่มีโรงงานผลิตวัตถุดิบคุณภาพนี้ เป็นปัจจัยสำคัญปัจจัยหนึ่ง ที่ทำให้ผู้ผลิตคอมเพรสเซอร์รายอื่นๆ ตัดสินใจมาลงทุนตั้งโรงงานในเมืองไทยแทนที่จไปประเทศอื่น</span>
-                        </p>
-                      </div>
-                      <div class="item">
-                        <img src="<?=base_url()?>/image_new/About9.jpg">
-                        <img src="<?=base_url()?>/image_new/About10.png">
-                        <p class="aboutnew-2">
-                          <span style="overflow: hidden;text-overflow: ellipsis;
-                          display: -webkit-box;
-                          -webkit-line-clamp: 3;
-                          -webkit-box-orient: vertical; ">ในปี ๒๕๓๐ กุลธรได้ลงทุนร่วมกับบริษัทผู้ผลิตมอเตอร์ไฟฟ้าที่เชี่ยวชาญมอเตอร์ที่ใช้ในอุตสาหกรรมเครื่องปรับอากาศ เครื่องทำความเย็นชั้นนำของสหรัฐตั้งโรงงาน กุลธรยูนิเวอร์แซลอีเล็คทริค เพื่อผลิตมอเตอร์ไฟฟ้าต่อมาเกิดการเปลี่ยนแปลงผู้ถือหุ้นในบริษัทฝรั่ง กุลธรจึงเข้าถือหุ้นทั้งหมดเปลี่ยนชื่อเป็น กุลธรอิเล็คทริค</span>
-                        </p>
-                      </div>
-                    </div>
-                    <script>
-                      $(document).ready(function() {
-                        var owl = $('.owl-carousel-2');
-                        owl.owlCarousel({
-                          margin: 10,
-                          loop: true,
-                          responsive: {
-                            0: {
-                              items: 1
-                            },
-                            600: {
-                              items: 2
-                            },
-                            1000: {
-                              items: 3
-                            }
+                  <script>
+                    $(document).ready(function() {
+                      var owl = $('.owl-carousel-1');
+                      owl.owlCarousel({
+                        margin: 10,
+                        loop: true,
+                        responsive: {
+                          0: {
+                            items: 1
+                          },
+                          600: {
+                            items: 2
+                          },
+                          1000: {
+                            items: 2
+                          },
+                          1300: {
+                            items: 2
                           }
-                        })
+                        }
                       })
-                    </script>
-                  </div>
+                    })
+                  </script>
                 </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <style type="text/css">
-        h1.section-products {
-          color: #000000;
-          font-size: 46px;
-        }
-        p.section-products {
-          color: #000000;
-          font-size: 28px;
-        }
-
-        .products-catagory-bt .products-catagory-name h1 {
-          color: #000000;
-          font-size: 36px;
-          text-align: left;
-        }
-        .products-catagory-bt .products-catagory-name h2 {
-          color: #1E1670;
-          font-size: 36px;
-          text-align: left;
-          font-weight: bold;
-        }
-        .products-catagory-name {
-          border-left: 5px solid #000000;
-        }
-        .products-catagory-bt.active .products-catagory-name h1 {
-          color: #000000;
-          font-size: 36px;
-          text-align: left;
-        }
-        .products-catagory-bt.active .products-catagory-name h2 {
-          color: #2F23B0;
-          font-size: 36px;
-          text-align: left;
-          font-weight: bold;
-        }
-        .active>.products-catagory-name {
-          border-left: 5px solid #2F23B0;
-        }
-        .products-catagory-bt:after{
-          content: "";
-          width: 100%;
-          height: 1px;
-          background: #eeeeee;
-          position: absolute;
-          bottom: 15px;
-          left: 0;
-          z-index: -1;
-          transition: all 0.3s ease 0s;
-        }
-
-      </style>
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $("#products-catagory-1").on('click', function(){
-            console.log("click!!!");
-          });
-        });
-      </script>
-      <div class="section" id="section2">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 ">
-              <h1 class="section-products">
-                สินค้าและบริการ
-              </h1>
-              <p class="section-products">Kulthorn Compressors Sold All Over the World Since 1981</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-4">
+                <div role="tabpanel" class="tab-pane fade" id="Section2">
                   <div class="row">
-                    <div class="col-lg-12 products-catagory-bt active" onclick="" id="products-catagory-1" style="padding-bottom: 30px;">
-                      <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
-                        <div style="padding-left: 15px; padding-right: 15px;">
-                          <h1>คอมเพรสเซอร์</h1>
-                          <h2>Compressors</h2>
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="<?=base_url()?>/image_new/About3.jpg">
+                        </div>
+                        <div class="col-lg-6 pt-60">
+                          <h1 class="MISSIONH1">OUR MISSION</h1>
+                          <p class="MISSIONP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-2" style="padding-bottom: 30px;">
-                      <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
-                        <div style="padding-left: 15px; padding-right: 15px;">
-                          <h1>วาล์ว</h1>
-                          <h2>VALVE</h2>
+
+                  </div>
+                  <div class="row" style="margin-top: 30px;">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-6 pt-60">
+                          <h1 class="MISSIONH1">OUR VISION</h1>
+                          <p class="MISSIONP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <img src="<?=base_url()?>/image_new/About4.jpg">
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-3" style="padding-bottom: 30px;">
-                      <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
-                        <div style="padding-left: 15px; padding-right: 15px;">
-                          <h1>อุปกรณ์ทำความเย็น</h1>
-                          <h2>Cooling equipment</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-4" style="padding-bottom: 30px;">
-                      <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
-                        <div style="padding-left: 15px; padding-right: 15px;">
-                          <h1>รถตัดหญ้า</h1>
-                          <h2>Lawn mower</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-5" style="padding-bottom: 30px;">
-                      <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
-                        <div style="padding-left: 15px; padding-right: 15px;">
-                          <h1>ปั๊มน้ำ</h1>
-                          <h2>Pumps</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-12 products-catagory-bt" id="products-catagory-6" style="padding-bottom: 30px;">
-                      <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
-                        <div style="padding-left: 15px; padding-right: 15px;">
-                          <h1>สปริงเกอร์</h1>
-                          <h2>Springer</h2>
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
-                <div class="col-lg-8 col-md-8 col-8">
-                  <div class="product-hide-1">
-                    <img style="" src="<?=base_url()?>image_new/product1.jpg">
+                <div role="tabpanel" class="tab-pane fade" id="Section3">
+                  <div class="owl-carousel owl-theme owl-carousel-2">
+                    <div class="item">
+                      <img src="<?=base_url()?>/image_new/About5.jpg">
+                      <img src="<?=base_url()?>/image_new/About6.png">
+                      <p class="aboutnew-2">
+                        <span style="overflow: hidden;text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;">Kulthorn International Co., Ltd.กุลธรเริ่มเปิดตลาดต่างประเทศ ในปี ๒๕๒๓ จึงได้ตั้งบริษัท กุลธรอินเตอร์เนชั่นแนล เพื่อดูแลงานขายต่างประเทศ ควบคู่กับการขายสินค้าหมวดเครื่องยนต์ ปั๊มน้ำ รถตัดหญ้าบริษัท กุลธรอินเตอร์เนชั่นแนล จำกัด</span>
+                      </p>
+                    </div>
+                    <div class="item">
+                      <img src="<?=base_url()?>/image_new/About7.jpg">
+                      <img src="<?=base_url()?>/image_new/About8.png">
+                      <p class="aboutnew-2">
+                        <span style="overflow: hidden;text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical; ">บริษัท กุลธรเคอร์บี้เฟาน์ดรี้ จำกัดปี ๒๕๓๒ กุลธรจัดตั้งโรงหล่อเหล็ก เพื่อผลิตชิ้นงานเหล็กหล่อคุณภาพป้อนโรงงานในเครือ และส่งขายให้ลูกค้าอื่นๆในอุตสาหกรรมเดียวกัน  การที่มีโรงงานผลิตวัตถุดิบคุณภาพนี้ เป็นปัจจัยสำคัญปัจจัยหนึ่ง ที่ทำให้ผู้ผลิตคอมเพรสเซอร์รายอื่นๆ ตัดสินใจมาลงทุนตั้งโรงงานในเมืองไทยแทนที่จไปประเทศอื่น</span>
+                      </p>
+                    </div>
+                    <div class="item">
+                      <img src="<?=base_url()?>/image_new/About9.jpg">
+                      <img src="<?=base_url()?>/image_new/About10.png">
+                      <p class="aboutnew-2">
+                        <span style="overflow: hidden;text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical; ">ในปี ๒๕๓๐ กุลธรได้ลงทุนร่วมกับบริษัทผู้ผลิตมอเตอร์ไฟฟ้าที่เชี่ยวชาญมอเตอร์ที่ใช้ในอุตสาหกรรมเครื่องปรับอากาศ เครื่องทำความเย็นชั้นนำของสหรัฐตั้งโรงงาน กุลธรยูนิเวอร์แซลอีเล็คทริค เพื่อผลิตมอเตอร์ไฟฟ้าต่อมาเกิดการเปลี่ยนแปลงผู้ถือหุ้นในบริษัทฝรั่ง กุลธรจึงเข้าถือหุ้นทั้งหมดเปลี่ยนชื่อเป็น กุลธรอิเล็คทริค</span>
+                      </p>
+                    </div>
                   </div>
-                  <div class="product-hide-2">
-                    <img style="" src="<?=base_url()?>image_new/product2.jpg">
-                  </div>
-                  <div class="product-hide-3">
-                    <img style="" src="<?=base_url()?>image_new/product3.jpg">
-                  </div>
-                  <div class="product-hide-4">
-                    <img style="" src="<?=base_url()?>image_new/product4.jpg">
-                  </div>
-                  <div class="product-hide-5">
-                    <img style="" src="<?=base_url()?>image_new/product5.jpg">
-                  </div>
-                  <div class="product-hide-6">
-                    <img style="" src="<?=base_url()?>image_new/product6.jpg">
-                  </div>
+                  <script>
+                    $(document).ready(function() {
+                      var owl = $('.owl-carousel-2');
+                      owl.owlCarousel({
+                        margin: 10,
+                        loop: true,
+                        responsive: {
+                          0: {
+                            items: 1
+                          },
+                          600: {
+                            items: 2
+                          },
+                          1000: {
+                            items: 3
+                          }
+                        }
+                      })
+                    })
+                  </script>
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </div>
-      <script>
-        $(document).ready(function(){
-          $("#products-catagory-1").mouseover(function(){
-            $(".product-hide-1").css("display", "block");
-          });
-          $("#products-catagory-1").mouseout(function(){
-            $(".product-hide-1").css("display", "none");
-          });
-          $("#products-catagory-2").mouseover(function(){
-            $(".product-hide-2").css("display", "block");
-          });
-          $("#products-catagory-2").mouseout(function(){
-            $(".product-hide-2").css("display", "none");
-          });
-          $("#products-catagory-3").mouseover(function(){
-            $(".product-hide-3").css("display", "block");
-          });
-          $("#products-catagory-3").mouseout(function(){
-            $(".product-hide-3").css("display", "none");
-          });
-          $("#products-catagory-4").mouseover(function(){
-            $(".product-hide-4").css("display", "block");
-          });
-          $("#products-catagory-4").mouseout(function(){
-            $(".product-hide-4").css("display", "none");
-          });
-          $("#products-catagory-5").mouseover(function(){
-            $(".product-hide-5").css("display", "block");
-          });
-          $("#products-catagory-5").mouseout(function(){
-            $(".product-hide-5").css("display", "none");
-          });
-          $("#products-catagory-6").mouseover(function(){
-            $(".product-hide-6").css("display", "block");
-          });
-          $("#products-catagory-6").mouseout(function(){
-            $(".product-hide-6").css("display", "none");
-          });
+    </div>
+    <style type="text/css">
+      h1.section-products {
+        color: #000000;
+        margin-top: 15px;
+        font-size: 46px;
+      }
+      p.section-products {
+        color: #000000;
+        font-size: 28px;
+      }
+
+      .products-catagory-bt .products-catagory-name h1 {
+        color: #000000;
+        font-size: 36px;
+        text-align: left;
+      }
+      .products-catagory-bt .products-catagory-name h2 {
+        color: #1E1670;
+        font-size: 36px;
+        text-align: left;
+        font-weight: bold;
+      }
+      .products-catagory-name {
+        border-left: 5px solid #000000;
+      }
+      .products-catagory-bt.active .products-catagory-name h1 {
+        color: #000000;
+        font-size: 36px;
+        text-align: left;
+      }
+      .products-catagory-bt.active .products-catagory-name h2 {
+        color: #2F23B0;
+        font-size: 36px;
+        text-align: left;
+        font-weight: bold;
+      }
+      .active>.products-catagory-name {
+        border-left: 5px solid #2F23B0;
+      }
+      .products-catagory-bt:after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #eeeeee;
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        z-index: -1;
+        transition: all 0.3s ease 0s;
+      }
+
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#products-catagory-1").on('click', function(){
+          console.log("click!!!");
         });
+      });
+    </script>
 
-      </script>
-      <style type="text/css">
-        .product-hide-1 {
-          display: none;
-        }
-        .product-hide-2 {
-          display: none;
-        }
-        .product-hide-3 {
-          display: none;
-        }
-        .product-hide-4 {
-          display: none;
-        }
-        .product-hide-5 {
-          display: none;
-        }
-        .product-hide-6 {
-          display: none;
-        }
-      </style>
-      <div class="section" id="section3">
-        <div class="intro">
-          <div class="detail-know">
-            <h2>เกร็ดความรู้</h2>
-            <p>เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรทำ</p>
-          </div>
-          <div class="container">
+    <div class="section" id="section2">
+     <!--  <div class="header-thirdPage"></div> -->
+     <div class="container">
+      <div class="row">
+
+       <div class="col-lg-12 ">
+        <h1 class="section-products">
+          สินค้าและบริการ
+        </h1>
+        <p class="section-products">Kulthorn Compressors Sold All Over the World Since 1981</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-4">
             <div class="row">
-
-              <div class="col-md-12">
-                <div class="owl-carousel owl-theme owl-carousel-3">
-
-                  <div class="item">
-                    <div class="know">
-                      <a href="#"><img src="<?= base_url()?>assets/img/know-1.png"></a>
-                      <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
-                      <span>
-                        เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
-                      </span>
-                      <p class="p-news-detail">
-                        Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
-                      </p>
-                    </div>
+              <div class="col-lg-12 products-catagory-bt active" onclick="" id="products-catagory-1" style="padding-bottom: 30px;">
+                <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
+                  <div style="padding-left: 15px; padding-right: 15px;">
+                    <a href="<?=base_url('Products')?>">
+                      <h1>คอมเพรสเซอร์</h1>
+                      <h2>Compressors</h2>
+                    </a>
                   </div>
-
-                  <div class="item">
-                    <div class="know">
-                      <a href="#"><img src="<?= base_url()?>assets/img/know-2.png"></a>
-                      <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
-                      <span>
-                        เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
-                      </span>
-                      <p class="p-news-detail">
-                        Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
-                      </p>
-                    </div>
+                </div>
+              </div>
+              <div class="col-lg-12 products-catagory-bt" id="products-catagory-2" style="padding-bottom: 30px;">
+                <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
+                  <div style="padding-left: 15px; padding-right: 15px;">
+                    <a href="<?=base_url('Products')?>">
+                      <h1>วาล์ว</h1>
+                      <h2>VALVE</h2>
+                    </a>
                   </div>
-
-                  <div class="item">
-                    <div class="know">
-                      <a href="#"><img src="<?= base_url()?>assets/img/know-3.png"></a>
-                      <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
-                      <span>
-                        เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
-                      </span>
-                      <p class="p-news-detail">
-                        Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
-                      </p>
-                    </div>
+                </div>
+              </div>
+              <div class="col-lg-12 products-catagory-bt" id="products-catagory-3" style="padding-bottom: 30px;">
+                <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
+                  <div style="padding-left: 15px; padding-right: 15px;">
+                    <a href="<?=base_url('Products')?>">
+                      <h1>อุปกรณ์ทำความเย็น</h1>
+                      <h2>Cooling equipment</h2>
+                    </a>
                   </div>
-
-                  <div class="item">
-                    <div class="know">
-                      <a href="#"><img src="<?= base_url()?>assets/img/know-4.png"></a>
-                      <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
-                      <span>
-                        เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
-                      </span>
-                      <p class="p-news-detail">
-                        Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
-                      </p>
-                    </div>
+                </div>
+              </div>
+              <div class="col-lg-12 products-catagory-bt" id="products-catagory-4" style="padding-bottom: 30px;">
+                <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
+                  <div style="padding-left: 15px; padding-right: 15px;">
+                    <a href="<?=base_url('Products')?>">
+                      <h1>รถตัดหญ้า</h1>
+                      <h2>Lawn mower</h2>
+                    </a>
                   </div>
-
-                  <div class="item">
-                    <div class="know">
-                      <a href="#"><img src="<?= base_url()?>assets/img/know-2.png"></a>
-                      <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
-                      <span>
-                        เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
-                      </span>
-                      <p class="p-news-detail">
-                        Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
-                      </p>
-                    </div>
+                </div>
+              </div>
+              <div class="col-lg-12 products-catagory-bt" id="products-catagory-5" style="padding-bottom: 30px;">
+                <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
+                  <div style="padding-left: 15px; padding-right: 15px;">
+                    <a href="<?=base_url('Products')?>">
+                      <h1>ปั๊มน้ำ</h1>
+                      <h2>Pumps</h2>
+                    </a>
                   </div>
+                </div>
+              </div>
+              <div class="col-lg-12 products-catagory-bt" id="products-catagory-6" style="padding-bottom: 30px;">
+                <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
+                  <div style="padding-left: 15px; padding-right: 15px;">
+                    <a href="<?=base_url('Products')?>">
+                      <h1>สปริงเกอร์</h1>
+                      <h2>Springer</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-8">
+            <div class="product-hide-1 active-products" id="img-active">
+              <img style=""  src="<?=base_url()?>image_new/product1.jpg">
+            </div>
+            <div class="product-hide-2">
+              <img style="" src="<?=base_url()?>image_new/product2.jpg">
+            </div>
+            <div class="product-hide-3">
+              <img style="" src="<?=base_url()?>image_new/product3.jpg">
+            </div>
+            <div class="product-hide-4">
+              <img style="" src="<?=base_url()?>image_new/product4.jpg">
+            </div>
+            <div class="product-hide-5">
+              <img style="" src="<?=base_url()?>image_new/product5.jpg">
+            </div>
+            <div class="product-hide-6">
+              <img style="" src="<?=base_url()?>image_new/product6.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+    $("#products-catagory-1").mouseover(function(){
+      $(".product-hide-1").css("display", "block");
+    });
+    $("#products-catagory-1").mouseout(function(){
+      $(".product-hide-1").css("display", "none");
+    });
+    $("#products-catagory-2").mouseover(function(){
+      $(".product-hide-2").css("display", "block");
+      $('#img-active').removeClass('active-products');
+    });
+    $("#products-catagory-2").mouseout(function(){
+      $(".product-hide-2").css("display", "none");
+      $('#img-active').addClass('active-products');
+    });
+    $("#products-catagory-3").mouseover(function(){
+      $(".product-hide-3").css("display", "block");
+      $('#img-active').removeClass('active-products');
+    });
+    $("#products-catagory-3").mouseout(function(){
+      $(".product-hide-3").css("display", "none");
+      $('#img-active').addClass('active-products');
+    });
+    $("#products-catagory-4").mouseover(function(){
+      $(".product-hide-4").css("display", "block");
+      $('#img-active').removeClass('active-products');
+    });
+    $("#products-catagory-4").mouseout(function(){
+      $(".product-hide-4").css("display", "none");
+      $('#img-active').addClass('active-products');
+    });
+    $("#products-catagory-5").mouseover(function(){
+      $(".product-hide-5").css("display", "block");
+      $('#img-active').removeClass('active-products');
+    });
+    $("#products-catagory-5").mouseout(function(){
+      $(".product-hide-5").css("display", "none");
+      $('#img-active').addClass('active-products');
+    });
+    $("#products-catagory-6").mouseover(function(){
+      $(".product-hide-6").css("display", "block");
+      $('#img-active').removeClass('active-products');
+    });
+    $("#products-catagory-6").mouseout(function(){
+      $(".product-hide-6").css("display", "none");
+      $('#img-active').addClass('active-products');
+    });
+  });
+
+</script>
+<style type="text/css">
+  .active-products {
+    display: block !important;
+  }
+  .product-hide-1 {
+    display: none;
+  }
+  .product-hide-2 {
+    display: none;
+  }
+  .product-hide-3 {
+    display: none;
+  }
+  .product-hide-4 {
+    display: none;
+  }
+  .product-hide-5 {
+    display: none;
+  }
+  .product-hide-6 {
+    display: none;
+  }
+</style>
+<div class="section" id="section3">
+  <div class="intro">
+    <div class="detail-know">
+      <h2>เกร็ดความรู้</h2>
+      <p>เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรทำ</p>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12">
+          <div class="owl-carousel owl-theme owl-carousel-3">
+
+            <div class="item">
+              <div class="know">
+                <a href="#"><img src="<?= base_url()?>assets/img/know-1.png"></a>
+                <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
+                <span>
+                  เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                </span>
+                <p class="p-news-detail">
+                  Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="know">
+                <a href="#"><img src="<?= base_url()?>assets/img/know-2.png"></a>
+                <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
+                <span>
+                  เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                </span>
+                <p class="p-news-detail">
+                  Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="know">
+                <a href="#"><img src="<?= base_url()?>assets/img/know-3.png"></a>
+                <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
+                <span>
+                  เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                </span>
+                <p class="p-news-detail">
+                  Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="know">
+                <a href="#"><img src="<?= base_url()?>assets/img/know-4.png"></a>
+                <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
+                <span>
+                  เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                </span>
+                <p class="p-news-detail">
+                  Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="know">
+                <a href="#"><img src="<?= base_url()?>assets/img/know-2.png"></a>
+                <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
+                <span>
+                  เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                </span>
+                <p class="p-news-detail">
+                  Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                </p>
+              </div>
+            </div>
 
 
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function() {
+    var owl = $('.owl-carousel-3');
+    owl.owlCarousel({
+      margin: 10,
+      loop: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        500: {
+          items: 2
+        },
+        700: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  })
+</script>
+
+
+<div class="section" id="section4">
+  <div class="intro">
+    <div class="detail-news">
+      <h2>ข่าวสารและกิจกรรม</h3>
+        <p>ข่าวสารน่าสนใจและกิจกรรมภายในของ บริษัท กุลธร จำกัด</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="owl-carousel owl-theme owl-carousel-4">
+              <div class="item">
+                <div class="news">
+                  <a href="#"><img src="<?= base_url()?>assets/img/news-1.png"></a>
+                  <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
+                  <span>
+                    เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                  </span>
+                  <p class="p-news-detail">
+                    Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="news">
+                  <a href="#"><img src="<?= base_url()?>assets/img/news-2.png"></a>
+                  <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
+                  <span>
+                    เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                  </span>
+                  <p class="p-news-detail">
+                    Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="news">
+                  <a href="#"><img src="<?= base_url()?>assets/img/news-3.png"></a>
+                  <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
+                  <span>
+                    เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                  </span>
+                  <p class="p-news-detail">
+                    Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="news">
+                  <a href="#"><img src="<?= base_url()?>assets/img/news-4.png"></a>
+                  <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
+                  <span>
+                    เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                  </span>
+                  <p class="p-news-detail">
+                    Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="news">
+                  <a href="#"><img src="<?= base_url()?>assets/img/news-4.png"></a>
+                  <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
+                  <span>
+                    เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
+                  </span>
+                  <p class="p-news-detail">
+                    Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
+                  </p>
                 </div>
               </div>
             </div>
@@ -670,284 +826,188 @@
         </div>
       </div>
 
+    </div>
+  </div>
 
-      <script>
-        $(document).ready(function() {
-          var owl = $('.owl-carousel-3');
-          owl.owlCarousel({
-            margin: 10,
-            loop: true,
-            responsive: {
-              0: {
-                items: 1
-              },
-              500: {
-                items: 2
-              },
-              700: {
-                items: 2
-              },
-              1000: {
-                items: 4
-              }
-            }
-          })
-        })
-      </script>
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel-4');
+      owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          400: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          700: {
+            items: 2
+          },
+          1000: {
+            items: 4
+          }
+        }
+      })
+    })
+  </script>
 
 
-      <div class="section" id="section4">
-        <div class="intro">
-          <div class="detail-news">
-            <h2>ข่าวสารและกิจกรรม</h3>
-              <p>ข่าวสารน่าสนใจและกิจกรรมภายในของ บริษัท กุลธร จำกัด</p>
+  <div class="section" id="section5">
+    <div class="intro">
+      <div class="detail-join">
+        <h2>ร่วมงานกับเรา</h2>
+        <p>ร่วมงานกับเรา สามารถส่ง Email มาได้ที่  info@kulthorn.com</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="top-table">
+              <table class="table-join"  width="100%">
+                <thead>
+                  <tr class="head-join">
+                    <td class="text-position"><h3>ตำแหน่ง</h3></td>
+                    <td class="text-count"><h3>จำนวน</h3></td>
+                    <td class="text-detail"><h3>รายละเอียด</h3></td>
+                  </tr>
+
+
+                  <!-- Wait code Loop -->
+                  <tr class="job-detail-tr-1">
+                    <td class="name-job">
+                      <h3>คอมพิวเตอร์กราฟฟิก</h3>
+                    </td>
+                    <td class="count-job">
+                      <h3> 2 อัตรา</h3>
+                    </td>
+                    <td class="detail-job">
+                      <h3><a href="<?=base_url()?>Job/detail">คุณสมบัติ</a></h3>
+                    </td>
+                  </tr>
+                  <tr class="job-detail-tr-2">
+                    <td class="name-job">
+                      <h3>ผู้จัดการโครงการ</h3>
+                    </td>
+                    <td class="count-job">
+                      <h3>2 อัตรา</h3>
+                    </td>
+                    <td class="detail-job">
+                      <h3><a href="<?=base_url()?>Job/detail">คุณสมบัติ</a></h3>
+                    </td>
+                  </tr>
+                  <!-- End Loop -->
+
+                </thead>
+              </table>
             </div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-
-                  <div class="owl-carousel owl-theme owl-carousel-4">
-                    <div class="item">
-                      <div class="news">
-                        <a href="#"><img src="<?= base_url()?>assets/img/news-1.png"></a>
-                        <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
-                        <span>
-                          เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
-                        </span>
-                        <p class="p-news-detail">
-                          Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
-                        </p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="news">
-                        <a href="#"><img src="<?= base_url()?>assets/img/news-2.png"></a>
-                        <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
-                        <span>
-                          เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
-                        </span>
-                        <p class="p-news-detail">
-                          Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
-                        </p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="news">
-                        <a href="#"><img src="<?= base_url()?>assets/img/news-3.png"></a>
-                        <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
-                        <span>
-                          เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
-                        </span>
-                        <p class="p-news-detail">
-                          Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
-                        </p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="news">
-                        <a href="#"><img src="<?= base_url()?>assets/img/news-4.png"></a>
-                        <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
-                        <span>
-                          เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
-                        </span>
-                        <p class="p-news-detail">
-                          Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
-                        </p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="news">
-                        <a href="#"><img src="<?= base_url()?>assets/img/news-4.png"></a>
-                        <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
-                        <span>
-                          เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
-                        </span>
-                        <p class="p-news-detail">
-                          Lorem ipsum dolor sit amet, consectetuer adipi-scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor- 
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
-
-        <script>
-          $(document).ready(function() {
-            var owl = $('.owl-carousel-4');
-            owl.owlCarousel({
-              margin: 10,
-              loop: true,
-              responsive: {
-                0: {
-                  items: 1
-                },
-                400: {
-                  items: 1
-                },
-                600: {
-                  items: 1
-                },
-                700: {
-                  items: 2
-                },
-                1000: {
-                  items: 4
-                }
-              }
-            })
-          })
-        </script>
-
-
-        <div class="section" id="section5">
-          <div class="intro">
-            <div class="detail-join">
-              <h2>ร่วมงานกับเรา</h2>
-              <p>ร่วมงานกับเรา สามารถส่ง Email มาได้ที่  info@kulthorn.com</p>
-            </div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="top-table">
-                    <table class="table-join"  width="100%">
-                      <thead>
-                        <tr class="head-join">
-                          <td class="text-position"><h3>ตำแหน่ง</h3></td>
-                          <td class="text-count"><h3>จำนวน</h3></td>
-                          <td class="text-detail"><h3>รายละเอียด</h3></td>
-                        </tr>
-
-
-                        <!-- Wait code Loop -->
-                        <tr class="job-detail-tr-1">
-                          <td class="name-job">
-                            <h3>คอมพิวเตอร์กราฟฟิก</h3>
-                          </td>
-                          <td class="count-job">
-                            <h3> 2 อัตรา</h3>
-                          </td>
-                          <td class="detail-job">
-                            <h3><a href="<?=base_url()?>Job/detail">คุณสมบัติ</a></h3>
-                          </td>
-                        </tr>
-                        <tr class="job-detail-tr-2">
-                          <td class="name-job">
-                            <h3>ผู้จัดการโครงการ</h3>
-                          </td>
-                          <td class="count-job">
-                            <h3>2 อัตรา</h3>
-                          </td>
-                          <td class="detail-job">
-                            <h3><a href="<?=base_url()?>Job/detail">คุณสมบัติ</a></h3>
-                          </td>
-                        </tr>
-                        <!-- End Loop -->
-
-                      </thead>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-
-
-
-
-        <div class="section" id="section6">
-          <div class="intro">
-            <div class="detail-contact">
-              <h2>
-                ติดต่อเรา
-              </h2>
-              <p class="p-contact">
-                ท่านสามารถสอบถามสินค้าเพิ่มเติมได้ที่
-              </p>
-
-              <div class="container">
-                <div class="row">
-                  <div class="col-12  col-lg-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1918.8728020035055!2d100.51097352290495!3d13.756599299480568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2993f1660da53%3A0x3875632c3e996850!2z4LiB4Li44Lil4LiY4Lij!5e0!3m2!1sth!2sth!4v1616649400590!5m2!1sth!2sth" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                  </div>
-                  <div class="col-12  col-lg-6">
-                    <div class="text-contact">
-                      <h2>
-                        บริษัท กุลธร จำกัด
-                      </h2>
-                      <ul class="ul-contact">
-                        <li class="address-text">
-                         237-237/1-4 ถนน หลานหลวง แขวงวัดโสมนัส เขตป้อมปราบศัตรูพ่าย กรุงเทพมหานคร 10100
-                       </li>
-                       <li>
-                        <h3 style="color: #FFF;">เบอร์โทรศัพท์ : &nbsp;</h3> <a href="tel:+662-282-2151"> +662-282-2151</a>
-                      </li>
-                      <li>
-                        <h3 style="color: #FFF;">อีเมล : &nbsp;</h3>bkksales@kulthorn.com , kcsales@kulthorn.co.th 
-                      </li>
-                    </ul>
-                    <hr style="border :2px dashed #FFF;">
-
-
-                  </div>
-                  <h2 class="form-contact">แบบฟอร์มติดต่อ</h2><br>
-                  <form>
-                    <div class="row">
-                      <div class="col-lg-6 col-md-6 col-sm-12">
-                       <input name="name" class="input-contact" placeholder="ชื่อผู้ติดต่อ" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px;  border-radius: 5px;">
-                     </div>
-                     <div class="col-lg-6 col-md-6 col-sm-12">
-                      <input name="lastname" class="input-contact" placeholder="นามสกุล" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px;  border-radius: 5px; ">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                     <input name="tel" class="input-contact"  placeholder="เบอร์โทรศัพท์" type="tel" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; border-radius: 5px;">
-                   </div>
-                   <div class="col-lg-6 col-md-6 col-12">
-                    <input name="email" class="input-contact" placeholder="อีเมล" type="email" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px;  border-radius: 5px;">
-                  </div>
-                  <div class="col-md-12">
-                    <textarea name="email" class="input-contact" placeholder="ข้อความ" type="email" style="background: #ffffff;border: 1px solid #ebebeb; min-height: 50px;  border-radius: 5px;"></textarea>
-                  </div>
-                </div>
-                <button class="btn-sent-email" type="submit">ส่งข้อความ</button>
-              </form>
-
-            </div>
-
-          </div>
-        </div>
-
-        <footer>
-          <div class="col-md-12 copyright">
-            <div class="detail-copy">
-              © Copyright 2020. All Rights Reserved.
-            </div>
-          </div>
-        </footer>
-
-
       </div>
 
 
     </div>
   </div>
+
+
+
+
+  <div class="section" id="section6">
+    <div class="intro">
+      <div class="detail-contact">
+        <h2>
+          ติดต่อเรา
+        </h2>
+        <p class="p-contact">
+          ท่านสามารถสอบถามสินค้าเพิ่มเติมได้ที่
+        </p>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12  col-lg-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1918.8728020035055!2d100.51097352290495!3d13.756599299480568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2993f1660da53%3A0x3875632c3e996850!2z4LiB4Li44Lil4LiY4Lij!5e0!3m2!1sth!2sth!4v1616649400590!5m2!1sth!2sth" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-12  col-lg-6">
+              <div class="text-contact">
+                <h2>
+                  บริษัท กุลธร จำกัด
+                </h2>
+                <ul class="ul-contact">
+                  <li class="address-text">
+                   237-237/1-4 ถนน หลานหลวง แขวงวัดโสมนัส เขตป้อมปราบศัตรูพ่าย กรุงเทพมหานคร 10100
+                 </li>
+                 <li>
+                  <h3 style="color: #FFF;">เบอร์โทรศัพท์ : &nbsp;</h3> <a href="tel:+662-282-2151"> +662-282-2151</a>
+                </li>
+                <li>
+                  <h3 style="color: #FFF;">อีเมล : &nbsp;</h3>bkksales@kulthorn.com , kcsales@kulthorn.co.th 
+                </li>
+              </ul>
+              <hr style="border :2px dashed #FFF;">
+
+
+            </div>
+            <h2 class="form-contact">แบบฟอร์มติดต่อ</h2><br>
+            <form>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                 <input name="name" class="input-contact" placeholder="ชื่อผู้ติดต่อ" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px;  border-radius: 5px;">
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-12">
+                <input name="lastname" class="input-contact" placeholder="นามสกุล" type="text" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px;  border-radius: 5px; ">
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+               <input name="tel" class="input-contact"  placeholder="เบอร์โทรศัพท์" type="tel" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px; border-radius: 5px;">
+             </div>
+             <div class="col-lg-6 col-md-6 col-12">
+              <input name="email" class="input-contact" placeholder="อีเมล" type="email" style="background: #ffffff;border: 1px solid #ebebeb;margin-bottom:17px;  border-radius: 5px;">
+            </div>
+            <div class="col-md-12">
+              <textarea name="email" class="input-contact" placeholder="ข้อความ" type="email" style="background: #ffffff;border: 1px solid #ebebeb; min-height: 50px;  border-radius: 5px;"></textarea>
+            </div>
+          </div>
+          <button class="btn-sent-email" type="submit">ส่งข้อความ</button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="col-md-12 copyright">
+      <div class="detail-copy">
+        © Copyright 2020. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
 </div>
+
+
+</div>
+</div>
+</div>
+
+<script src="<?=base_url()?>assets/aos-master/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
 <script src="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?=base_url()?>assets/fullpage/scrolloverflow.js"></script>
 <script type="text/javascript" src="<?=base_url()?>assets/fullpage/fullpage.js"></script>
 <script type="text/javascript" src="<?=base_url()?>assets/fullpage/examples.js"></script>
 <script src="<?=base_url()?>assets/owlcarousel/highlight.js"></script>
 <script src="<?=base_url()?>assets/owlcarousel/app.js"></script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   var myFullpage = new fullpage('#fullpage', {
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage'],
     navigation: true,
@@ -958,6 +1018,74 @@
     menu: '#menu',
     scrollOverflow: true
   });
+</script> -->
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage'],
+    navigation: true,
+    verticalCentered: true,
+    slidesNavigation: true,
+    // navigationTooltips: ['01.กุลธร', '02.เกี่ยวกับเรา', '03.สินค้าและบริการ', '04.เกร็ดความรู้', '05.ข่าวสารและกิจกรรม', '06.ร่วมงานกับเรา', '07.ติดต่อเรา'],
+    showActiveTooltip: true,
+    menu: '#menu',
+    scrollOverflow: true,
+    afterLoad    : function(origin, destination, direction){
+      var loadedSection = this;
+    //using anchorLink
+
+    if(destination.index==2){        
+      $('#navbarNav').addClass('chcolor');
+      $('#changlang').addClass('changlang-color');
+      $('#row-header').addClass('border-header');
+      
+
+      $('#nav-color-1').addClass('before-color');
+      $('#nav-color-2').addClass('before-color');
+      $('#nav-color-3').addClass('before-color');
+      $('#nav-color-4').addClass('before-color');
+      $('#nav-color-5').addClass('before-color');
+      $('#nav-color-6').addClass('before-color');
+      $('#nav-color-7').addClass('before-color');
+      $('#nav-color-8').addClass('before-color');
+
+      $('#nav-color-1').removeClass('nav-1');
+      $('#nav-color-2').removeClass('nav-2');
+      $('#nav-color-3').removeClass('nav-3');
+      $('#nav-color-4').removeClass('nav-4');
+      $('#nav-color-5').removeClass('nav-5');
+      $('#nav-color-6').removeClass('nav-6');
+      $('#nav-color-7').removeClass('nav-7');
+      $('#nav-color-8').removeClass('nav-8');
+    }
+    else
+    {
+     $('#navbarNav').removeClass('chcolor');
+     $('#changlang').removeClass('changlang-color');
+     $('#row-header').removeClass('border-header');
+     
+     $('#nav-color-1').removeClass('before-color');
+     $('#nav-color-2').removeClass('before-color');
+     $('#nav-color-3').removeClass('before-color');
+     $('#nav-color-4').removeClass('before-color');
+     $('#nav-color-5').removeClass('before-color');
+     $('#nav-color-6').removeClass('before-color');
+     $('#nav-color-7').removeClass('before-color');
+     $('#nav-color-8').removeClass('before-color');
+
+     $('#nav-color-1').addClass('nav-1');
+     $('#nav-color-2').addClass('nav-2');
+     $('#nav-color-3').addClass('nav-3');
+     $('#nav-color-4').addClass('nav-4');
+     $('#nav-color-5').addClass('nav-5');
+     $('#nav-color-6').addClass('nav-6');
+     $('#nav-color-7').addClass('nav-7');
+     $('#nav-color-8').addClass('nav-8');
+     
+   }
+ }
+
+});
+  
 </script>
 </body>
 </html>

@@ -215,7 +215,7 @@
 									<div class="col-lg-12 margin-top">
 										<div class="row">
 											<div class="col-md-4">
-												<img src="<?=base_url()?>assets/img/tab-1.png">
+												<img class="knowledge-detail-img" src="<?=base_url()?>assets/img/tab-1.png">
 											</div>
 											<div class="col-md-8">
 												<div class="knowledge-advice">
@@ -232,7 +232,7 @@
 									<div class="col-lg-12 margin-top">
 										<div class="row">
 											<div class="col-md-4">
-												<img src="<?=base_url()?>assets/img/tab-1.png">
+												<img class="knowledge-detail-img" src="<?=base_url()?>assets/img/tab-1.png">
 											</div>
 											<div class="col-md-8">
 												<div class="knowledge-advice">
@@ -249,7 +249,7 @@
 									<div class="col-lg-12 margin-top">
 										<div class="row">
 											<div class="col-md-4">
-												<img src="<?=base_url()?>assets/img/tab-1.png">
+												<img class="knowledge-detail-img" src="<?=base_url()?>assets/img/tab-1.png">
 											</div>
 											<div class="col-md-8">
 												<div class="knowledge-advice">

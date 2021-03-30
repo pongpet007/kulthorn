@@ -140,7 +140,7 @@
 								<div class="item">
 									<div class="knowledge-about">
 										<a href="#">
-											<img src="<?=base_url()?>assets/img/knowledge-detail-1.png">
+											<img class="news-detail-img" src="<?=base_url()?>assets/img/knowledge-detail-1.png">
 										</a>
 										<a href="#">
 											<h3>
@@ -237,7 +237,7 @@
 										<div class="row">
 											<div class="col-md-4">
 												<a href="#">
-													<img src="<?=base_url()?>assets/img/tab-1.png">
+													<img class="news-detail-img"  src="<?=base_url()?>assets/img/tab-1.png">
 												</a>
 											</div>
 											<div class="col-md-8">
@@ -258,7 +258,7 @@
 										<div class="row">
 											<div class="col-md-4">
 												<a href="#">
-													<img src="<?=base_url()?>assets/img/tab-1.png">
+													<img class="news-detail-img"  src="<?=base_url()?>assets/img/tab-1.png">
 												</a>
 											</div>
 											<div class="col-md-8">
@@ -279,7 +279,7 @@
 										<div class="row">
 											<div class="col-md-4">
 												<a href="#">
-													<img src="<?=base_url()?>assets/img/tab-1.png">
+													<img class="news-detail-img"  src="<?=base_url()?>assets/img/tab-1.png">
 												</a>
 											</div>
 											<div class="col-md-8">

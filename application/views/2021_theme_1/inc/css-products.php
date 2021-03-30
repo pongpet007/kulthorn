@@ -437,6 +437,12 @@
 	.knowledge-advice h4 {
 		color: #000;
 	}
+	img.news-detail-img {
+		width: 100%;
+	}
+	img.knowledge-detail-img {
+		width: 100%;
+	}
 
 
 	@media only screen and (max-device-width: 415px) {

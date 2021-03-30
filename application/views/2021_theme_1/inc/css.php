@@ -35,7 +35,7 @@ body {
       z-index:9;
       text-align:center;
       color: #f2f2f2;
-      padding: 20px 0 0 0;
+      padding: 10px 0 0 0;
       }
       #header{
       top:0px;

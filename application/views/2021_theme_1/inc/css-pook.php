@@ -16,7 +16,7 @@
 	}
 	.nav-1:before , .nav-2:before , .nav-3:before , .nav-4:before , .nav-5:before , .nav-6:before , .nav-8:before {
 		content: '';
-		height: 60%;
+		height: 50%;
 		width: 2px;
 		position: absolute;
 		right: 0;
@@ -26,6 +26,7 @@
 	}
 	.nav-color {
 		text-align: center;
+		float: right;
 	}
 	.changlang {
 		padding-top: 5px;
@@ -234,7 +235,7 @@
 		background-color: #00000082;
 	}
 	.navbar-expand-lg .navbar-nav .nav-link-new {
-		padding: 25px;
+		padding: 0 25px;
 	}
 	li.address-text {
 		font-size: 26px;

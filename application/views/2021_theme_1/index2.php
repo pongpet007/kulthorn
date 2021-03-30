@@ -38,7 +38,7 @@
         <div class="row">
           <div class="col-lg-1 col-sm-2 ">
             <div class="img-logo">
-              <img src="<?= base_url()?>/assets/img/logo-kul.png">
+              <img src="<?= base_url()?>/assets/img/logo-bg-white.png" style="">
             </div>
 
           </div>

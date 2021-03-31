@@ -63,8 +63,8 @@
           <div class="col-lg-1 col-sm-2 col-3 is-animated">
 
             <div >
-              <div class="img-logo ">
-                <img src="<?= base_url()?>/assets/img/logo-bg-white.png" style="">
+              <div class="img-logo " data-aos="fade-down-right" id="img-logo-header">
+                <img src="<?= base_url()?>/assets/img/logo-bg-white.png" >
               </div>
             </div>
 
@@ -135,27 +135,16 @@
         <div class="slide" id="slide1" style="background-image: url('assets/img/bg-banner-1.jpg');">
           <div class="container">
             <div class="row">
-              <div class="col-lg-4">      
-                <img class="img-headerslide-1 "
-                data-aos="fade-down"             
-                data-aos-easing="linear"
-                data-aos-duration="1000"
-                src="<?=base_url()?>assets/img/baanner-1-1.png">
+              <div class="col-lg-4 " >      
+                <img class="img-headerslide-1 is-animated" data-aos="flip-up" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-1.png">
               </div>
               <div class="col-lg-8">
                 <div class="row">
                   <div class="col-lg-12">
-                    <img class="img-headerslide" 
-                    data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1000"
-                    src="<?=base_url()?>assets/img/baanner-1-2.png" >
+                    <img class="img-headerslide is-animated" data-aos="flip-down" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-2.png" >
                   </div>
                   <div class="col-lg-12">
-                    <img class="img-headerslide" data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000" 
-                    src="<?=base_url()?>assets/img/baanner-1-3.png">
+                    <img class="img-headerslide is-animated" data-aos="flip-right" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-3.png">
                   </div>
                 </div>
               </div>
@@ -168,15 +157,15 @@
               <div class="col-lg-7" style="margin-top: 40px;">
                 <div class="row">
                   <div class="col-lg-12">
-                    <img class="img-headerslide" src="<?=base_url()?>assets/img/baanner-2-1.png">
+                    <img class="img-headerslide is-animated"  src="<?=base_url()?>assets/img/baanner-2-1.png">
                   </div>
                   <div class="col-lg-12">
-                    <img class="img-headerslide" src="<?=base_url()?>assets/img/baanner-2-2.png" >
+                    <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-2.png" >
                   </div>
                 </div>
               </div>
               <div class="col-lg-5">
-                <img class="img-headerslide" src="<?=base_url()?>assets/img/baanner-2-3.png" >
+                <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-3.png" >
               </div>
             </div>
           </div>
@@ -195,6 +184,28 @@
           </div>
         </div>
       </div>
+
+      <script type="text/javascript">
+
+        $( document ).ready(function() {
+          // var $isHeader = $('.animate__slideInUp'),
+          // $isHeader2 = $('.animate__slideInUp'),
+          // $isHeader3 = $('.animate__slideInUp');
+          
+          // $isHeader.css('animation-duration', '1.8s');
+          // $isHeader.css('animation-delay', '0s');
+
+          // $isHeader2.css('animation-duration', '1.8s');
+          // $isHeader2.css('animation-delay', '0s');
+
+          // $isHeader3.css('animation-duration', '1.8s');
+          // $isHeader3.css('animation-delay', '0s');
+
+
+        });
+      </script>
+
+
       <div class="section " id="section1" style="background : url('<?=base_url()?>assets/img/bg-banner-3.jpg')center center; background-size: cover; " >
         <div class="container ">
           <div class="row">
@@ -546,19 +557,19 @@
               <div class="product-hide-1 active-products animate__backInUp" id="img-active">
                 <img style=""  src="<?=base_url()?>image_new/product1.jpg">
               </div>
-              <div class="product-hide-2">
+              <div class="product-hide-2 " id="img-anime-pro-2">
                 <img style="" src="<?=base_url()?>image_new/product2.jpg">
               </div>
-              <div class="product-hide-3">
+              <div class="product-hide-3" id="img-anime-pro-3">
                 <img style="" src="<?=base_url()?>image_new/product3.jpg">
               </div>
-              <div class="product-hide-4">
+              <div class="product-hide-4" id="img-anime-pro-4">
                 <img style="" src="<?=base_url()?>image_new/product4.jpg">
               </div>
-              <div class="product-hide-5">
+              <div class="product-hide-5" id="img-anime-pro-5">
                 <img style="" src="<?=base_url()?>image_new/product5.jpg">
               </div>
-              <div class="product-hide-6">
+              <div class="product-hide-6" id="img-anime-pro-6">
                 <img style="" src="<?=base_url()?>image_new/product6.jpg">
               </div>
             </div>
@@ -571,49 +582,86 @@
     $(document).ready(function(){
       $("#products-catagory-1").mouseover(function(){
         $(".product-hide-1").css("display", "block");
+
       });
       $("#products-catagory-1").mouseout(function(){
         $(".product-hide-1").css("display", "none");
+
       });
       $("#products-catagory-2").mouseover(function(){
         $(".product-hide-2").css("display", "block");
         $('#img-active').removeClass('active-products');
+        $('#img-anime-pro-2').addClass('animate__animated animate__backInDown');
+        $('#img-anime-pro-2').css('animation-duration', '1s');
+        $('#img-anime-pro-2').css('animation-delay', '0s');
       });
       $("#products-catagory-2").mouseout(function(){
+        $('#img-anime-pro-2').removeClass('animate__animated animate__backInDown');
         $(".product-hide-2").css("display", "none");
-        $('#img-active').addClass('active-products');
+        $('#img-active').addClass('active-products animate__animated animate__backInDown');
+        $('#img-active').css('animation-duration', '.8s');
+        $('#img-active').css('animation-delay', '0s');
+        
       });
       $("#products-catagory-3").mouseover(function(){
         $(".product-hide-3").css("display", "block");
         $('#img-active').removeClass('active-products');
+        $('#img-anime-pro-3').addClass('animate__animated animate__backInRight');
+        $('#img-anime-pro-3').css('animation-duration', '1s');
+        $('#img-anime-pro-3').css('animation-delay', '0s');
+
       });
       $("#products-catagory-3").mouseout(function(){
+        $('#img-anime-pro-3').removeClass('animate__animated animate__backInRight');
         $(".product-hide-3").css("display", "none");
-        $('#img-active').addClass('active-products');
+        $('#img-active').addClass('active-products animate__animated animate__backInDown');
+        $('#img-active').css('animation-duration', '.8s');
+        $('#img-active').css('animation-delay', '0s');
       });
       $("#products-catagory-4").mouseover(function(){
         $(".product-hide-4").css("display", "block");
         $('#img-active').removeClass('active-products');
+        $('#img-anime-pro-4').addClass('animate__animated animate__backInDown');
+        $('#img-anime-pro-4').css('animation-duration', '1s');
+        $('#img-anime-pro-4').css('animation-delay', '0s');
+
       });
       $("#products-catagory-4").mouseout(function(){
         $(".product-hide-4").css("display", "none");
-        $('#img-active').addClass('active-products');
+        $('#img-active').addClass('active-products animate__animated animate__backInDown');
+        $('#img-active').css('animation-duration', '.8s');
+        $('#img-active').css('animation-delay', '0s');
+        $('#img-anime-pro-2').removeClass('animate__animated animate__backInDown');
       });
       $("#products-catagory-5").mouseover(function(){
         $(".product-hide-5").css("display", "block");
         $('#img-active').removeClass('active-products');
+        $('#img-anime-pro-5').addClass('animate__animated animate__backInDown');
+        $('#img-anime-pro-5').css('animation-duration', '1s');
+        $('#img-anime-pro-5').css('animation-delay', '0s');
+
       });
       $("#products-catagory-5").mouseout(function(){
         $(".product-hide-5").css("display", "none");
-        $('#img-active').addClass('active-products');
+        $('#img-active').addClass('active-products animate__animated animate__backInDown');
+        $('#img-active').css('animation-duration', '.8s');
+        $('#img-active').css('animation-delay', '0s');
+        $('#img-anime-pro-5').removeClass('animate__animated animate__backInDown');
       });
       $("#products-catagory-6").mouseover(function(){
         $(".product-hide-6").css("display", "block");
         $('#img-active').removeClass('active-products');
+        $('#img-anime-pro-6').addClass('animate__animated animate__backInDown');
+        $('#img-anime-pro-6').css('animation-duration', '1s');
+        $('#img-anime-pro-6').css('animation-delay', '0s');
+
       });
       $("#products-catagory-6").mouseout(function(){
         $(".product-hide-6").css("display", "none");
-        $('#img-active').addClass('active-products');
+        $('#img-active').addClass('active-products animate__animated animate__backInDown');
+        $('#img-active').css('animation-duration', '.8s');
+        $('#img-active').css('animation-delay', '0s');
+        $('#img-anime-pro-6').removeClass('animate__animated animate__backInDown');
       });
     });
 
@@ -1115,20 +1163,25 @@
 
    if( (origin.index == 1 || origin.index == 2 ||  origin.index == 3 || origin.index == 4 || origin.index == 5  || origin.index == 6 ) && destination.index == 0 ) { 
 
+    $isAnimatedFirst.addClass('animate__animated animate__jackInTheBox');
+    $isAnimatedFirst.css('animation-delay', '0s');
+    $isAnimatedFirst.css('animation-duration', '1.5s');
+
+
     $isAnimatedSecond.removeClass('animate__animated animate__backInDown animate__animated animate__backInDown');
     $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
     $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');
     $isAnimatedFifth.removeClass('animate__animated animate__backInUp animate__backInDown');
-    $isAnimatedSixth.removeClass('animate__animated animate__backInUp animate__backInDown');
+    $isAnimatedSixth.removeClass('animate__animated animate__backInDown animate__backInDown');
     $isAnimatedSeventh.removeClass('animate__animated animate__backInDown');
   }
 
   else if ( (origin.index == 0 || origin.index == 2 ||  origin.index == 3 || origin.index == 4 || origin.index == 5  || origin.index == 6 ) && destination.index == 1  ) {
-    $isAnimatedFirst.removeClass('animate__animated');
+    $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
     $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
     $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');
     $isAnimatedFifth.removeClass('animate__animated animate__backInUp animate__backInDown');
-    $isAnimatedSixth.removeClass('animate__animated animate__backInUp animate__backInDown');
+    $isAnimatedSixth.removeClass('animate__animated animate__backInDown animate__backInDown');
     $isAnimatedSeventh.removeClass('animate__animated animate__backInDown');
 
     $isAnimatedSecond.addClass('animate__animated animate__backInDown');
@@ -1165,11 +1218,11 @@
 
   else if ( (origin.index == 0 || origin.index == 1 || origin.index == 3 || origin.index == 4 || origin.index == 5  || origin.index == 6) && destination.index == 2) {
 
-    $isAnimatedFirst.removeClass('animate__animated');
+    $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
     $isAnimatedSecond.removeClass('animated animate__animated animate__backInDown');
     $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');
     $isAnimatedFifth.removeClass('animate__animated animate__backInUp animate__backInDown');
-    $isAnimatedSixth.removeClass('animate__animated animate__backInUp animate__backInDown');
+    $isAnimatedSixth.removeClass('animate__animated animate__backInDown animate__backInDown');
     $isAnimatedSeventh.removeClass('animate__animated animate__backInDown');
 
     $isAnimatedThird.eq(0).addClass('animate__animated animate__backInDown');
@@ -1188,11 +1241,11 @@
 
     }
     else if ( (origin.index == 0 || origin.index == 1 || origin.index == 2 || origin.index == 4 || origin.index == 5  || origin.index == 6) && destination.index == 3 ) {
-      $isAnimatedFirst.removeClass('animate__animated');
+      $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
       $isAnimatedSecond.removeClass('animated animate__animated animate__backInDown');
       $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
       $isAnimatedFifth.removeClass('animate__animated animate__backInUp animate__backInDown');
-      $isAnimatedSixth.removeClass('animate__animated animate__backInUp animate__backInDown');
+      $isAnimatedSixth.removeClass('animate__animated animate__backInDown animate__backInDown');
       $isAnimatedSeventh.removeClass('animate__animated animate__backInDown');
 
       $isAnimatedFourth.eq(0).addClass('animate__animated animate__backInDown');
@@ -1206,11 +1259,11 @@
 
     }
     else if ( (origin.index == 0 || origin.index == 1 || origin.index == 2 || origin.index == 3 || origin.index == 5  || origin.index == 6) && destination.index == 4 ) {
-      $isAnimatedFirst.removeClass('animate__animated');
+      $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
       $isAnimatedSecond.removeClass('animated animate__animated animate__backInDown');
       $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
       $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');
-      $isAnimatedSixth.removeClass('animate__animated animate__backInUp animate__backInLeft');
+      $isAnimatedSixth.removeClass('animate__animated animate__backInDown animate__backInLeft');
       $isAnimatedSeventh.removeClass('animate__animated animate__backInDown');
 
       $isAnimatedFifth.eq(0).addClass('animate__animated animate__backInDown');
@@ -1223,7 +1276,7 @@
 
     }
     else if ( (origin.index == 0 || origin.index == 1 || origin.index == 2 || origin.index == 3 || origin.index == 4 || origin.index == 6 ) && destination.index == 5 ) {
-      $isAnimatedFirst.removeClass('animate__animated');
+      $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
       $isAnimatedSecond.removeClass('animated animate__animated animate__backInDown');
       $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
       $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');
@@ -1237,12 +1290,12 @@
       $isAnimatedSixth.css('animation-duration', '1.8s');
     }
     else if ( (origin.index == 0 || origin.index == 1 || origin.index == 2 || origin.index == 3 || origin.index == 4 || origin.index == 5 ) && destination.index == 6 ) {
-      $isAnimatedFirst.removeClass('animate__animated');
+      $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
       $isAnimatedSecond.removeClass('animated animate__animated animate__backInDown');
       $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
       $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');
-      $isAnimatedFifth.removeClass('animate__animated animate__backInUp animate__backInDown');
-      $isAnimatedSixth.removeClass('animate__animated animate__backInUp animate__backInLeft');
+      $isAnimatedFifth.removeClass('animate__animated animate__backInUp animate__backInDown ');
+      $isAnimatedSixth.removeClass('animate__animated animate__backInDown animate__backInLeft');
 
 
       $isAnimatedSeventh.addClass('animate__animated animate__backInDown');

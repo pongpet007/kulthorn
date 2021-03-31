@@ -1,4 +1,7 @@
 <style type="text/css">
+	.animate__animated.animate__bounce {
+		--animate-duration: 2s;
+	}
 
 
 	.nav-link-new{
@@ -421,8 +424,14 @@
 			margin-top: 20px;
 		}
 		.tab .nav-tabs li a {
-			font-size: 20px;
-			padding: 5px 20px;
+			font-size: 20px !important;
+			padding: 5px 20px !important;
+		}
+		.tab .nav-tabs {
+			margin-top: 20px !important;
+		}
+		.tab .nav-tabs li a.active:before {
+			content: "" !important;
 		}
 		p.aboutnew span {
 			font-size: 20px !important;
@@ -445,11 +454,6 @@
 		h1.section-products {
 			font-size: 35px !important;
 		}
-
-
-
-
-
 
 		p.section-products {
 			font-size: 25px !important;
@@ -494,6 +498,9 @@
 		.detail-news h2 {
 			font-size: 35px;
 			margin-top: 20px;
+		}
+		.news {
+			padding-top: 0;
 		}
 		.news h2 {
 			font-size: 30px; 
@@ -567,6 +574,7 @@
 			text-align: center;
 			margin-top: 300px;
 		}
+
 	} 
 
 	@media (max-width: 1023px)  and  (min-width: 768px) {

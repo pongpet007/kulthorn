@@ -66,7 +66,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8"> 
-				<h2>หัวข้อเกร็ดความรู้</h2>
+				<h2 class="name-knowledge">หัวข้อเกร็ดความรู้</h2>
 				<ul class="ul-knowledge ">
 					<li>
 						โดย : <span style="color: #808080;">ADMIN</span>
@@ -109,21 +109,21 @@
 					<li>
 						<div class="share-twitter">
 							<a href="#">
-								<i class="fab fa-twitter line-color"></i>&nbsp;&nbsp;<span>share</span>
+								<i class="fab fa-twitter line-color"></i>&nbsp;&nbsp;<span>Tweet</span>
 							</a>
 						</div>
 					</li>
 					<li>
 						<div class="share-mail">
 							<a href="#">
-								<i class="fas fa-envelope mail-color"></i>&nbsp;&nbsp;<span>share</span>
+								<i class="fas fa-envelope mail-color"></i>&nbsp;&nbsp;<span>Send</span>
 							</a>
 						</div>
 					</li>
 					<li>
 						<div class="share-print">
 							<a href="#">
-								<i class="fas fa-print print-color"></i>&nbsp;&nbsp;<span>share</span>
+								<i class="fas fa-print print-color"></i>&nbsp;&nbsp;<span>Print</span>
 							</a>
 						</div>
 					</li>
@@ -197,7 +197,7 @@
 
 				</div>
 
-				<div class="col-lg-4"> 
+				<div class="col-lg-4 d-none d-sm-none d-md-block"> 
 
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">

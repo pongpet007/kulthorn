@@ -43,13 +43,13 @@
             </li>
             <li class="nav-item nav-item-new nav-7">
               <a class="nav-link nav-link-new img-flag" style="cursor: default;">
-                <img src="<?= base_url()?>assets/img/thai-flag.png" style="margin-top: -5px;">
+
               </a>
             </li>
             <li class="nav-item  nav-8">
               <div class="dropdown nav-link-new show changlang">
                 <a class="btn btn-secondary dropdown-toggle button-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  ภาษาไทย
+                  <img src="<?= base_url()?>assets/img/thai-flag.png" style="margin-top: -5px;"> ภาษาไทย
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -60,13 +60,13 @@
               </div>
             </li>
             <li class="nav-item nav-item-new nav-9">  
-              <a class="nav-link nav-link-new" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="nav-link nav-link-new" href=""><i class="fab fa-facebook-f size-font-i"></i></a>
             </li>
             <li class="nav-item nav-item-new nav-9">  
-              <a class="nav-link nav-link-new" href=""><i class="fab fa-twitter"></i></a>
+              <a class="nav-link nav-link-new" href=""><i class="fab fa-twitter size-font-i"></i></a>
             </li>
             <li class="nav-item nav-item-new nav-9">  
-              <a class="nav-link nav-link-new" href=""><i class="fab fa-instagram"></i></a>
+              <a class="nav-link nav-link-new" href=""><i class="fab fa-instagram size-font-i"></i></a>
             </li>
 
           </ul>

@@ -18,6 +18,7 @@
 	<script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
 	<script src="<?=base_url()?>assets/owlcarousel/owl.carousel.js"></script>
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 	<?php $this->load->view('2021_theme_1/inc/css-peck'); ?>
 	<?php $this->load->view('2021_theme_1/inc/css-products'); ?>
@@ -65,7 +66,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8"> 
+			<div class="col-lg-8 animate__animated animate__backInDown"> 
 				<h2>หัวข้อเนื้อหาข่าวสาร</h2>
 				<ul class="ul-knowledge ">
 					<li>
@@ -109,21 +110,21 @@
 					<li>
 						<div class="share-twitter">
 							<a href="#">
-								<i class="fab fa-twitter line-color"></i>&nbsp;&nbsp;<span>share</span>
+								<i class="fab fa-twitter line-color"></i>&nbsp;&nbsp;<span>Tweet</span>
 							</a>
 						</div>
 					</li>
 					<li>
 						<div class="share-mail">
 							<a href="#">
-								<i class="fas fa-envelope mail-color"></i>&nbsp;&nbsp;<span>share</span>
+								<i class="fas fa-envelope mail-color"></i>&nbsp;&nbsp;<span>Send</span>
 							</a>
 						</div>
 					</li>
 					<li>
 						<div class="share-print">
 							<a href="#">
-								<i class="fas fa-print print-color"></i>&nbsp;&nbsp;<span>share</span>
+								<i class="fas fa-print print-color"></i>&nbsp;&nbsp;<span>Print</span>
 							</a>
 						</div>
 					</li>
@@ -218,7 +219,7 @@
 
 				</div>
 
-				<div class="col-lg-4"> 
+				<div class="col-lg-4 d-none d-sm-none d-md-block"> 
 
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">

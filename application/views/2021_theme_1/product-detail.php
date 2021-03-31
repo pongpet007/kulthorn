@@ -34,7 +34,7 @@
   <?
   $this->load->view('2021_theme_1/inc/header1/header3')
   ?>
-  <div class="container header-top">
+  <div class="container header-top" data-aos="fade-down"  data-aos-easing="linear"  data-aos-duration="1500">
     <div class="row">
       <div class="col-lg-7 col-sm-6">
 
@@ -71,16 +71,15 @@
 
 
 
-<div class="container mt-3 all-product">
+<div class="container mt-3 all-product" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
   <div class="row">
     <div class="col-lg-5">
-      <div class="" data-aos="fade-right"  data-aos-offset="300"  data-aos-easing="ease-in-sine">
+      <div class="" >
       <img src="<?= base_url()?>assets/img/product-1.png" style="width: 100%;">
     </div>
   </div>
   <div class="col-lg-7">
-    <div class="detail-product-pro" data-aos="fade-up"
-    data-aos-anchor-placement="bottom-bottom">
+    <div class="detail-product-pro" >
     <h3>
       ฟิลเตอร์ ไดเออร์
     </h3>
@@ -171,7 +170,7 @@
       data-aos-anchor="#example-anchor"
       data-aos-offset="500"
       data-aos-duration="500">
-      <a href="">
+      <a href="#">
         <i class="fas fa-th-list list-color"></i>
         &nbsp;
         <span>ขอใบเสนอราคา</span>
@@ -182,7 +181,7 @@
     data-aos-anchor="#example-anchor"
     data-aos-offset="500"
     data-aos-duration="700">
-    <a href="">
+    <a href="#">
       <i class="fas fa-sync-alt color-columns"></i>
       <span>เปรียบเทียบผลิตภัณฑ์</span>
     </a>
@@ -219,7 +218,7 @@
       <div class="foot-detail">
         <div class="nav">
           <a href="#" >
-            <h3 style="color: #000000; font-weight: bold; font-size: 30px;">
+            <h3 class="detail-head-pro-about" style="">
               รายละเอียด
             </h3>
           </a>
@@ -233,7 +232,7 @@
 
         <div class="nav">
           <a href="#" style="cursor: normal; ">
-            <h3 style="color: #000000; font-weight: bold; font-size: 30px;">
+            <h3 class="head-pro-about" >
               สินค้าที่เกียวข้อง
             </h3>
           </a>
@@ -255,7 +254,7 @@
               </div>
               <div class="detail-product">
                 <a href="#">
-                  <h3 style="font-size: 26px; color: #1D1D1E; font-weight: bold;">
+                  <h3 class="name-pro-about" style="">
                     เครื่องทำความเย็น / CONDENSING UNIT
                   </h3>
                 </a>
@@ -279,7 +278,7 @@
               </div>
               <div class="detail-product">
                 <a href="#">
-                  <h3 style="font-size: 26px; color: #1D1D1E; font-weight: bold;">
+                  <h3 class="name-pro-about" style="">
                     เครื่องทำความเย็น / CONDENSING UNIT
                   </h3>
                 </a>
@@ -303,7 +302,7 @@
               </div>
               <div class="detail-product">
                 <a href="#">
-                  <h3 style="font-size: 26px; color: #1D1D1E; font-weight: bold;">
+                  <h3 class="name-pro-about" style="">
                     เครื่องทำความเย็น / CONDENSING UNIT
                   </h3>
                 </a>
@@ -327,7 +326,7 @@
               </div>
               <div class="detail-product">
                 <a href="#">
-                  <h3 style="font-size: 26px; color: #1D1D1E; font-weight: bold;">
+                  <h3 class="name-pro-about" style="">
                     เครื่องทำความเย็น / CONDENSING UNIT
                   </h3>
                 </a>
@@ -351,7 +350,7 @@
               </div>
               <div class="detail-product">
                 <a href="#">
-                  <h3 style="font-size: 26px; color: #1D1D1E; font-weight: bold;">
+                  <h3 class="name-pro-about" style="">
                     เครื่องทำความเย็น / CONDENSING UNIT
                   </h3>
                 </a>

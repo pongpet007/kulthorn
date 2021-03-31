@@ -1,4 +1,7 @@
 <style type="text/css">
+	.size-font-i {
+		font-size: 18px;
+	}
 	.navbar-expand-lg .navbar-nav .nav-link-new{
 		color: #000 !important;
 		font-size: 28px;
@@ -11,6 +14,9 @@
 	}
 	.button-color {
 		font-size: 20px;
+		background-color: #545b6200 !important;
+		color : #000 !important;
+		border :none !important;
 	}
 
 	.nav-1 , .nav-2 , .nav-3 , .nav-4 , .nav-5 , .nav-6 ,  .nav-8  {
@@ -133,6 +139,12 @@
 			font-size: 25px;
 		}
 
+	}
+	@media (min-width: 1401px)  {
+		.navbar-expand-lg .navbar-nav .nav-link-new {
+			padding: 10px !important;
+			font-size: 25px !important;
+		}
 	}
 
 

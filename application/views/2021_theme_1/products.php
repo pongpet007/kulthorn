@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/fontawesome-free/css/all.min.css">
     <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
 
+    <link href="<?=base_url()?>assets/aos-master/dist/aos.css" rel="stylesheet">
+
     <?php $this->load->view('2021_theme_1/inc/css-peck'); ?>
     <?php $this->load->view('2021_theme_1/inc/css-products'); ?>
     <?php $this->load->view('2021_theme_1/inc/css'); ?>
@@ -20,7 +22,7 @@
     ?>
 
     <!-- Button Compare -->
-    <div class="compare">
+    <div class="compare" data-aos="flip-right" data-aos-duration="1000">
         <button type="button" onclick="window.location.href='<?= base_url()?>Products/compare';" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
             <i class="fas fa-sync-alt"></i>
             <span class="count-compare">
@@ -32,16 +34,16 @@
 
     <div class="container header-top">
         <div class="row">
-            <div class="col-lg-7 col-sm-6">
+            <div class="col-lg-7 col-sm-6" data-aos="zoom-in-right" data-aos-duration="1000">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item color-menu"><a href="#">หน้าแรก</a></li>
-                        <li class="breadcrumb-item color-menu" aria-current="page">สินค้าและบริการ</li>
+                        <li class="breadcrumb-item color-menu"><a href="#" class="menu-home">หน้าแรก</a></li>
+                        <li class="breadcrumb-item color-menu" aria-current="page"><a href="#" class="menu-products">สินค้าและบริการ</a></li>
                         <li class="breadcrumb-item  color-menu-active active" aria-current="page">ชื่อหมวดสินค้า</li>
                     </ol>
                 </nav>
             </div>
-            <div class="search-product col-lg-5 col-sm-6 pt-2 pb-1">
+            <div class="search-product col-lg-5 col-sm-6 pt-2 pb-1" data-aos="zoom-in-left" data-aos-duration="1000">
 
                 <form class="form-inline">
                     <div class="form-group find-pro">
@@ -57,11 +59,12 @@
 
 
 
-    <div class="container mt-3 all-product">
+    <div class="container mt-3 all-product" data-aos="fade-up"
+     data-aos-duration="1500">
         <div class="row">
             <div class="col-lg-3 order-2 order-md-1">
-               <h3><b>หมวดสินค้าทั้งหมด</b></h3>
-               <nav class="nav flex-column">
+             <h3><b>หมวดสินค้าทั้งหมด</b></h3>
+             <nav class="nav flex-column">
                 <a class="nav-link active" href="#"><i class="fas fa-chevron-right icon-cate"></i>วาล์ว</a>
                 <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>คอมเพรสเซอร์</a>
                 <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>อุปกรณ์ทำความเย็น</a>
@@ -94,15 +97,20 @@
                     <div class ="picture-product">
                         <img src="image_new/p-1.jpg">
                         <div class="overlay-img-2 product-overlay">
-                            <h3>
-                                ชมรายละเอียดสินค้า
-                            </h3>
+                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                                <h3>
+                                    ชมรายละเอียดสินค้า
+                                </h3>
+                            </a>
                         </div>
                     </div>
+
                     <div class="detail-product">
-                        <h3>
-                            เครื่องทำความเย็น / CONDENSING UNIT
-                        </h3>
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                            <h3>
+                                เครื่องทำความเย็น / CONDENSING UNIT
+                            </h3>
+                        </a>
                         <p>
                             บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
                         </p>
@@ -113,15 +121,19 @@
                     <div class ="picture-product">
                         <img src="image_new/p-1.jpg">
                         <div class="overlay-img-2 product-overlay">
-                            <h3>
-                                ชมรายละเอียดสินค้า
-                            </h3>
+                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                                <h3>
+                                    ชมรายละเอียดสินค้า
+                                </h3>
+                            </a>
                         </div>
                     </div>
                     <div class="detail-product">
-                        <h3>
-                            เครื่องทำความเย็น / CONDENSING UNIT
-                        </h3>
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                            <h3>
+                                เครื่องทำความเย็น / CONDENSING UNIT
+                            </h3>
+                        </a>
                         <p>
                             บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
                         </p>
@@ -132,15 +144,90 @@
                     <div class ="picture-product">
                         <img src="image_new/p-1.jpg">
                         <div class="overlay-img-2 product-overlay">
-                            <h3>
-                                ชมรายละเอียดสินค้า
-                            </h3>
+                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                                <h3>
+                                    ชมรายละเอียดสินค้า
+                                </h3>
+                            </a>
                         </div>
                     </div>
                     <div class="detail-product">
-                        <h3>
-                            เครื่องทำความเย็น / CONDENSING UNIT
-                        </h3>
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                            <h3>
+                                เครื่องทำความเย็น / CONDENSING UNIT
+                            </h3>
+                        </a>
+                        <p>
+                            บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
+                        </p>
+                    </div>
+                </div>
+
+                <div class= "col-6 col-lg-4 ">
+                    <div class ="picture-product">
+                        <img src="image_new/p-1.jpg">
+                        <div class="overlay-img-2 product-overlay">
+                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                                <h3>
+                                    ชมรายละเอียดสินค้า
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="detail-product">
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                            <h3>
+                                เครื่องทำความเย็น / CONDENSING UNIT
+                            </h3>
+                        </a>
+                        <p>
+                            บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class= "col-6 col-lg-4 ">
+                    <div class ="picture-product">
+                        <img src="image_new/p-1.jpg">
+                        <div class="overlay-img-2 product-overlay">
+                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                                <h3>
+                                    ชมรายละเอียดสินค้า
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="detail-product">
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                            <h3>
+                                เครื่องทำความเย็น / CONDENSING UNIT
+                            </h3>
+                        </a>
+                        <p>
+                            บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class= "col-6 col-lg-4 ">
+                    <div class ="picture-product">
+                        <img src="image_new/p-1.jpg">
+                        <div class="overlay-img-2 product-overlay">
+                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                                <h3>
+                                    ชมรายละเอียดสินค้า
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="detail-product">
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                            <h3>
+                                เครื่องทำความเย็น / CONDENSING UNIT
+                            </h3>
+                        </a>
                         <p>
                             บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
                         </p>
@@ -164,6 +251,11 @@
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
   })
+</script>
+
+<script src="<?=base_url()?>assets/aos-master/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

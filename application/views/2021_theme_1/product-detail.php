@@ -58,9 +58,7 @@
   </div><!--/////breadcrumb -->
 
   <!-- Button Compare -->
-  <div class="compare" data-aos="fade-right"
-  data-aos-offset="400"
-  data-aos-easing="ease-in-sine">
+  <div class="compare" data-aos="fade-right"  data-aos-offset="400"  data-aos-easing="ease-in-sine">
   <button type="button" onclick="window.location.href='<?= base_url()?>Products/compare';" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
     <i class="fas fa-sync-alt"></i>
     <span class="count-compare">
@@ -212,7 +210,7 @@
 </div>
 </div>
 
-<div class="container mt-5">
+<div class="container mt-5"  data-aos="fade-down-right" data-aos-duration="1000">
   <div class="row">
     <div class="col-lg-12">
       <div class="foot-detail">

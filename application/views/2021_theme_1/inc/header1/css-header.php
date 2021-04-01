@@ -1,10 +1,19 @@
 <style type="text/css">
+	.navbar-expand-lg .navbar-nav a.nav-link-new:hover {
+		color: #79818C !important;
+	}
 	.size-font-i {
 		font-size: 18px;
 	}
 	.navbar-expand-lg .navbar-nav .nav-link-new{
 		color: #000 !important;
 		font-size: 28px;
+	}
+	a.menu-products:hover {
+		color: #79818C;
+	}
+	a.menu-home:hover {
+		color: #79818C;
 	}
 	.nav-link-new:hover {
 		color: #555555;
@@ -53,6 +62,7 @@
 	}
 	.img-logo img {
 		width: 50%;
+		float: right;
 	}
 	.img-flag img {
 		/*width: 70%;*/

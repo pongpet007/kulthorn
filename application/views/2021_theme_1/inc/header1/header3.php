@@ -21,25 +21,25 @@
         <div class="collapse navbar-collapse " id="navbarNav">
           <ul class="navbar-nav navbar-nav-new">
             <li class="nav-item nav-item-new nav-1">
-              <a class="nav-link nav-link-new" href="#firstPage"><span class="number-page-1">01.</span>หน้าหลัก</a>
+              <a class="nav-link nav-link-new" href="<?=base_url()?>#firstPage"><span class="number-page-1">01.</span>หน้าหลัก</a>
             </li>
             <li class="nav-item  nav-item-new nav-2">
-              <a class="nav-link nav-link-new" href="#secondPage"><span class="number-page-2">02.</span>เกี่ยวกับเรา</a>
+              <a class="nav-link nav-link-new" href="<?=base_url()?>#secondPage"><span class="number-page-2">02.</span>เกี่ยวกับเรา</a>
             </li>
             <li class="nav-item nav-item-new nav-3">
-              <a class="nav-link nav-link-new" href="#thirdPage"><span class="number-page-3">03.</span>สินค้าและบริการ</a>
+              <a class="nav-link nav-link-new" href="<?=base_url()?>#thirdPage"><span class="number-page-3">03.</span>สินค้าและบริการ</a>
             </li>
             <li class="nav-item nav-item-new nav-4">
-              <a class="nav-link nav-link-new" href="#fourthPage"><span class="number-page-4">04.</span>เกร็ดความรู้</a>
+              <a class="nav-link nav-link-new" href="<?=base_url()?>#fourthPage"><span class="number-page-4">04.</span>เกร็ดความรู้</a>
             </li>
             <li class="nav-item nav-item-new nav-5">
-              <a class="nav-link nav-link-new" href="#fifthPage"><span class="number-page-5">05.</span>ข่าวสารและกิจกรรม</a>
+              <a class="nav-link nav-link-new" href="<?=base_url()?>#fifthPage"><span class="number-page-5">05.</span>ข่าวสารและกิจกรรม</a>
             </li>
             <li class="nav-item nav-item-new nav-6">
-              <a class="nav-link nav-link-new" href="#sixthPage"><span class="number-page-6">06.</span>ร่วมงานกับเรา</a>
+              <a class="nav-link nav-link-new" href="<?=base_url()?>#sixthPage"><span class="number-page-6">06.</span>ร่วมงานกับเรา</a>
             </li>
             <li class="nav-item nav-item-new nav-6">
-              <a class="nav-link nav-link-new" href="#seventhPage"><span class="number-page-6">07.</span>ติดต่อเรา</a>
+              <a class="nav-link nav-link-new" href="<?=base_url()?>#seventhPage"><span class="number-page-6">07.</span>ติดต่อเรา</a>
             </li>
             <li class="nav-item nav-item-new nav-7">
               <a class="nav-link nav-link-new img-flag" style="cursor: default;">

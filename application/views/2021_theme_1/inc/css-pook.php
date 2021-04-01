@@ -349,6 +349,15 @@
 
 	/* ////////////////////////// Responsive ////////////////////////// */
 	@media (max-width: 480px) {
+		.chcolor .nav-link-new {
+			color: #FFF !important ;
+		}
+		.before-color:before {
+			width: 0px;
+		}
+		.changlang-color .button-color {
+			color: #FFF !important;
+		}
 		#fp-nav {
 			top: 60%;
 		}
@@ -428,7 +437,7 @@
 			padding: 5px 20px !important;
 		}
 		.tab .nav-tabs {
-			margin-top: 20px !important;
+			margin-top: 50px !important;
 		}
 		.tab .nav-tabs li a.active:before {
 			content: "" !important;
@@ -578,6 +587,15 @@
 	} 
 
 	@media (max-width: 1023px)  and  (min-width: 768px) {
+		.chcolor .nav-link-new {
+			color: #FFF !important ;
+		}
+		.before-color:before {
+			width: 0px;
+		}
+		.changlang-color .button-color {
+			color: #FFF !important;
+		}
 		.fp-controlArrow {
 			top: 40%;
 		}

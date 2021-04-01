@@ -497,6 +497,18 @@
 		color: #1D1D1E;
 		font-weight: bold;
 	}
+	a.goto-productdetail {
+		color: #FFF;
+	}
+	a.goto-productdetail:hover {
+		color: #D6D6D6;
+	}
+	a.goto-productdetail-2 {
+		color: #000;
+	}
+	a.goto-productdetail-2:hover {
+		color: #D6D6D6;
+	}
 
 	@media only screen and (max-width: 415px) {
 		
@@ -533,8 +545,12 @@
 			font-size: 18px;
 		}
 		ul.ul-knowledge {
-			display: block;
+			display: -webkit-inline-box;
 			line-height: 28px;
+
+		}
+		ul.ul-knowledge li {
+			font-size: 20px;
 		}
 		.breadcrumb-detail-pro {
 			padding-bottom: 0px;

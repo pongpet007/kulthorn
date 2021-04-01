@@ -18,6 +18,8 @@
 	<script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
 	<script src="<?=base_url()?>assets/owlcarousel/owl.carousel.js"></script>
 
+	<link href="<?=base_url()?>assets/aos-master/dist/aos.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 	<?php $this->load->view('2021_theme_1/inc/css-peck'); ?>
@@ -32,8 +34,7 @@
 	?>
 	<div class="container header-top">
 		<div class="row">
-			<div class="col-lg-7 col-sm-6">
-
+			<div class="col-lg-7 col-sm-6 animate__animated animate__slideInLeft">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item color-menu"><a href="#">หน้าแรก</a></li>
@@ -44,16 +45,12 @@
 
 			</div>
 			<div class="search-product col-lg-5 col-sm-6 pt-2 pb-1">
-
-
-
 			</div>
 		</div>
-
 	</div><!--/////breadcrumb -->
 
 	<!-- Button Compare -->
-	<div class="compare">
+	<div class="compare" data-aos="fade-right"  data-aos-offset="400"  data-aos-easing="ease-in-sine">
 		<button type="button" onclick="window.location.href='<?= base_url()?>Products/compare';" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
 			<i class="fas fa-sync-alt"></i>
 			<span class="count-compare">
@@ -66,7 +63,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8 animate__animated animate__backInDown"> 
+			<div class="col-lg-8 animate__animated animate__fadeInUp" style="animation-duration: 1.5s;"> 
 				<h2>หัวข้อเนื้อหาข่าวสาร</h2>
 				<ul class="ul-knowledge ">
 					<li>
@@ -131,9 +128,7 @@
 				</ul>
 
 				<h3 style="font-weight: bold; ">เนื้อหาแนะนำที่เกี่ยวข้อง</h3 style="font-weight: bold; ">
-
 					<div class="line-know-about"></div>
-
 					<div class="container">
 						<div class="row">
 
@@ -208,19 +203,11 @@
 									</div>
 								</div>
 							</div>
-
-
-
-
-
-
 						</div>
 					</div>
-
 				</div>
 
-				<div class="col-lg-4 d-none d-sm-none d-md-block"> 
-
+				<div class="col-lg-4 d-none d-sm-none d-md-block " data-aos="fade-down" data-aos-duration="1000"> 
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">
 							<a class="nav-link active tab-select" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
@@ -296,14 +283,6 @@
 										</div>
 										<div class="dot-border"></div>
 									</div>
-
-
-
-
-
-
-
-
 								</div>
 							</div>
 							<div class="face-follow">
@@ -320,7 +299,10 @@
 		</div>
 
 
-
+		<script src="<?=base_url()?>assets/aos-master/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 
 		<script>
 			$(document).ready(function() {

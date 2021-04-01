@@ -1163,7 +1163,16 @@
 
    if( (origin.index == 1 || origin.index == 2 ||  origin.index == 3 || origin.index == 4 || origin.index == 5  || origin.index == 6 ) && destination.index == 0 ) { 
 
-    $isAnimatedFirst.addClass('animate__animated animate__jackInTheBox');
+    $isAnimatedFirst.eq(0).addClass('animate__animated animate__flipInX');
+    $isAnimatedFirst.eq(1).addClass('animate__animated animate__zoomInUp');
+    $isAnimatedFirst.eq(2).addClass('animate__animated animate__flipInX');
+    $isAnimatedFirst.eq(3).addClass('animate__animated animate__fadeInUp');
+    $isAnimatedFirst.eq(4).addClass('animate__animated animate__fadeInRight');
+    $isAnimatedFirst.eq(5).addClass('animate__animated animate__flipInX');
+    $isAnimatedFirst.eq(6).addClass('animate__animated animate__zoomInUp');
+    $isAnimatedFirst.eq(7).addClass('animate__animated animate__fadeInUp');
+    // $isAnimatedFirst.addClass('animate__animated animate__jackInTheBox');
+
     $isAnimatedFirst.css('animation-delay', '0s');
     $isAnimatedFirst.css('animation-duration', '1.5s');
 
@@ -1177,7 +1186,7 @@
   }
 
   else if ( (origin.index == 0 || origin.index == 2 ||  origin.index == 3 || origin.index == 4 || origin.index == 5  || origin.index == 6 ) && destination.index == 1  ) {
-    $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
+    $isAnimatedFirst.removeClass('animate__animated animate__flipInX animate__zoomInUp animate__flipInX animate__fadeInUp animate__fadeInRight');
     $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
     $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');
     $isAnimatedFifth.removeClass('animate__animated animate__backInUp animate__backInDown');
@@ -1218,7 +1227,7 @@
 
   else if ( (origin.index == 0 || origin.index == 1 || origin.index == 3 || origin.index == 4 || origin.index == 5  || origin.index == 6) && destination.index == 2) {
 
-    $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
+    $isAnimatedFirst.removeClass('animate__animated animate__flipInX animate__zoomInUp animate__flipInX animate__fadeInUp animate__fadeInRight');
     $isAnimatedSecond.removeClass('animated animate__animated animate__backInDown');
     $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');
     $isAnimatedFifth.removeClass('animate__animated animate__backInUp animate__backInDown');
@@ -1241,7 +1250,7 @@
 
     }
     else if ( (origin.index == 0 || origin.index == 1 || origin.index == 2 || origin.index == 4 || origin.index == 5  || origin.index == 6) && destination.index == 3 ) {
-      $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
+      $isAnimatedFirst.removeClass('animate__animated animate__flipInX animate__zoomInUp animate__flipInX animate__fadeInUp animate__fadeInRight');
       $isAnimatedSecond.removeClass('animated animate__animated animate__backInDown');
       $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
       $isAnimatedFifth.removeClass('animate__animated animate__backInUp animate__backInDown');
@@ -1259,7 +1268,7 @@
 
     }
     else if ( (origin.index == 0 || origin.index == 1 || origin.index == 2 || origin.index == 3 || origin.index == 5  || origin.index == 6) && destination.index == 4 ) {
-      $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
+      $isAnimatedFirst.removeClass('animate__animated animate__flipInX animate__zoomInUp animate__flipInX animate__fadeInUp animate__fadeInRight');
       $isAnimatedSecond.removeClass('animated animate__animated animate__backInDown');
       $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
       $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');
@@ -1276,7 +1285,7 @@
 
     }
     else if ( (origin.index == 0 || origin.index == 1 || origin.index == 2 || origin.index == 3 || origin.index == 4 || origin.index == 6 ) && destination.index == 5 ) {
-      $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
+      $isAnimatedFirst.removeClass('animate__animated animate__flipInX animate__zoomInUp animate__flipInX animate__fadeInUp animate__fadeInRight');
       $isAnimatedSecond.removeClass('animated animate__animated animate__backInDown');
       $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
       $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');
@@ -1290,7 +1299,7 @@
       $isAnimatedSixth.css('animation-duration', '1.8s');
     }
     else if ( (origin.index == 0 || origin.index == 1 || origin.index == 2 || origin.index == 3 || origin.index == 4 || origin.index == 5 ) && destination.index == 6 ) {
-      $isAnimatedFirst.removeClass('animate__animated animate__jackInTheBox');
+      $isAnimatedFirst.removeClass('animate__animated animate__flipInX animate__zoomInUp animate__flipInX animate__fadeInUp animate__fadeInRight');
       $isAnimatedSecond.removeClass('animated animate__animated animate__backInDown');
       $isAnimatedThird.removeClass('animate__animated animate__backInDown animate__backInRight animate__backInLeft animate__backInUp');
       $isAnimatedFourth.removeClass('animate__animated animate__backInUp animate__backInDown');

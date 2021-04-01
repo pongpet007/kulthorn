@@ -18,6 +18,9 @@
   <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
   <script src="<?=base_url()?>assets/owlcarousel/owl.carousel.js"></script>
 
+  <link href="<?=base_url()?>assets/aos-master/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <?php 
   $this->load->view('2021_theme_1/inc/css-peck');
@@ -35,28 +38,23 @@
   ?>
   <div class="container header-top">
     <div class="row">
-      <div class="col-lg-7 col-sm-6">
-
+      <div class="col-lg-7 col-sm-6 animate__animated animate__slideInLeft">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item color-menu"><a href="#">หน้าแรก</a></li>
             <li class="breadcrumb-item color-menu" aria-current="page"><a href="#">ร่วมงานกับเรา</a></li>
-            <li class="breadcrumb-item  color-menu-active active" aria-current="page">โปรแกรมเมอร์</li>
+            <li class="breadcrumb-item  color-menu-active active" aria-current="page">ชื่อตำแหน่งงาน</li>
           </ol>
         </nav>
 
       </div>
       <div class="search-product col-lg-5 col-sm-6 pt-2 pb-1">
-
-
-
       </div>
     </div>
-
   </div><!--/////breadcrumb -->
 
   <!-- Button Compare -->
-  <div class="compare">
+  <div class="compare" data-aos="fade-right"  data-aos-offset="400"  data-aos-easing="ease-in-sine">
     <button type="button" onclick="window.location.href='<?= base_url()?>Products/compare';" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
       <i class="fas fa-sync-alt"></i>
       <span class="count-compare">
@@ -67,401 +65,284 @@
 
 
 
-  <div class="container mt-3 all-product">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-5">
-        <div>
-          <img src="<?= base_url()?>assets/img/product-1.png" style="width: 100%;">
+      <div class="col-lg-8 animate__animated animate__fadeInUp" style="animation-duration: 1.5s;"> 
+        <h2>ชื่อตำแหน่งงาน</h2>
+        <ul class="ul-knowledge ">
+          <li>
+            โดย : <span style="color: #808080;">ADMIN</span>
+          </li>
+          <li>
+            วันที่โพส : <span style="color: #808080;">9/2/2564</span>
+          </li>
+          <li>
+            จำนวนผู้เข้าชม : <span style="color: #808080;">1200 คน</span>
+          </li>
+        </ul>
+        <div class="img-knowledge">
+          <img src="<?=base_url()?>assets/img/news-detail.png">
         </div>
-      </div>
-      <div class="col-lg-7">
-        <div class="detail-product-pro">
-          <h3>
-            โปรแกรมเมอร์
-          </h3>
-          <div class="breadcrumb-detail-pro">
-            <div class="breadcrumb-detail menu-pro-detail">หมวดหมู่สินค้า&nbsp;</div>
-            <div class="category-menu-detail">&nbsp;อุปกรณ์ทำความเย็น</div>
-          </div>
-          <div class="breadcrumb-detail-pro">
-            <div class="breadcrumb-detail menu-pro-detail">แบรนด์&nbsp;</div>
-            <div class="category-menu-detail">&nbsp;SEO</div>
-          </div>
+        
+        <div class="detail-knowledge">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet porta nulla. Nullam accumsan quam felis, in sodales ligula pharetra id. Duis volutpat dui non auctor feugiat. Quisque viverra a urna at hendrerit. Praesent sit amet nisi eget ante imperdiet tempus. Sed tristique lacus nec dolor hendrerit rhoncus. Cras ante mauris, tempus vel ante sed, vulputate laoreet ipsum. Suspendisse vel consectetur arcu, at fermentum sem. Donec semper ante et lectus commodo posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ultricies hendrerit ante, condimentum bibendum augue venenatis nec. Morbi posuere dolor lectus, vitae mollis nunc luctus in. Fusce dictum sapien at ex tempor, id feugiat felis elementum.
+          </p>
+        </div>
 
-          <ul class="ul-share">
-            <li>
-              <div class="breadcrumb-detail menu-pro-detail">แชร์&nbsp;</div>
-            </li>
-            <li>
-              <div class="share-face">
-                <a href="#">
-                  <i class="fab fa-facebook-square face-color"></i>&nbsp;&nbsp;<span>share</span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="share-line">
-                <a href="#">
-                  <i class="fab fa-line line-color"></i>&nbsp;&nbsp;<span>share</span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="share-twitter">
-                <a href="#">
-                  <i class="fab fa-twitter line-color"></i>&nbsp;&nbsp;<span>share</span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="share-mail">
-                <a href="#">
-                  <i class="fas fa-envelope mail-color"></i>&nbsp;&nbsp;<span>share</span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="share-print">
-                <a href="#">
-                  <i class="fas fa-print print-color"></i>&nbsp;&nbsp;<span>share</span>
-                </a>
-              </div>
-            </li>
-          </ul>
-
-          <div>
-            <img  class="hr-product" src="<?=base_url()?>assets/img/line.png">
-          </div>
-
-          <div class="tags-products">
-            <div class="breadcrumb-detail menu-pro-detail">ป้ายกำกับสินค้า&nbsp;</div>
-            
-            <div class="scrollbar" id="tags">
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-              <div class="category-menu-detail">
-                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-              </div>
-
-            </div>
-
-
-          </div>
-
-          <hr>
-
-          <div class="breadcrumb-detail-pro">
-            <div class="breadcrumb-detail menu-pro-detail">รายละเอียด&nbsp;</div>
-          </div>
-          <div class="about-product">
-            <p>จำหน่ายฟิลเตอร์ ไดเออร์ อุปกรณ์ทำความเย็น หัวจ่ายน้ำยา เครื่องมือทำความเย็นสำหรับช่าง คอยล์เย็น อะไหล่คอยล์เย็น</p>
-          </div>
-
-          <div class="about-tools">
-            <div class="quotation">
-              <a href="">
-                <i class="fas fa-th-list list-color"></i>
-                &nbsp;
-                <span>ขอใบเสนอราคา</span>
+        <ul class="ul-share ul-knowledge-share">
+          <li>
+            <div class="breadcrumb-detail menu-pro-detail">แชร์&nbsp;</div>
+          </li>
+          <li>
+            <div class="share-face">
+              <a href="#">
+                <i class="fab fa-facebook-square face-color"></i>&nbsp;&nbsp;<span>share</span>
               </a>
             </div>
-
-            <div class="compare-product">
-              <a href="">
-                <i class="fas fa-sync-alt color-columns"></i>
-                <span>เปรียบเทียบผลิตภัณฑ์</span>
+          </li>
+          <li>
+            <div class="share-line">
+              <a href="#">
+                <i class="fab fa-line line-color"></i>&nbsp;&nbsp;<span>share</span>
               </a>
             </div>
+          </li>
+          <li>
+            <div class="share-twitter">
+              <a href="#">
+                <i class="fab fa-twitter line-color"></i>&nbsp;&nbsp;<span>Tweet</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="share-mail">
+              <a href="#">
+                <i class="fas fa-envelope mail-color"></i>&nbsp;&nbsp;<span>Send</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="share-print">
+              <a href="#">
+                <i class="fas fa-print print-color"></i>&nbsp;&nbsp;<span>Print</span>
+              </a>
+            </div>
+          </li>
+        </ul>
 
-            <div class="contact-we">
-              <div class="dropdown nav-link-new show ">
-                <a class="btn btn-secondary dropdown-toggle button-contact" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-comments color-comment"></i>&nbsp;ติดต่อเรา
-                </a>
+        <h3 style="font-weight: bold; ">เนื้อหาแนะนำที่เกี่ยวข้อง</h3 style="font-weight: bold; ">
+          <div class="line-know-about"></div>
+          <div class="container">
+            <div class="row">
 
-                <div class="dropdown-menu drop-contact" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item drop-new" href="#">แอดไลน์</a>
-                  <a class="dropdown-item drop-new" href="#">โทรศัพย์</a>
-                  <a class="dropdown-item drop-new" href="#">เฟสบุค</a>
+              <div class="owl-carousel owl-theme owl-carousel-job-about">
+                <div class="item">
+                  <div class="knowledge-about">
+                    <a href="#">
+                      <img class="news-detail-img" src="<?=base_url()?>assets/img/knowledge-detail-1.png">
+                    </a>
+                    <a href="#">
+                      <h3>
+                        ชื่อตำแหน่งงาน
+                      </h3>
+                    </a>
+                    <p>เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="knowledge-about">
+                    <a href="#">
+                      <img src="<?=base_url()?>assets/img/knowledge-detail-1.png">
+                    </a>
+                    <a href="#">
+                      <h3>
+                        ชื่อตำแหน่งงาน
+                      </h3>
+                    </a>
+                    <p>เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="knowledge-about">
+                    <a href="#">
+                      <img src="<?=base_url()?>assets/img/knowledge-detail-1.png">
+                    </a>
+                    <a href="#">
+                      <h3>
+                        ชื่อตำแหน่งงาน
+                      </h3>
+                    </a>
+                    <p>เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="knowledge-about">
+                    <a href="#">
+                      <img src="<?=base_url()?>assets/img/knowledge-detail-1.png">
+                    </a>
+                    <a href="#">
+                      <h3>
+                        ชื่อตำแหน่งงาน
+                      </h3>
+                    </a>
+                    <p>เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="knowledge-about">
+                    <a href="#">
+                      <img src="<?=base_url()?>assets/img/knowledge-detail-1.png">
+                    </a>
+                    <a href="#">
+                      <h3>
+                        ชื่อตำแหน่งงาน
+                      </h3>
+                    </a>
+                    <p>เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
+        <div class="col-lg-4 d-none d-sm-none d-md-block " data-aos="fade-down" data-aos-duration="1000"> 
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active tab-select" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                เนื้อหายอดนิยม
+              </a>
+            </li>
+
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="container">
+                <div class="row border-tab">
+
+                  <div class="col-lg-12 margin-top">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="#">
+                          <img class="news-detail-img"  src="<?=base_url()?>assets/img/tab-1.png">
+                        </a>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="knowledge-advice">
+                          <a href="">
+                            <h4>หัวข้อเกร็ดความรู้การดูแลเครื่องทำความเย็น</h4>
+                          </a>
+                          <div class="date-knowledge">
+                            <span>วันที่โพส : </span><span>9/2/2564</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dot-border"></div>
+                  </div>
+
+                  <div class="col-lg-12 margin-top">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="#">
+                          <img class="news-detail-img"  src="<?=base_url()?>assets/img/tab-1.png">
+                        </a>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="knowledge-advice">
+                          <a href="">
+                            <h4>หัวข้อเกร็ดความรู้การดูแลเครื่องทำความเย็น</h4>
+                          </a>
+                          <div class="date-knowledge">
+                            <span>วันที่โพส : </span><span>9/2/2564</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dot-border"></div>
+                  </div>
+
+                  <div class="col-lg-12 margin-top">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="#">
+                          <img class="news-detail-img"  src="<?=base_url()?>assets/img/tab-1.png">
+                        </a>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="knowledge-advice">
+                          <a href="">
+                            <h4>หัวข้อเกร็ดความรู้การดูแลเครื่องทำความเย็น</h4>
+                          </a>
+                          <div class="date-knowledge">
+                            <span>วันที่โพส : </span><span>9/2/2564</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dot-border"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="face-follow">
+                <h3>
+                  ติดตาม Facebook
+                </h3>
+              </div>
+            </div>
+
+          </div>
 
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="foot-detail">
-          <div class="nav">
-            <a href="#" >
-              <h3 style="color: #000000; font-weight: bold; font-size: 30px;">
-                รายละเอียด
-              </h3>
-            </a>
-          </div>
-
-          <hr style="margin-top: -2px;">
-
-          <div class="more-detail">
-            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-          </div>
-
-          <div class="nav">
-            <a href="#" style="cursor: normal; ">
-              <h3 style="color: #000000; font-weight: bold; font-size: 30px;">
-                สินค้าที่เกียวข้อง
-              </h3>
-            </a>
-          </div>
-          <hr style="margin-top: -2px;">
-
-          <div class= "owl-carousel owl-theme owl-carousel-pro-about">
-
-            <div class="item">           
-              <div class ="picture-product">
-                <a href="#">
-                  <img src="<?= base_url()?>assets/img/pro-about-1.png" style="width: 100%;">
-                </a>
-                <!-- <div class="overlay-img-3 pro-about">
-                  <h3>
-                    ชมรายละเอียดสินค้า
-                  </h3>
-                </div> -->
-              </div>
-              <div class="detail-product">
-                <a href="#">
-                  <h3 style="font-size: 26px; color: #1D1D1E; font-weight: bold;">
-                    เครื่องทำความเย็น / CONDENSING UNIT
-                  </h3>
-                </a>
-
-                <p style="color: #666666;">
-                  บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                </p>
-              </div>
-            </div>
-
-            <div class="item">           
-              <div class ="picture-product">
-                <a href="#">
-                  <img src="<?= base_url()?>assets/img/pro-about-2.png" style="width: 100%;">
-                </a>
-                <!-- <div class="overlay-img-3 pro-about">
-                  <h3>
-                    ชมรายละเอียดสินค้า
-                  </h3>
-                </div> -->
-              </div>
-              <div class="detail-product">
-                <a href="#">
-                  <h3 style="font-size: 26px; color: #1D1D1E; font-weight: bold;">
-                    เครื่องทำความเย็น / CONDENSING UNIT
-                  </h3>
-                </a>
-
-                <p style="color: #666666;">
-                  บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                </p>
-              </div>
-            </div>
-
-            <div class="item">           
-              <div class ="picture-product">
-                <a href="#">
-                  <img src="<?= base_url()?>assets/img/pro-about-3.png" style="width: 100%;">
-                </a>
-                <!-- <div class="overlay-img-3 pro-about">
-                  <h3>
-                    ชมรายละเอียดสินค้า
-                  </h3>
-                </div> -->
-              </div>
-              <div class="detail-product">
-                <a href="#">
-                  <h3 style="font-size: 26px; color: #1D1D1E; font-weight: bold;">
-                    เครื่องทำความเย็น / CONDENSING UNIT
-                  </h3>
-                </a>
-
-                <p style="color: #666666;">
-                  บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                </p>
-              </div>
-            </div>
-
-            <div class="item">           
-              <div class ="picture-product">
-                <a href="#">
-                  <img src="<?= base_url()?>assets/img/pro-about-1.png" style="width: 100%;">
-                </a>
-                <!-- <div class="overlay-img-3 pro-about">
-                  <h3>
-                    ชมรายละเอียดสินค้า
-                  </h3>
-                </div> -->
-              </div>
-              <div class="detail-product">
-                <a href="#">
-                  <h3 style="font-size: 26px; color: #1D1D1E; font-weight: bold;">
-                    เครื่องทำความเย็น / CONDENSING UNIT
-                  </h3>
-                </a>
-
-                <p style="color: #666666;">
-                  บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                </p>
-              </div>
-            </div>
-
-            <div class="item">           
-              <div class ="picture-product">
-                <a href="#">
-                  <img src="<?= base_url()?>assets/img/pro-about-3.png" style="width: 100%;">
-                </a>
-               <!--  <div class="overlay-img-3 pro-about">
-                  <h3>
-                    ชมรายละเอียดสินค้า
-                  </h3>
-                </div> -->
-              </div>
-              <div class="detail-product">
-                <a href="#">
-                  <h3 style="font-size: 26px; color: #1D1D1E; font-weight: bold;">
-                    เครื่องทำความเย็น / CONDENSING UNIT
-                  </h3>
-                </a>
-
-                <p style="color: #666666;">
-                  บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                </p>
-              </div>
-            </div>
 
 
 
-          </div>
+    <script src="<?=base_url()?>assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 
-        </div>
-      </div>
-    </div>
-  </div>
+    <script>
+      $(document).ready(function() {
+        var owl = $('.owl-carousel-job-about');
+        owl.owlCarousel({
+          margin: 10,
+          loop: true,
+          responsive: {
+            0: {
+              items: 2
+            },
+            600: {
+              items: 3
+            },
+            1000: {
+              items: 4
+            }
+          }
+        })
+      })
+    </script>
 
-</div>
+    <script src="<?=base_url()?>assets/owlcarousel/highlight.js"></script>
+    <script src="<?=base_url()?>assets/owlcarousel/app.js"></script>
 
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
 
-
-
-
-<script>
-  $(document).ready(function() {
-    var owl = $('.owl-carousel-pro-about');
-    owl.owlCarousel({
-      margin: 10,
-      loop: true,
-      responsive: {
-        0: {
-          items: 2
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 4
-        }
-      }
-    })
-  })
-</script>
-
-<script src="<?=base_url()?>assets/owlcarousel/highlight.js"></script>
-<script src="<?=base_url()?>assets/owlcarousel/app.js"></script>
-
-<script type="text/javascript">
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-</body>
-</html>
+  </body>
+  </html>

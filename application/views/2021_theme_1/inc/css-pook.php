@@ -600,7 +600,9 @@
 		.row-mobile {
 			padding: 0;
 		}
-
+		ul.navbar-nav-new {
+			margin-left: 0;
+		}
 	} 
 
 	@media (max-width: 1023px)  and  (min-width: 768px) {

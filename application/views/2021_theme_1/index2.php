@@ -70,7 +70,7 @@
 
           </div>
 
-          <div class="col-lg-11 col-sm-10 d-none is-animated"data-aos="fade-left"data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+          <div class="col-lg-11 col-sm-10 d-lg-block d-md-block  d-sm-none  d-none is-animated"data-aos="fade-left"data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
             <nav class="navbar navbar-expand-lg navbar-light /*bg-light*/ nav-color">
               <a class="navbar-brand" href="#"> </a>
               <button class="navbar-toggler nav-color-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,139 +128,142 @@
             </nav>
           </div>
         </div>
+      </div>
 
-        <!-- Menu Header mobile -->
 
-        <div class="d-lg-none d-md-none d-sm-none col-12 is-animated"data-aos="fade-left"data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
-          <nav class="navbar navbar-expand-lg navbar-light /*bg-light*/ nav-color">
-            <a class="navbar-brand" href="#"> </a>
-            <button class="navbar-toggler nav-color-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-              <ul class="navbar-nav navbar-nav-new">
-                <li class="nav-item nav-item-new nav-1 " id="nav-color-1">
-                  <a class="nav-link nav-link-new" href="#firstPage"><span class="number-page-1">01.</span>หน้าหลัก</a>
-                </li>
-                <li class="nav-item  nav-item-new nav-2 " id="nav-color-2">
-                  <a class="nav-link nav-link-new" href="#secondPage"><span class="number-page-2">02.</span>เกี่ยวกับเรา</a>
-                </li>
-                <li class="nav-item nav-item-new nav-3" id="nav-color-3">
-                  <a class="nav-link nav-link-new" href="#thirdPage"><span class="number-page-3">03.</span>สินค้าและบริการ</a>
-                </li>
-                <li class="nav-item nav-item-new nav-4" id="nav-color-4">
-                  <a class="nav-link nav-link-new" href="#fourthPage"><span class="number-page-4">04.</span>เกร็ดความรู้</a>
-                </li>
-                <li class="nav-item nav-item-new nav-5" id="nav-color-5">
-                  <a class="nav-link nav-link-new" href="#fifthPage"><span class="number-page-5">05.</span>ข่าวสารและกิจกรรม</a>
-                </li>
-                <li class="nav-item nav-item-new nav-6" id="nav-color-6">
-                  <a class="nav-link nav-link-new" href="#sixthPage"><span class="number-page-6">06.</span>ร่วมงานกับเรา</a>
-                </li>
-                <li class="nav-item nav-item-new nav-6" id="nav-color-7">
-                  <a class="nav-link nav-link-new" href="#seventhPage"><span class="number-page-6">07.</span>ติดต่อเรา</a>
-                </li>
+          <!-- Menu Header mobile -->
 
-                <li class="nav-item  nav-8" id="nav-color-8">
-                  <div class="dropdown nav-link-new show changlang" id="changlang">
-                    <a class="btn btn-secondary dropdown-toggle button-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img src="<?= base_url()?>assets/img/thai-flag.png" style="margin-top: -5px;"> ภาษาไทย
-                    </a>
+          <div class="d-lg-none d-md-none d-sm-none col-12 is-animated"data-aos="fade-left"data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+            <nav class="navbar navbar-expand-lg navbar-light /*bg-light*/ nav-color">
+              <a class="navbar-brand" href="#"> </a>
+              <button class="navbar-toggler nav-color-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav navbar-nav-new">
+                  <li class="nav-item nav-item-new nav-1 " id="nav-color-1">
+                    <a class="nav-link nav-link-new" href="#firstPage"><span class="number-page-1">01.</span>หน้าหลัก</a>
+                  </li>
+                  <li class="nav-item  nav-item-new nav-2 " id="nav-color-2">
+                    <a class="nav-link nav-link-new" href="#secondPage"><span class="number-page-2">02.</span>เกี่ยวกับเรา</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-3" id="nav-color-3">
+                    <a class="nav-link nav-link-new" href="#thirdPage"><span class="number-page-3">03.</span>สินค้าและบริการ</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-4" id="nav-color-4">
+                    <a class="nav-link nav-link-new" href="#fourthPage"><span class="number-page-4">04.</span>เกร็ดความรู้</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-5" id="nav-color-5">
+                    <a class="nav-link nav-link-new" href="#fifthPage"><span class="number-page-5">05.</span>ข่าวสารและกิจกรรม</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-6" id="nav-color-6">
+                    <a class="nav-link nav-link-new" href="#sixthPage"><span class="number-page-6">06.</span>ร่วมงานกับเรา</a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-6" id="nav-color-7">
+                    <a class="nav-link nav-link-new" href="#seventhPage"><span class="number-page-6">07.</span>ติดต่อเรา</a>
+                  </li>
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item drop-new" href="#">Action</a>
-                      <a class="dropdown-item drop-new" href="#">Another action</a>
-                      <a class="dropdown-item drop-new" href="#">Something else here</a>
+                  <li class="nav-item  nav-8" id="nav-color-8">
+                    <div class="dropdown nav-link-new show changlang" id="changlang">
+                      <a class="btn btn-secondary dropdown-toggle button-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="<?= base_url()?>assets/img/thai-flag.png" style="margin-top: -5px;"> ภาษาไทย
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item drop-new" href="#">Action</a>
+                        <a class="dropdown-item drop-new" href="#">Another action</a>
+                        <a class="dropdown-item drop-new" href="#">Something else here</a>
+                      </div>
                     </div>
+                  </li>
+                  <li class="nav-item nav-item-new nav-9">  
+                    <a class="nav-link nav-link-new" href=""><i class="fab fa-facebook-f icon-header"></i></a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-9">  
+                    <a class="nav-link nav-link-new" href=""><i class="fab fa-twitter icon-header"></i></a>
+                  </li>
+                  <li class="nav-item nav-item-new nav-9">  
+                    <a class="nav-link nav-link-new" href=""><i class="fab fa-instagram icon-header"></i></a>
+                  </li>
+
+                </ul>
+              </div>
+            </nav>
+          </div>
+       
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <div id="fullpage">
+      <div class="section firstPage" id="section0">
+        <div class="slide" id="slide1" style="background-image: url('assets/img/bg-banner-1.jpg');">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 " >      
+                <img class="img-headerslide-1 is-animated" data-aos="flip-up" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-1.png">
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <img class="img-headerslide is-animated" data-aos="flip-down" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-2.png" >
                   </div>
-                </li>
-                <li class="nav-item nav-item-new nav-9">  
-                  <a class="nav-link nav-link-new" href=""><i class="fab fa-facebook-f icon-header"></i></a>
-                </li>
-                <li class="nav-item nav-item-new nav-9">  
-                  <a class="nav-link nav-link-new" href=""><i class="fab fa-twitter icon-header"></i></a>
-                </li>
-                <li class="nav-item nav-item-new nav-9">  
-                  <a class="nav-link nav-link-new" href=""><i class="fab fa-instagram icon-header"></i></a>
-                </li>
-
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-  </div>
-  <div id="fullpage">
-    <div class="section firstPage" id="section0">
-      <div class="slide" id="slide1" style="background-image: url('assets/img/bg-banner-1.jpg');">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 " >      
-              <img class="img-headerslide-1 is-animated" data-aos="flip-up" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-1.png">
-            </div>
-            <div class="col-lg-8">
-              <div class="row">
-                <div class="col-lg-12">
-                  <img class="img-headerslide is-animated" data-aos="flip-down" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-2.png" >
+                  <div class="col-lg-12">
+                    <img class="img-headerslide is-animated" data-aos="flip-right" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-3.png">
+                  </div>
                 </div>
-                <div class="col-lg-12">
-                  <img class="img-headerslide is-animated" data-aos="flip-right" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-3.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide is-animated" id="slide2" style="background-image: url('assets/img/bg-banner-2.jpg');">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7" style="margin-top: 40px;">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <img class="img-headerslide is-animated"  src="<?=base_url()?>assets/img/baanner-2-1.png">
+                  </div>
+                  <div class="col-lg-12">
+                    <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-2.png" >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-3.png" >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide" id="slide3" style="background-image: url('assets/img/bg-banner-3.jpg');">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <img class="img-slide-2 is-animated" src="<?=base_url()?>assets/img/baanner-3-1.png" >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="slide is-animated" id="slide2" style="background-image: url('assets/img/bg-banner-2.jpg');">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7" style="margin-top: 40px;">
-              <div class="row">
-                <div class="col-lg-12">
-                  <img class="img-headerslide is-animated"  src="<?=base_url()?>assets/img/baanner-2-1.png">
-                </div>
-                <div class="col-lg-12">
-                  <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-2.png" >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-3.png" >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slide" id="slide3" style="background-image: url('assets/img/bg-banner-3.jpg');">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="row">
-                <div class="col-lg-12">
-                  <img class="img-slide-2 is-animated" src="<?=base_url()?>assets/img/baanner-3-1.png" >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <script type="text/javascript">
+      <script type="text/javascript">
 
-      $( document ).ready(function() {
+        $( document ).ready(function() {
           // var $isHeader = $('.animate__slideInUp'),
           // $isHeader2 = $('.animate__slideInUp'),
           // $isHeader3 = $('.animate__slideInUp');

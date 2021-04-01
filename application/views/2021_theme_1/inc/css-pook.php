@@ -19,6 +19,13 @@
 		color: #000 !important ;
 		
 	}
+	.fp-controlArrow.fp-prev {
+		border-width: 15.5px 30px 15.5px 0 !important;
+	}
+	.fp-controlArrow.fp-next {
+		border-width: 15.5px 0 15.5px 30px !important;
+	}
+
 	.before-color {
 		position: relative;
 	}
@@ -577,11 +584,14 @@
 			letter-spacing: .5px;
 		}
 		.fp-controlArrow {
-			top: 40%;
+			top: 55%;
 		}
 		img.img-slide-2 {
 			text-align: center;
 			margin-top: 300px;
+		}
+		.tab .tab-content {
+			padding: 0px 20px 20px !important;
 		}
 
 	} 

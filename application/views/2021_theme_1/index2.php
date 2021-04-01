@@ -209,7 +209,7 @@
       <div class="section " id="section1" style="background : url('<?=base_url()?>assets/img/bg-banner-3.jpg')center center; background-size: cover; " >
         <div class="container ">
           <div class="row">
-            <div id="demos" class="large-12 columns space-his " >
+            <div id="demos" class="large-12 columns space-his pt-md-5" >
               <div class="tab section-2-space second" role="tabpanel">
                 <!-- Nav tabs -->
                 <style type="text/css">

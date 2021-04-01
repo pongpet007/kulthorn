@@ -132,7 +132,7 @@
 					</li>
 				</ul>
 
-				<h3 style="font-weight: bold; ">เนื้อหาแนะนำที่เกี่ยวข้อง</h3 style="font-weight: bold; ">
+				<h3 class="h3-know-advice" style="font-weight: bold; ">เนื้อหาแนะนำที่เกี่ยวข้อง</h3 style="font-weight: bold; ">
 
 					<div class="line-know-about"></div>
 

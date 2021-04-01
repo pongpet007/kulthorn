@@ -1,9 +1,188 @@
 <style type="text/css">
+	.navbar-nav .nav-link-new {
+		font-family: 'PSLDISPLAYPRO';
+	}
+	.display-header {
+		visibility: hidden;
+	}
+	#view-code{
+		color:#4183d7; 
+		font-size:13px;
+		text-transform:uppercase;
+		font-weight:700;
+		text-decoration:none;
+		position:absolute;top:640px; left:50%;margin-left:-35px;
+	}
+	div.screen{
+		width: 100%;
+		height:55px;	
+		overflow:hidden;
+		position : absolute; 
+		top : 0; 
+		left: 0;
+		margin-left: 0;
+		/*background:#31558a;*/
+	}
+
+	.list { 
+		margin-top:36px; 
+		text-align:left;
+	}
+	div.burger {
+		height: 40px; 
+		width: 40px;
+		position: absolute;
+		top: 11px; 
+		left: 21px;
+		cursor: pointer;	
+	}
+	div.x,
+	div.y,
+	div.z {
+		position: absolute; margin: auto;
+		top: 0px; bottom: 0px;		
+		background: #fff;
+		border-radius:2px;
+		-webkit-transition: all 200ms ease-out;
+		-moz-transition: all 200ms ease-out;
+		-ms-transition: all 200ms ease-out;
+		-o-transition: all 200ms ease-out;
+		transition: all 200ms ease-out;
+	}		
+	div.x, div.y, div.z { height: 3px; width: 26px; }
+	div.y{top: 18px;}
+	div.z{top: 37px;}
+	div.collapse2{
+		top: 20px;
+		background:#4a89dc;
+		-webkit-transition: all 70ms ease-out;
+		-moz-transition: all 70ms ease-out;
+		-ms-transition: all 70ms ease-out;
+		-o-transition: all 70ms ease-out;
+		transition: all 70ms ease-out;
+	}
+	div.rotate30{
+		-ms-transform: rotate(30deg); 
+		-webkit-transform: rotate(30deg); 
+		transform: rotate(30deg);	
+		-webkit-transition: all 50ms ease-out;
+		-moz-transition: all 50ms ease-out;
+		-ms-transition: all 50ms ease-out;
+		-o-transition: all 50ms ease-out;
+		transition: all 50ms ease-out;					
+	}
+	div.rotate150{
+		-ms-transform: rotate(150deg); 
+		-webkit-transform: rotate(150deg); 
+		transform: rotate(150deg);	
+		-webkit-transition: all 50ms ease-out;
+		-moz-transition: all 50ms ease-out;
+		-ms-transition: all 50ms ease-out;
+		-o-transition: all 50ms ease-out;
+		transition: all 50ms ease-out;					
+	}
+	
+	div.rotate45{
+		-ms-transform: rotate(45deg); 
+		-webkit-transform: rotate(45deg); 
+		transform: rotate(45deg);	
+		-webkit-transition: all 100ms ease-out;
+		-moz-transition: all 100ms ease-out;
+		-ms-transition: all 100ms ease-out;
+		-o-transition: all 100ms ease-out;
+		transition: all 100ms ease-out;					
+	}
+	div.rotate135{
+		-ms-transform: rotate(135deg); 
+		-webkit-transform: rotate(135deg); 
+		transform: rotate(135deg);	
+		-webkit-transition: all 100ms ease-out;
+		-moz-transition: all 100ms ease-out;
+		-ms-transition: all 100ms ease-out;
+		-o-transition: all 100ms ease-out;
+		transition: all 100ms ease-out;					
+	}
+
+	div.navbar {
+		height:73px;
+		/*background:#385e97;*/
+	}
+	.detail-news  {
+		padding-top: 50px;
+	}
+
+	div.circle{	
+		border-radius: 50%;
+		width: 0px;
+		height: 0px; 
+		position:absolute;
+		top: 35px;
+		left: 36px;
+		/*background:#000;*/
+		opacity:1;
+		-webkit-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-moz-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-ms-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-o-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);	
+	}
+	div.circle.expand{
+		width:1200px;
+		height:1200px;
+		top: -560px;
+		left: -565px; 	
+		-webkit-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-moz-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-ms-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-o-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);					
+
+	}
+	div.menu {
+		height: 10px; 
+		width: 100%;
+		position: fixed;
+		top: 0px; left: 0px;
+	}
+	div.menu ul li {
+		list-style: none;
+		position:absolute;
+		visibility: hidden;
+		top:50px;;
+		left:0;
+		opacity:0;
+		width:320px;
+		text-align:center;
+		font-size:0px;
+		-webkit-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-moz-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-ms-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-o-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+	}
+	div.menu ul li a {
+		color:#4a89dc;
+		text-transform:uppercase;
+		text-decoration:none;	
+		letter-spacing:3px;			
+	}
+
+	div.menu li.animate{
+		font-size:21px;
+		opacity:1;
+		-webkit-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-moz-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-ms-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		-o-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+		display: contents;
+	}
+
+	/* end Header mobile*/
+	
 	.animate__animated.animate__bounce {
 		--animate-duration: 2s;
 	}
-
-
 	.nav-link-new{
 		color: #FFF !important;
 		font-size: 28px;
@@ -17,7 +196,7 @@
 	}
 	.chcolor .nav-link-new {
 		color: #000 !important ;
-		
+
 	}
 	.fp-controlArrow.fp-prev {
 		border-width: 15.5px 30px 15.5px 0 !important;
@@ -49,10 +228,13 @@
 		background-color: #FFF;
 	}
 	.button-color {
-		font-size: 20px;
+		font-size: 24px;
 		background-color: #545b6200 !important;
 		border: none;
 		margin-top: -5px;
+	}
+	img.img-flag {
+		width: 20px;
 	}
 	.icon-header {
 		font-size: 20px;
@@ -144,7 +326,7 @@
 	.detail-contact h2 {
 		font-size: 35px;
 		color: #FFF;
-		
+
 	}
 	.intro p.p-contact {
 		font-size: 24px;
@@ -174,7 +356,7 @@
 
 	}
 	.img-logo img {
-		width: 40%;
+		width: 50%;
 	}
 	#section6 {
 		background : url(<?=base_url()?>assets/img/bg-contact.png) center center;
@@ -269,7 +451,7 @@
 	.head-join td{
 		background-color: #00000082;
 	}
-	
+
 	table.table-join thead tr td {
 		padding: 1.5rem 0.625rem 1.5rem;
 	}
@@ -348,14 +530,33 @@
 	img.img-headerslid {
 		width: 100%;
 	}
+	img.img-flag.button-color {
+		width: 20px;
+	}
 
 
 	/* ------------------------------------         Products       ---------------------------------------  */
-	
+
 
 
 	/* ////////////////////////// Responsive ////////////////////////// */
 	@media (max-width: 480px) {
+		/*header nobile*/
+		.nav-link-new {
+			font-size: 25px;
+		}
+		#header {
+			padding: 0 !important;
+		}
+		.display-header {
+			visibility: visible;
+		}
+		div.y,div.x,div.z {
+			background-color: #EEE;
+		}
+		
+		/* end header nobile*/
+
 		.chcolor .nav-link-new {
 			color: #FFF !important ;
 		}
@@ -374,9 +575,6 @@
 		}
 		.img-logo img {
 			width: 100%;
-		}
-		.nav-color {
-			right: -20px;
 		}
 		.navbar-expand-lg .navbar-nav .nav-link-new {
 			padding: 5px;
@@ -432,20 +630,21 @@
 		}
 
 		.fp-tableCell {
-			padding: 10% 0px 0px;
+			padding: 20% 0px 0px;
 			vertical-align: unset;
 		}
 
 		.space-his {
-			margin-top: 20px;
+			/*margin-top: 20px;*/
+		}
+		.pt-mobile {
+			padding-top: 0 !important;
 		}
 		.tab .nav-tabs li a {
 			font-size: 20px !important;
 			padding: 5px 20px !important;
 		}
-		.tab .nav-tabs {
-			margin-top: 50px !important;
-		}
+		
 		.tab .nav-tabs li a.active:before {
 			content: "" !important;
 		}
@@ -460,15 +659,17 @@
 		}
 		.MISSIONP  {
 			font-size: 20px !important;
-			/*line-height: 40px !important;*/
+			line-height: 25px !important;
+			letter-spacing: .5px;
 		}
 		p.aboutnew-2 {
-			font-size: 25px !important;
+			font-size: 20px !important;
 			line-height: 25px !important;
 			letter-spacing: 0.5px;
 		}
 		h1.section-products {
 			font-size: 35px !important;
+			margin-top: 0 !important;
 		}
 
 		p.section-products {
@@ -513,7 +714,6 @@
 
 		.detail-news h2 {
 			font-size: 35px;
-			margin-top: 20px;
 		}
 		.news {
 			padding-top: 0;
@@ -603,9 +803,31 @@
 		ul.navbar-nav-new {
 			margin-left: 0;
 		}
+		p.aboutnew {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.detail-news  {
+			padding-top: 0;
+		}
+
 	} 
 
 	@media (max-width: 1023px)  and  (min-width: 768px) {
+		/*header nobile*/
+		#header {
+			padding: 0 !important;
+		}
+		.display-header {
+			visibility: visible;
+		}
+		div.y,div.x,div.z {
+			background-color: #EEE;
+		}
+		.navbar-nav-new {
+			margin :0;
+		}
+		/* end header nobile*/
 		.chcolor .nav-link-new {
 			color: #FFF !important ;
 		}

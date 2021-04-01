@@ -62,7 +62,7 @@
     <div class="container mt-3 all-product" data-aos="fade-up"
      data-aos-duration="1500">
         <div class="row">
-            <div class="col-lg-3 order-2 order-md-1">
+            <div class="col-lg-3 order-2 order-md-1 category-menu">
              <h3><b>หมวดสินค้าทั้งหมด</b></h3>
              <nav class="nav flex-column">
                 <a class="nav-link active" href="#"><i class="fas fa-chevron-right icon-cate"></i>วาล์ว</a>

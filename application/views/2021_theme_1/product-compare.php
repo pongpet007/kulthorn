@@ -22,7 +22,7 @@
  <?
  $this->load->view('2021_theme_1/inc/header1/header3')
  ?>
- <div class="container">
+ <div class="container header-top">
     <div class="row">
         <div class="col-lg-7 col-sm-6" data-aos="fade-down" data-aos-duration="1000">
 

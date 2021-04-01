@@ -506,6 +506,20 @@
 	a.goto-productdetail-2:hover {
 		color: #D6D6D6;
 	}
+	.detail-product h3 {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+	.detail-product p {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
 
 	@media only screen and (max-width: 415px) {
 		
@@ -576,9 +590,7 @@
 		.compare-product {
 			margin-right: 5px;
 		}
-		.nav-link-new {
-			font-size: 15px !important;
-		}
+		
 		.compare-product a {
 			padding: 10px 5px;
 			font-size: 18px;
@@ -588,7 +600,13 @@
 			font-size: 18px;
 		}
 		.picture-product .product-overlay {
-			bottom: 185px;
+			bottom: 169px;
+		}
+		.category-menu h3 {
+			font-size: 24px;
+		}
+		.detail-product h3 {
+			font-size: 24px;
 		}
 		.compare-detail-pro {
 			display: inline-block;
@@ -635,6 +653,9 @@
 		.ul-knowledge-share {
 			margin-top: 5px;
 			margin-bottom: 5px;
+		}
+		h3.h3-know-advice {
+			font-size: 24px;
 		}
 	}
 	@media (max-width: 992px) and (min-width: 768px) {
@@ -716,6 +737,9 @@
 		}
 	}
 	@media (max-width: 1399px) and (min-width: 1200px) {
+		.picture-product .overlay-img-2 {
+			bottom: 185px;
+		}
 		.button-contact {
 			vertical-align: 20px;
 		}
@@ -724,6 +748,30 @@
 		}
 		.picture-product .overlay-img-4 {
 			bottom: 380px;	
+		}
+		.header-top {
+			margin-top: 70px !important;
+		}
+		.compare-detail-pro {
+			padding-left: 0;
+		}
+		.quotation-compare a {
+			padding: 10px 20px;
+		}
+		.delete-compare a {
+			padding: 10px 10px;
+		}
+		.compare-product-new h3 {
+			font-size: 24px;
+			letter-spacing: .5px;
+		}
+		.compare-product-new p {
+			font-size: 24px;
+			letter-spacing: .5px;
+		}
+		.compare-product-new h4 {
+			font-size: 24px;
+			letter-spacing: .5px;
 		}
 	}
 	@media (min-width: 1400px) {
@@ -736,6 +784,7 @@
 		.share-face , .share-line , .share-twitter , .share-mail , .share-print  {
 			padding: 0 0;
 		}
-
 	}
+
+
 </style>

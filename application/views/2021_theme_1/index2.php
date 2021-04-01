@@ -59,7 +59,7 @@
         <li data-menuanchor="seventhPage"><a href="#seventhPage">07.ติดต่อเรา</a></li>
       </ul> -->
       <div class="container-fluid headerPage">
-        <div class="row" id="row-header">
+        <div class="row row-mobile" id="row-header">
           <div class="col-lg-1 col-sm-2 d-none d-sm-block is-animated">
 
             <div >
@@ -129,7 +129,7 @@
           </div>
         </div>
 
-
+        <!-- Menu Header mobile -->
 
         <div class="d-lg-none d-md-none d-sm-none col-12 is-animated"data-aos="fade-left"data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
           <nav class="navbar navbar-expand-lg navbar-light /*bg-light*/ nav-color">

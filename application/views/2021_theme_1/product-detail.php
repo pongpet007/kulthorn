@@ -36,7 +36,7 @@
   ?>
   <div class="container header-top" data-aos="fade-down"  data-aos-easing="linear"  data-aos-duration="1500">
     <div class="row">
-      <div class="col-lg-7 col-sm-6">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
 
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -48,11 +48,7 @@
         </nav>
 
       </div>
-      <div class="search-product col-lg-5 col-sm-6 pt-2 pb-1">
-
-
-
-      </div>
+      
     </div>
 
   </div><!--/////breadcrumb -->
@@ -210,7 +206,7 @@
 </div>
 </div>
 
-<div class="container mt-5"  data-aos="fade-down-right" data-aos-duration="1000">
+<div class="container mt-5"  data-aos="zoom-out" data-aos-duration="1000">
   <div class="row">
     <div class="col-lg-12">
       <div class="foot-detail">

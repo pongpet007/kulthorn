@@ -593,6 +593,13 @@
 		.tab .tab-content {
 			padding: 0px 20px 20px !important;
 		}
+		.nav-color {
+			float: none;
+			padding: 0;
+		}
+		.row-mobile {
+			padding: 0;
+		}
 
 	} 
 

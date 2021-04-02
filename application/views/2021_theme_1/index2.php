@@ -67,26 +67,21 @@
           </li>
 
           <li class="nav-item  nav-8" id="nav-color-8">
-            <div class="dropdown nav-link-new show changlang" id="changlang">
-              <a class="btn btn-secondary dropdown-toggle button-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="<?= base_url()?>assets/img/thai-flag.png" alt="kulthorn" class="img-flag" style="margin-top: -5px;"> ภาษาไทย
+            <div class="facebook-1 nav-link nav-link-new">  
+              <a class="text-reset" href="#">
+                <img src="<?= base_url()?>assets/img/thai-flag.png" alt="kulthorn" class="img-flag" style="margin-top: -5px;"> ไทย
               </a>
-
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item drop-new" href="#">Action</a>
-                <a class="dropdown-item drop-new" href="#">Another action</a>
-                <a class="dropdown-item drop-new" href="#">Something else here</a>
-              </div>
+              <a class="text-reset" href="#">
+                <img src="<?= base_url()?>assets/img/flag-eng.png" alt="kulthorn" class="img-flag" style="margin-top: -5px;"> Eng
+              </a>
             </div>
           </li>
           <li class="nav-item nav-item-new nav-9">  
-            <a class="nav-link nav-link-new" href=""><i class="fab fa-facebook-f icon-header"></i></a>
-          </li>
-          <li class="nav-item nav-item-new nav-9">  
-            <a class="nav-link nav-link-new" href=""><i class="fab fa-twitter icon-header"></i></a>
-          </li>
-          <li class="nav-item nav-item-new nav-9">  
-            <a class="nav-link nav-link-new" href=""><i class="fab fa-instagram icon-header"></i></a>
+            <div class="facebook-1 nav-link nav-link-new">
+              <a class="text-reset" href="https://facebook.com"><i class="fab fa-facebook-f icon-header" style="display: inline;"></i></a>
+              <a class="text-reset" href="https://twitter.com"><i class="fab fa-twitter icon-header" style="display: inline;"></i></a>
+              <a class="text-reset" href="https://instagram.com"><i class="fab fa-instagram icon-header"></i></a>
+            </div>
           </li>
 
         </ul>
@@ -267,7 +262,7 @@
             </div>
           </div>
         </div>
-        <div class="slide is-animated" id="slide2" style="background-image: url('assets/img/bg-banner-2.jpg');" >
+        <div class="slide is-animated" id="slide2" style="background-image: url('assets/img/bg-banner-2.jpg?<?= rand()?>');" >
           <div class="container">
             <div class="row">
               <div class="col-lg-7" style="margin-top: 40px;">
@@ -275,8 +270,8 @@
                   <div class="col-lg-12">
                     <img class="img-headerslide is-animated"  src="<?=base_url()?>assets/img/baanner-2-1.png" alt="kulthorn">
                   </div>
-                  <div class="col-lg-12">
-                    <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-2.png" alt="kulthorn" >
+                  <div class="col-lg-12 d-sm-block d-none ">
+                    <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/pipe-04.png" alt="kulthorn" >
                   </div>
                 </div>
               </div>

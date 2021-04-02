@@ -32,7 +32,7 @@
 		height: 40px; 
 		width: 40px;
 		position: absolute;
-		top: 11px; 
+		top: 0px; 
 		left: 21px;
 		cursor: pointer;	
 	}
@@ -189,10 +189,10 @@
 	}
 
 	.fp-controlArrow.fp-prev {
-		left: 60px;
+		left: 50px;
 	}
 	.fp-controlArrow.fp-next {
-		right: 60px;
+		right: 50px;
 	}
 	.chcolor .nav-link-new {
 		color: #000 !important ;
@@ -546,6 +546,9 @@
 
 	/* ////////////////////////// Responsive ////////////////////////// */
 	@media (max-width: 480px) {
+		#fp-nav ul {
+			background-color: #dddddda3;
+		}
 		/*header nobile*/
 		.nav-link-new {
 			font-size: 25px;
@@ -793,7 +796,7 @@
 		}
 		img.img-slide-2 {
 			text-align: center;
-			margin-top: 300px;
+			margin-top: 200px;
 		}
 		.tab .tab-content {
 			padding: 0px 20px 20px !important;

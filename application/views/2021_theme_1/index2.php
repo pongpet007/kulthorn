@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Fixed headers - fullPage.js</title>
+  <title>KULTHORN FullPage</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,7 +39,6 @@
     <div class="screen">
       <div class="navbar"></div>
       <div class="list">
-
       </div>
 
       <div class="circle"></div>
@@ -70,7 +69,7 @@
           <li class="nav-item  nav-8" id="nav-color-8">
             <div class="dropdown nav-link-new show changlang" id="changlang">
               <a class="btn btn-secondary dropdown-toggle button-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="<?= base_url()?>assets/img/thai-flag.png" class="img-flag" style="margin-top: -5px;"> ภาษาไทย
+                <img src="<?= base_url()?>assets/img/thai-flag.png" alt="kulthorn" class="img-flag" style="margin-top: -5px;"> ภาษาไทย
               </a>
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -109,7 +108,7 @@
 
         <div >
           <div class="img-logo " data-aos="fade-down-right" id="img-logo-header">
-            <img src="<?= base_url()?>/assets/img/logo-bg-white.png" >
+            <img src="<?= base_url()?>/assets/img/logo-bg-white.png" alt="kulthorn">
           </div>
         </div>
 
@@ -148,7 +147,7 @@
               <li class="nav-item  nav-8 nav-color-8" id="">
                 <div class="dropdown nav-link-new show changlang" id="changlang">
                   <a class="btn btn-secondary dropdown-toggle button-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="<?= base_url()?>assets/img/thai-flag.png" class="img-flag" style="margin-top: -5px;"> ภาษาไทย
+                    <img src="<?= base_url()?>assets/img/thai-flag.png" alt="kulthorn" class="img-flag" style="margin-top: -5px;"> ภาษาไทย
                   </a>
 
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -249,51 +248,51 @@
 
     <div id="fullpage">
       <div class="section firstPage" id="section0">
-        <div class="slide" id="slide1" style="background-image: url('assets/img/bg-banner-1.jpg');">
+        <div class="slide" id="slide1" style="background-image: url('assets/img/bg-banner-1.jpg');" alt="kulthorn">
           <div class="container">
             <div class="row">
               <div class="col-lg-4 " >      
-                <img class="img-headerslide-1 is-animated" data-aos="flip-up" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-1.png">
+                <img class="img-headerslide-1 is-animated" data-aos="flip-up" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-1.png" alt="kulthorn">
               </div>
               <div class="col-lg-8">
                 <div class="row">
                   <div class="col-lg-12">
-                    <img class="img-headerslide is-animated" data-aos="flip-down" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-2.png" >
+                    <img class="img-headerslide is-animated" data-aos="flip-down" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-2.png" alt="kulthorn">
                   </div>
                   <div class="col-lg-12">
-                    <img class="img-headerslide is-animated" data-aos="flip-right" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-3.png">
+                    <img class="img-headerslide is-animated" data-aos="flip-right" style="transition-duration: 1s !important;   animation-delay: 0s" src="<?=base_url()?>assets/img/baanner-1-3.png" alt="kulthorn">
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="slide is-animated" id="slide2" style="background-image: url('assets/img/bg-banner-2.jpg');">
+        <div class="slide is-animated" id="slide2" style="background-image: url('assets/img/bg-banner-2.jpg');" >
           <div class="container">
             <div class="row">
               <div class="col-lg-7" style="margin-top: 40px;">
                 <div class="row">
                   <div class="col-lg-12">
-                    <img class="img-headerslide is-animated"  src="<?=base_url()?>assets/img/baanner-2-1.png">
+                    <img class="img-headerslide is-animated"  src="<?=base_url()?>assets/img/baanner-2-1.png" alt="kulthorn">
                   </div>
                   <div class="col-lg-12">
-                    <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-2.png" >
+                    <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-2.png" alt="kulthorn" >
                   </div>
                 </div>
               </div>
               <div class="col-lg-5">
-                <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-3.png" >
+                <img class="img-headerslide is-animated" src="<?=base_url()?>assets/img/baanner-2-3.png"  alt="kulthorn">
               </div>
             </div>
           </div>
         </div>
-        <div class="slide" id="slide3" style="background-image: url('assets/img/bg-banner-3.jpg');">
+        <div class="slide" id="slide3" style="background-image: url('assets/img/bg-banner-3.jpg');" alt="kulthorn">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
                 <div class="row">
                   <div class="col-lg-12">
-                    <img class="img-slide-2 is-animated" src="<?=base_url()?>assets/img/baanner-3-1.png" >
+                    <img class="img-slide-2 is-animated" src="<?=base_url()?>assets/img/baanner-3-1.png" alt="kulthorn" >
                   </div>
                 </div>
               </div>
@@ -396,7 +395,7 @@
                   <div role="tabpanel" class="tab-pane fade in active show is-animated" id="Section1">
                     <div class="owl-carousel owl-theme owl-carousel-1">
                       <div class="item">
-                        <a href="#"><img src="<?=base_url()?>/image_new/About1.jpg"></a>
+                        <a href="#"><img src="<?=base_url()?>/image_new/About1.jpg" alt="kulthorn"></a>
                         <p class="about-year">
                           <span>
                             2508
@@ -407,7 +406,7 @@
                         </p>
                       </div>
                       <div class="item">
-                        <a href="#"><img src="<?=base_url()?>/image_new/About2.jpg"></a>
+                        <a href="#"><img src="<?=base_url()?>/image_new/About2.jpg" alt="kulthorn"></a>
                         <p class="about-year">2510<span>
                         </span></p>
                         <p class="aboutnew">
@@ -444,7 +443,7 @@
                       <div class="col-lg-12 col-12 is-animated">
                         <div class="row">
                           <div class="col-lg-6">
-                            <img src="<?=base_url()?>/image_new/About3.jpg">
+                            <img src="<?=base_url()?>/image_new/About3.jpg" alt="kulthorn">
                           </div>
                           <div class="col-lg-6 pt-60 pt-mobile">
                             <h1 class="MISSIONH1">OUR MISSION</h1>
@@ -462,7 +461,7 @@
                             <p class="MISSIONP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
                           </div>
                           <div class="col-lg-6">
-                            <img src="<?=base_url()?>/image_new/About4.jpg">
+                            <img src="<?=base_url()?>/image_new/About4.jpg" alt="kulthorn">
                           </div>
                         </div>
                       </div>
@@ -472,8 +471,8 @@
                   <div role="tabpanel" class="tab-pane fade " id="Section3">
                     <div class="owl-carousel owl-theme owl-carousel-2">
                       <div class="item is-animated">
-                        <img src="<?=base_url()?>/image_new/About5.jpg">
-                        <img src="<?=base_url()?>/image_new/About6.png">
+                        <img src="<?=base_url()?>/image_new/About5.jpg" alt="kulthorn">
+                        <img src="<?=base_url()?>/image_new/About6.png" alt="kulthorn">
                         <p class="aboutnew-2">
                           <span style="overflow: hidden;text-overflow: ellipsis;
                           display: -webkit-box;
@@ -482,8 +481,8 @@
                         </p>
                       </div>
                       <div class="item is-animated">
-                        <img src="<?=base_url()?>/image_new/About7.jpg">
-                        <img src="<?=base_url()?>/image_new/About8.png">
+                        <img src="<?=base_url()?>/image_new/About7.jpg" alt="kulthorn">
+                        <img src="<?=base_url()?>/image_new/About8.png" alt="kulthorn">
                         <p class="aboutnew-2">
                           <span style="overflow: hidden;text-overflow: ellipsis;
                           display: -webkit-box;
@@ -492,8 +491,8 @@
                         </p>
                       </div>
                       <div class="item is-animated">
-                        <img src="<?=base_url()?>/image_new/About9.jpg">
-                        <img src="<?=base_url()?>/image_new/About10.png">
+                        <img src="<?=base_url()?>/image_new/About9.jpg" alt="kulthorn">
+                        <img src="<?=base_url()?>/image_new/About10.png" alt="kulthorn">
                         <p class="aboutnew-2">
                           <span style="overflow: hidden;text-overflow: ellipsis;
                           display: -webkit-box;
@@ -613,13 +612,13 @@
                     <div style="padding-left: 15px; padding-right: 15px;">
                       <div class="row">
                         <div class="cate_name_pro col-md-12 col-8">
-                          <a href="<?=base_url('Products')?>">
+                          <a href="<?=base_url('Products')?>" alt="kulthorn">
                             <h1>คอมเพรสเซอร์</h1>
                             <h2>Compressors</h2>
                           </a>
                         </div>
                         <div class=" d-sm-none col-4">
-                          <img src="<?=base_url()?>image_new/product1.jpg">
+                          <img src="<?=base_url()?>image_new/product1.jpg" alt="kulthorn">
                         </div>
                       </div>
 
@@ -637,7 +636,7 @@
                         </a>
                       </div>
                       <div class=" d-sm-none col-4">
-                        <img src="<?=base_url()?>image_new/product2.jpg">
+                        <img src="<?=base_url()?>image_new/product2.jpg" alt="kulthorn">
                       </div>
                     </div>
                   </div>
@@ -654,7 +653,7 @@
                       </a>
                     </div>
                     <div class=" d-sm-none col-4">
-                      <img src="<?=base_url()?>image_new/product3.jpg">
+                      <img src="<?=base_url()?>image_new/product3.jpg" alt="kulthorn">
                     </div>
                   </div>
                 </div>
@@ -671,7 +670,7 @@
                       </a>
                     </div>
                     <div class=" d-sm-none col-4">
-                      <img src="<?=base_url()?>image_new/product4.jpg">
+                      <img src="<?=base_url()?>image_new/product4.jpg" alt="kulthorn">
                     </div>
                   </div>
                 </div>
@@ -688,7 +687,7 @@
                       </a>
                     </div>
                     <div class=" d-sm-none col-4">
-                      <img src="<?=base_url()?>image_new/product5.jpg">
+                      <img src="<?=base_url()?>image_new/product5.jpg" alt="kulthorn">
                     </div>
                   </div>
                 </div>
@@ -705,7 +704,7 @@
                       </a>
                     </div>
                     <div class=" d-sm-none col-4">
-                      <img src="<?=base_url()?>image_new/product6.jpg">
+                      <img src="<?=base_url()?>image_new/product6.jpg" alt="kulthorn">
                     </div>
                   </div>
                 </div>
@@ -715,22 +714,22 @@
         </div>
         <div class="col-lg-8 col-md-8 d-none d-sm-block is-animated">
           <div class=" product-hide-1 active-products animate__backInUp" id="img-active">
-            <img style="" class="img-index-products"  src="<?=base_url()?>image_new/product1.jpg">
+            <img style="" class="img-index-products"  src="<?=base_url()?>image_new/product1.jpg" alt="kulthorn">
           </div>
           <div class="product-hide-2 " id="img-anime-pro-2">
-            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product2.jpg">
+            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product2.jpg" alt="kulthorn">
           </div>
           <div class="product-hide-3" id="img-anime-pro-3">
-            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product3.jpg">
+            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product3.jpg" alt="kulthorn">
           </div>
           <div class="product-hide-4" id="img-anime-pro-4">
-            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product4.jpg">
+            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product4.jpg" alt="kulthorn">
           </div>
           <div class="product-hide-5" id="img-anime-pro-5">
-            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product5.jpg">
+            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product5.jpg" alt="kulthorn">
           </div>
           <div class="product-hide-6" id="img-anime-pro-6">
-            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product6.jpg">
+            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product6.jpg" alt="kulthorn">
           </div>
         </div>
       </div>
@@ -827,7 +826,7 @@
 
 </script>
 <style type="text/css">
- 
+
   .active-products {
     display: block !important;
   }
@@ -864,7 +863,7 @@
 
             <div class="item ">
               <div class="know ">
-                <a href="#"><img src="<?= base_url()?>assets/img/know-1.png"></a>
+                <a href="#"><img src="<?= base_url()?>assets/img/know-1.png" alt="kulthorn"></a>
                 <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
                 <span>
                   เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
@@ -877,7 +876,7 @@
 
             <div class="item ">
               <div class="know">
-                <a href="#"><img src="<?= base_url()?>assets/img/know-2.png"></a>
+                <a href="#"><img src="<?= base_url()?>assets/img/know-2.png" alt="kulthorn"></a>
                 <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
                 <span>
                   เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
@@ -890,7 +889,7 @@
 
             <div class="item ">
               <div class="know">
-                <a href="#"><img src="<?= base_url()?>assets/img/know-3.png"></a>
+                <a href="#"><img src="<?= base_url()?>assets/img/know-3.png" alt="kulthorn"></a>
                 <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
                 <span>
                   เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
@@ -903,7 +902,7 @@
 
             <div class="item ">
               <div class="know">
-                <a href="#"><img src="<?= base_url()?>assets/img/know-4.png"></a>
+                <a href="#"><img src="<?= base_url()?>assets/img/know-4.png" alt="kulthorn"></a>
                 <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
                 <span>
                   เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
@@ -916,7 +915,7 @@
 
             <div class="item ">
               <div class="know">
-                <a href="#"><img src="<?= base_url()?>assets/img/know-2.png"></a>
+                <a href="#"><img src="<?= base_url()?>assets/img/know-2.png" alt="kulthorn"></a>
                 <a href="#"><h2>หัวข้อเนื้อหาเกร็ดความรู้</h2></a>
                 <span>
                   เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
@@ -976,7 +975,7 @@
             <div class="owl-carousel owl-theme owl-carousel-4">
               <div class="item">
                 <div class="news">
-                  <a href="#"><img src="<?= base_url()?>assets/img/news-1.png"></a>
+                  <a href="#"><img src="<?= base_url()?>assets/img/news-1.png" alt="kulthorn"></a>
                   <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
                   <span>
                     เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
@@ -988,7 +987,7 @@
               </div>
               <div class="item">
                 <div class="news">
-                  <a href="#"><img src="<?= base_url()?>assets/img/news-2.png"></a>
+                  <a href="#"><img src="<?= base_url()?>assets/img/news-2.png" alt="kulthorn"></a>
                   <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
                   <span>
                     เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
@@ -1000,7 +999,7 @@
               </div>
               <div class="item">
                 <div class="news">
-                  <a href="#"><img src="<?= base_url()?>assets/img/news-3.png"></a>
+                  <a href="#"><img src="<?= base_url()?>assets/img/news-3.png" alt="kulthorn"></a>
                   <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
                   <span>
                     เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
@@ -1012,7 +1011,7 @@
               </div>
               <div class="item">
                 <div class="news">
-                  <a href="#"><img src="<?= base_url()?>assets/img/news-4.png"></a>
+                  <a href="#"><img src="<?= base_url()?>assets/img/news-4.png" alt="kulthorn"></a>
                   <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
                   <span>
                     เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
@@ -1024,7 +1023,7 @@
               </div>
               <div class="item">
                 <div class="news">
-                  <a href="#"><img src="<?= base_url()?>assets/img/news-4.png"></a>
+                  <a href="#"><img src="<?= base_url()?>assets/img/news-4.png" alt="kulthorn"></a>
                   <a href="#"><h2>หัวข้อเนื้อหาข่าวสาร</h2></a>
                   <span>
                     เกร็ดความรู้และบทความน่าสนใจที่ทางกุลธรแนะนำ
@@ -1192,21 +1191,21 @@
     </div>
   </div>
 
-  <footer>
-    <div class="col-md-12 copyright">
-      <div class="detail-copy">
-        © Copyright <?echo date('Y')?>. All Rights Reserved.
-      </div>
+
+
+</div>
+
+<footer>
+  <div class="col-md-12 copyright">
+    <div class="detail-copy">
+      © Copyright <?echo date('Y')?>. All Rights Reserved.
     </div>
-  </footer>
-
-
-</div>
-
-
+  </div>
+</footer>
 </div>
 </div>
 </div>
+
 
 
 <script src="<?=base_url()?>assets/aos-master/dist/aos.js"></script>
@@ -1220,6 +1219,7 @@
 <script type="text/javascript" src="<?=base_url()?>assets/fullpage/examples.js"></script>
 <script src="<?=base_url()?>assets/owlcarousel/highlight.js"></script>
 <script src="<?=base_url()?>assets/owlcarousel/app.js"></script>
+<script src="<?=base_url()?>assets/js/popper.js"></script>
 
 <script type="text/javascript">
   document.documentElement.style.setProperty('--animate-duration', '.5s');

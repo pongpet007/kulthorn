@@ -536,6 +536,9 @@
 	img.img-index-products {
 		margin-top: 70px;
 	}
+	.fourth {
+		margin-top: 60px;
+	}
 
 	/* ------------------------------------         Products       ---------------------------------------  */
 
@@ -812,6 +815,9 @@
 		.detail-news  {
 			padding-top: 0;
 		}
+		.fourth {
+			margin-top: 0;
+		}
 
 	} 
 
@@ -891,7 +897,7 @@
 			margin-bottom: 180px;
 		}
 		.copyright {
-			bottom: 75px;
+			bottom: 60px;
 		}
 		.nav-1:before , .nav-2:before , .nav-3:before , .nav-4:before , .nav-5:before , .nav-6:before , .nav-8:before {
 			width: 0;
@@ -926,6 +932,15 @@
 		}
 		.cate_name_pro h1 , .cate_name_pro h2 {
 			font-size: 24px !important;
+		}
+		h1.section-products {
+			margin-top: 30px !important;
+		}
+		.fourth {
+			margin-top: 0px;
+		}
+		.detail-news {
+			padding-top: 0px;
 		}
 
 	}
@@ -962,12 +977,21 @@
 			font-size: 28px;
 		}
 		.copyright {
-			bottom: 20px;
+			bottom: 40px;
 			position: relative;
 			padding: 10px 0;
 		}
+		.fourth {
+			margin-top: 0; 
+		}
+		.detail-news {
+			padding-top: 0;
+		}
 		.img-logo img {
 			width: 100%;
+		}
+		h1.section-products {
+			margin-top: 0 !important;
 		}
 
 		.nav-1:before , .nav-2:before , .nav-3:before , .nav-4:before , .nav-5:before , .nav-6:before , .nav-8:before {
@@ -1025,10 +1049,7 @@
 			left: 50px;
 		}
 		.detail-know h2 {
-			margin-top: 60px;
-		}
-		.detail-news h2 {
-			margin-top: 60px;
+			margin-top: 70px;
 		}
 		.fp-controlArrow.fp-next {
 			right: 50px;
@@ -1044,6 +1065,25 @@
 		}
 		.nav-link-new {
 			font-size: 25px;
+		}
+		.intro p.p-news-detail {
+			padding-top: 10px;
+			letter-spacing: .5px;
+		}
+		.detail-news {
+			padding-top: 60px;
+		}
+		.products-catagory-bt.active .products-catagory-name h1 {
+			font-size: 30px !important;
+		}
+		.products-catagory-bt.active .products-catagory-name h2 {
+			font-size: 30px !important;
+		}
+		.products-catagory-bt .products-catagory-name h1 {
+			font-size: 30px !important;
+		}
+		.products-catagory-bt .products-catagory-name h2 {
+			font-size: 30px !important;
 		}
 
 	}

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
     <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/vendor/fontawesome-free/css/all.min.css">
     <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
@@ -14,6 +17,10 @@
     <?php $this->load->view('2021_theme_1/inc/css-products'); ?>
     <?php $this->load->view('2021_theme_1/inc/css'); ?>
     <title>Products</title>
+
+    <meta name="description" content="Kulthorn" />
+    <meta name="keywords"  content="Kulthorn" />
+
 </head>
 <body>
 
@@ -49,7 +56,7 @@
                     <div class="form-group find-pro">
                         <input type="search" class="form-control" id="search" placeholder="ค้นหาสินค้า...">
                     </div>
-                    <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+                    <button type="submit" class="btn-search" name="search-product"><i class="fas fa-search"></i></button>
                 </form>
 
             </div>
@@ -63,14 +70,14 @@
     data-aos-duration="1500">
     <div class="row">
         <div class="col-lg-3 order-2 order-md-1 category-menu">
-         <h3><b>หมวดสินค้าทั้งหมด</b></h3>
-         <nav class="nav flex-column">
-            <a class="nav-link active" href="#"><i class="fas fa-chevron-right icon-cate"></i>วาล์ว</a>
-            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>คอมเพรสเซอร์</a>
-            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>อุปกรณ์ทำความเย็น</a>
-            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>รถตัดหญ้า</a>
-            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>ปั๊มน้ำ</a>
-            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>สปริงเกอร์</a>
+           <h3><b>หมวดสินค้าทั้งหมด</b></h3>
+           <nav class="nav flex-column">
+            <a href="#" class="nav-link active" ><i class="fas fa-chevron-right icon-cate"></i>วาล์ว</a>
+            <a href="#" class="nav-link" ><i class="fas fa-chevron-right icon-cate"></i>คอมเพรสเซอร์</a>
+            <a href="#" class="nav-link" ><i class="fas fa-chevron-right icon-cate"></i>อุปกรณ์ทำความเย็น</a>
+            <a href="#" class="nav-link" ><i class="fas fa-chevron-right icon-cate"></i>รถตัดหญ้า</a>
+            <a href="#" class="nav-link" ><i class="fas fa-chevron-right icon-cate"></i>ปั๊มน้ำ</a>
+            <a href="#" class="nav-link" ><i class="fas fa-chevron-right icon-cate"></i>สปริงเกอร์</a>
         </nav>
 
         <h3 class="mt-5"><b>แบรนด์สินค้า</b></h3>
@@ -95,7 +102,7 @@
 
             <div class= "col-6 col-lg-4 ">
                 <div class ="picture-product">
-                    <img src="image_new/p-1.jpg">
+                    <img src="image_new/p-1.jpg" alt="kulthorn">
                     <div class="overlay-img-2 product-overlay">
                         <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
                             <h3>
@@ -119,7 +126,7 @@
 
             <div class= "col-6 col-lg-4 ">
                 <div class ="picture-product">
-                    <img src="image_new/p-1.jpg">
+                    <img src="image_new/p-1.jpg" alt="kulthorn">
                     <div class="overlay-img-2 product-overlay">
                         <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
                             <h3>
@@ -142,7 +149,7 @@
 
             <div class= "col-6 col-lg-4 ">
                 <div class ="picture-product">
-                    <img src="image_new/p-1.jpg">
+                    <img src="image_new/p-1.jpg" alt="kulthorn"> 
                     <div class="overlay-img-2 product-overlay">
                         <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
                             <h3>
@@ -165,31 +172,7 @@
 
             <div class= "col-6 col-lg-4 ">
                 <div class ="picture-product">
-                    <img src="image_new/p-1.jpg">
-                    <div class="overlay-img-2 product-overlay">
-                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
-                            <h3>
-                                ชมรายละเอียดสินค้า
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="detail-product">
-                    <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
-                        <h3>
-                            เครื่องทำความเย็น / CONDENSING UNIT
-                        </h3>
-                    </a>
-                    <p>
-                        บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                    </p>
-                </div>
-            </div>
-
-
-            <div class= "col-6 col-lg-4 ">
-                <div class ="picture-product">
-                    <img src="image_new/p-1.jpg">
+                    <img src="image_new/p-1.jpg"alt="kulthorn">
                     <div class="overlay-img-2 product-overlay">
                         <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
                             <h3>
@@ -213,7 +196,31 @@
 
             <div class= "col-6 col-lg-4 ">
                 <div class ="picture-product">
-                    <img src="image_new/p-1.jpg">
+                    <img src="image_new/p-1.jpg" alt="kulthorn">
+                    <div class="overlay-img-2 product-overlay">
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                            <h3>
+                                ชมรายละเอียดสินค้า
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="detail-product">
+                    <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                        <h3>
+                            เครื่องทำความเย็น / CONDENSING UNIT
+                        </h3>
+                    </a>
+                    <p>
+                        บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
+                    </p>
+                </div>
+            </div>
+
+
+            <div class= "col-6 col-lg-4 ">
+                <div class ="picture-product">
+                    <img src="image_new/p-1.jpg" alt="kulthorn">
                     <div class="overlay-img-2 product-overlay">
                         <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
                             <h3>

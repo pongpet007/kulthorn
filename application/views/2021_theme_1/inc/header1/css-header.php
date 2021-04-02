@@ -472,7 +472,16 @@
 		}
 	}
 
-	@media (min-width: 1600px) {
+	@media (max-width: 1699px) and (min-width: 1600px) {
+		.navbar-expand-lg .navbar-nav .nav-link-new {
+			padding: 0 10px;
+			font-size: 28px !important;
+		}
+		.header-top {
+			margin-top: 80px;
+		}
+	}
+	@media (min-width: 1700px) {
 		.navbar-expand-lg .navbar-nav .nav-link-new {
 			padding: 0 20px;
 			font-size: 28px !important;

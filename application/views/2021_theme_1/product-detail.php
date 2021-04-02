@@ -29,6 +29,10 @@
   <?php $this->load->view('2021_theme_1/inc/css'); ?>
   
   <title>Products detail</title>
+  <meta name="description" content="Kulthorn" />
+  <meta name="keywords"  content="Kulthorn" />
+
+
 </head>
 <body>
   <?
@@ -65,11 +69,11 @@
 
 
 
-  <div class="container mt-3 all-product" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+  <div class="container mt-3 all-product" >
     <div class="row">
       <div class="col-lg-5">
         <div class="" >
-          <img src="<?= base_url()?>assets/img/product-1.png" style="width: 100%;">
+          <img src="<?= base_url()?>assets/img/product-1.png" style="width: 100%;" alt="kulthorn">
         </div>
       </div>
       <div class="col-lg-7">
@@ -130,7 +134,7 @@
 
 
           <div>
-            <img  class="hr-product" src="<?=base_url()?>assets/img/line.png">
+            <img  class="hr-product" src="<?=base_url()?>assets/img/line.png" alt="kulthorn">
           </div>
 
           <div class="tags-pro">
@@ -171,38 +175,35 @@
             </a>
           </div>
 
-          <div class="compare-product" data-aos="fade-left"
+          <div class="compare-product" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            <a href="#">
+              <i class="fas fa-sync-alt color-columns"></i>
+              <span>เปรียบเทียบผลิตภัณฑ์</span>
+            </a>
+          </div>
+
+          <div class="contact-we"
+          data-aos="fade-left"
           data-aos-anchor="#example-anchor"
           data-aos-offset="500"
-          data-aos-duration="700">
-          <a href="#">
-            <i class="fas fa-sync-alt color-columns"></i>
-            <span>เปรียบเทียบผลิตภัณฑ์</span>
-          </a>
-        </div>
+          data-aos-duration="900">
+          <div class="dropdown nav-link-new show ">
+            <a class="btn btn-secondary dropdown-toggle button-contact" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-comments color-comment"></i>&nbsp;ติดต่อเรา
+            </a>
 
-        <div class="contact-we"
-        data-aos="fade-left"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="500"
-        data-aos-duration="900">
-        <div class="dropdown nav-link-new show ">
-          <a class="btn btn-secondary dropdown-toggle button-contact" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-comments color-comment"></i>&nbsp;ติดต่อเรา
-          </a>
-
-          <div class="dropdown-menu drop-contact" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item drop-new" href="#">แอดไลน์</a>
-            <a class="dropdown-item drop-new" href="#">โทรศัพย์</a>
-            <a class="dropdown-item drop-new" href="#">เฟสบุค</a>
+            <div class="dropdown-menu drop-contact" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item drop-new" href="#">แอดไลน์</a>
+              <a class="dropdown-item drop-new" href="#">โทรศัพย์</a>
+              <a class="dropdown-item drop-new" href="#">เฟสบุค</a>
+            </div>
           </div>
         </div>
       </div>
+
+
     </div>
-
-
   </div>
-</div>
 </div>
 </div>
 
@@ -238,7 +239,7 @@
           <div class="item">           
             <div class ="picture-product">
               <a href="#">
-                <img src="<?= base_url()?>assets/img/pro-about-1.png" style="width: 100%;">
+                <img src="<?= base_url()?>assets/img/pro-about-1.png" style="width: 100%;" alt="kulthorn">
               </a>
                 <!-- <div class="overlay-img-3 pro-about">
                   <h3>
@@ -262,7 +263,7 @@
             <div class="item">           
               <div class ="picture-product">
                 <a href="#">
-                  <img src="<?= base_url()?>assets/img/pro-about-2.png" style="width: 100%;">
+                  <img src="<?= base_url()?>assets/img/pro-about-2.png" style="width: 100%;" alt="kulthorn">
                 </a>
                 <!-- <div class="overlay-img-3 pro-about">
                   <h3>
@@ -286,7 +287,7 @@
             <div class="item">           
               <div class ="picture-product">
                 <a href="#">
-                  <img src="<?= base_url()?>assets/img/pro-about-3.png" style="width: 100%;">
+                  <img src="<?= base_url()?>assets/img/pro-about-3.png" style="width: 100%;" alt="kulthorn">
                 </a>
                 <!-- <div class="overlay-img-3 pro-about">
                   <h3>
@@ -310,7 +311,7 @@
             <div class="item">           
               <div class ="picture-product">
                 <a href="#">
-                  <img src="<?= base_url()?>assets/img/pro-about-1.png" style="width: 100%;">
+                  <img src="<?= base_url()?>assets/img/pro-about-1.png" style="width: 100%;" alt="kulthorn">
                 </a>
                 <!-- <div class="overlay-img-3 pro-about">
                   <h3>
@@ -334,7 +335,7 @@
             <div class="item">           
               <div class ="picture-product">
                 <a href="#">
-                  <img src="<?= base_url()?>assets/img/pro-about-3.png" style="width: 100%;">
+                  <img src="<?= base_url()?>assets/img/pro-about-3.png" style="width: 100%;" alt="kulthorn">
                 </a>
                <!--  <div class="overlay-img-3 pro-about">
                   <h3>

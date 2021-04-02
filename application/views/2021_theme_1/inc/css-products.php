@@ -557,7 +557,8 @@
 		font-size: 24px;	
 	}
 	.img-products-quotation img{
-		width: 150px;
+		max-width: 100px;
+		width: 100%;
 	}
 	input.pro-cart {
 		background: transparent none repeat scroll 0 0;
@@ -720,7 +721,7 @@
 		}
 		.delete-compare {
 			margin-top: 10px;
-			text-align: center;
+			text-align: left;
 		}
 		.delete-compare a {
 			padding: 5px 10px;
@@ -848,7 +849,7 @@
 			bottom: 380px;	
 		}
 		.header-top {
-			margin-top: 70px !important;
+			margin-top: 90px !important;
 		}
 		.compare-detail-pro {
 			padding-left: 0;

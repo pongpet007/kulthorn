@@ -13,7 +13,7 @@
     <div class="menu">
       <ul class="navbar-nav navbar-nav-new">
         <li class="nav-item nav-item-new nav-1 " id="nav-color-1">
-          <a class="nav-link nav-link-new" href="<?=base_url()?>#firstPage"><span class="number-page-1">01.</span>หน้าหลัก</a>
+          <a class="nav-link nav-link-new" href="<?=base_url('#firstPage')?>"><span class="number-page-1">01.</span>หน้าหลัก</a>
         </li>
         <li class="nav-item  nav-item-new nav-2 " id="nav-color-2">
           <a class="nav-link nav-link-new" href="<?=base_url()?>#secondPage"><span class="number-page-2">02.</span>เกี่ยวกับเรา</a>
@@ -199,13 +199,13 @@
                   </div>
                 </li>
                 <li class="nav-item nav-item-new nav-9">  
-                  <a class="nav-link nav-link-new" href=""><i class="fab fa-facebook-f size-font-i"></i></a>
+                  <a class="nav-link nav-link-new" href="#"><i class="fab fa-facebook-f size-font-i"></i></a>
                 </li>
                 <li class="nav-item nav-item-new nav-9">  
-                  <a class="nav-link nav-link-new" href=""><i class="fab fa-twitter size-font-i"></i></a>
+                  <a class="nav-link nav-link-new" href="#"><i class="fab fa-twitter size-font-i"></i></a>
                 </li>
                 <li class="nav-item nav-item-new nav-9">  
-                  <a class="nav-link nav-link-new" href=""><i class="fab fa-instagram size-font-i"></i></a>
+                  <a class="nav-link nav-link-new" href="#"><i class="fab fa-instagram size-font-i"></i></a>
                 </li>
 
               </ul>

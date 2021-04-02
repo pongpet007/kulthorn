@@ -12,3 +12,19 @@
 		</div>
 	</div>
 </div>
+
+<style type="text/css">
+	@media (max-width: 767px) and (min-width: 300px) {
+		.copyright {
+			margin-top: 50px;
+		}
+	}
+	@media (max-width: 1023px) and (min-width: 768px) {
+		
+	}
+	@media (max-width: 1359px) and (min-width: 1024px) {
+		.copyright {
+			margin-top: 50px;
+		}
+	}
+</style>

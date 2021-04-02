@@ -30,7 +30,7 @@
 	<title>ขอใบเสนอราคา</title>
 	<meta name="description" content="Kulthorn" />
 	<meta name="keywords"  content="Kulthorn" />
-	
+
 </head>
 <body>
 	<?
@@ -124,7 +124,10 @@
 								<textarea name="detail" placeholder="รายละเอียด"></textarea>
 							</div>
 							<div class="g-recaptcha" data-sitekey="6LfudvkUAAAAAE8r05xmweDiQQVswvV6KmryzIKb" data-theme="light" data-type="image" data-size="normal"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfudvkUAAAAAE8r05xmweDiQQVswvV6KmryzIKb&amp;co=aHR0cHM6Ly93d3cuYWRzcGFja2FnaW5nbGFiLmNvbTo0NDM.&amp;hl=en&amp;type=image&amp;v=bfvuz6tShG5aoZp4K4zPVf5t&amp;theme=light&amp;size=normal&amp;cb=fsrgomjt595" width="304" height="78" role="presentation" name="a-rhcf7l2kgac9" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>                                        <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=onload&amp;hl=en" async="" defer=""></script>                                        <br>
-							<button class="cart-btn-2" type="submit" style="width: 100%;background-color: #174ea9;color: #fff; font-size: 20px; margin-right: 20px;    border-color: #fff0;">ส่งขอใบเสนอราคา</button>
+							<div style="text-align: center;">
+								<button class="cart-btn-2" type="submit" style="width: 20%;background-color: #174ea9;color: #fff; font-size: 20px; margin-right: 20px;    border-color: #fff0;">ส่งขอใบเสนอราคา</button>
+							</div>
+							
 						</div>
 					</div>
 				</div>

@@ -187,7 +187,7 @@
           data-aos-anchor="#example-anchor"
           data-aos-offset="500"
           data-aos-duration="900">
-          <div class="dropdown nav-link-new show ">
+          <div class="dropdown show ">
             <a class="btn btn-secondary dropdown-toggle button-contact" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-comments color-comment"></i>&nbsp;ติดต่อเรา
             </a>

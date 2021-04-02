@@ -547,7 +547,7 @@
 		padding-bottom: 0px;
 	}
 	.quotation-detail-tr-1 {
-		background-color: #EEE;
+		/*background-color: #EEE;*/
 	}
 	.quotation-detail-tr-1 td {
 		padding-top: 5px;

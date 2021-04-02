@@ -289,7 +289,9 @@
 		</div>
 
 
-
+		<?
+		$this->load->view('2021_theme_1/inc/footer1/footer2')
+		?>
 
 		<script>
 			$(document).ready(function() {

@@ -464,21 +464,21 @@
 	}
 	@media (max-width: 1599px) and (min-width: 1401px)  {
 		.navbar-expand-lg .navbar-nav .nav-link-new {
-			padding: 0 20px;
+			padding: 0 10px;
 			font-size: 28px !important;
 		}
 		.header-top {
-			margin-top: 50px;
+			margin-top: 60px;
 		}
 	}
 
 	@media (min-width: 1600px) {
 		.navbar-expand-lg .navbar-nav .nav-link-new {
-			padding: 0 10px;
+			padding: 0 20px;
 			font-size: 28px !important;
 		}
 		.header-top {
-			margin-top: 50px;
+			margin-top: 80px;
 		}
 	}
 

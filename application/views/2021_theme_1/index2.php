@@ -396,7 +396,7 @@
                   <div role="tabpanel" class="tab-pane fade in active show is-animated" id="Section1">
                     <div class="owl-carousel owl-theme owl-carousel-1">
                       <div class="item">
-                        <img src="<?=base_url()?>/image_new/About1.jpg">
+                        <a href="#"><img src="<?=base_url()?>/image_new/About1.jpg"></a>
                         <p class="about-year">
                           <span>
                             2508
@@ -407,7 +407,7 @@
                         </p>
                       </div>
                       <div class="item">
-                        <img src="<?=base_url()?>/image_new/About2.jpg">
+                        <a href="#"><img src="<?=base_url()?>/image_new/About2.jpg"></a>
                         <p class="about-year">2510<span>
                         </span></p>
                         <p class="aboutnew">
@@ -612,7 +612,7 @@
                   <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                     <div style="padding-left: 15px; padding-right: 15px;">
                       <div class="row">
-                        <div class=" col-md-12 col-8">
+                        <div class="cate_name_pro col-md-12 col-8">
                           <a href="<?=base_url('Products')?>">
                             <h1>คอมเพรสเซอร์</h1>
                             <h2>Compressors</h2>
@@ -630,7 +630,7 @@
                   <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                     <div style="padding-left: 15px; padding-right: 15px;">
                      <div class="row">
-                      <div class=" col-md-12 col-8">
+                      <div class="cate_name_pro col-md-12 col-8">
                         <a href="<?=base_url('Products')?>">
                           <h1>วาล์ว</h1>
                           <h2>VALVE</h2>
@@ -647,7 +647,7 @@
                 <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                   <div style="padding-left: 15px; padding-right: 15px;">
                     <div class="row">
-                     <div class=" col-md-12 col-8">
+                     <div class="cate_name_pro col-md-12 col-8">
                       <a href="<?=base_url('Products')?>">
                         <h1>อุปกรณ์ทำความเย็น</h1>
                         <h2>Cooling equipment</h2>
@@ -664,7 +664,7 @@
               <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                 <div style="padding-left: 15px; padding-right: 15px;">
                   <div class="row">
-                    <div class=" col-md-12 col-8">
+                    <div class="cate_name_pro col-md-12 col-8">
                       <a href="<?=base_url('Products')?>">
                         <h1>รถตัดหญ้า</h1>
                         <h2>Lawn mower</h2>
@@ -681,7 +681,7 @@
               <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                 <div style="padding-left: 15px; padding-right: 15px;">
                   <div class="row">
-                    <div class=" col-md-12 col-8">
+                    <div class="cate_name_pro col-md-12 col-8">
                       <a href="<?=base_url('Products')?>">
                         <h1>ปั๊มน้ำ</h1>
                         <h2>Pumps</h2>
@@ -698,7 +698,7 @@
               <div class="products-catagory-name" style="margin-left: -15px;margin-right: -15px;">
                 <div style="padding-left: 15px; padding-right: 15px;">
                   <div class="row">
-                    <div class=" col-md-12 col-8">
+                    <div class="cate_name_pro col-md-12 col-8">
                       <a href="<?=base_url('Products')?>">
                         <h1>สปริงเกอร์</h1>
                         <h2>Springer</h2>
@@ -714,23 +714,23 @@
           </div>
         </div>
         <div class="col-lg-8 col-md-8 d-none d-sm-block is-animated">
-          <div class="product-hide-1 active-products animate__backInUp" id="img-active">
-            <img style=""  src="<?=base_url()?>image_new/product1.jpg">
+          <div class=" product-hide-1 active-products animate__backInUp" id="img-active">
+            <img style="" class="img-index-products"  src="<?=base_url()?>image_new/product1.jpg">
           </div>
           <div class="product-hide-2 " id="img-anime-pro-2">
-            <img style="" src="<?=base_url()?>image_new/product2.jpg">
+            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product2.jpg">
           </div>
           <div class="product-hide-3" id="img-anime-pro-3">
-            <img style="" src="<?=base_url()?>image_new/product3.jpg">
+            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product3.jpg">
           </div>
           <div class="product-hide-4" id="img-anime-pro-4">
-            <img style="" src="<?=base_url()?>image_new/product4.jpg">
+            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product4.jpg">
           </div>
           <div class="product-hide-5" id="img-anime-pro-5">
-            <img style="" src="<?=base_url()?>image_new/product5.jpg">
+            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product5.jpg">
           </div>
           <div class="product-hide-6" id="img-anime-pro-6">
-            <img style="" src="<?=base_url()?>image_new/product6.jpg">
+            <img style="" class="img-index-products" src="<?=base_url()?>image_new/product6.jpg">
           </div>
         </div>
       </div>
@@ -827,6 +827,7 @@
 
 </script>
 <style type="text/css">
+ 
   .active-products {
     display: block !important;
   }

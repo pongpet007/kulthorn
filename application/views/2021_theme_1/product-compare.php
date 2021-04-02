@@ -19,10 +19,10 @@
     <title>Products Compare</title>
 </head>
 <body>
- <?
- $this->load->view('2021_theme_1/inc/header1/header3')
- ?>
- <div class="container header-top">
+   <?
+   $this->load->view('2021_theme_1/inc/header1/header3')
+   ?>
+   <div class="container header-top">
     <div class="row">
         <div class="col-lg-7 col-sm-6" data-aos="fade-down" data-aos-duration="1000">
 
@@ -57,7 +57,7 @@
 
 
 
-<div class="container mt-3">
+<div class="container mt-3" style="margin-bottom: 30px;">
     <div class="row">
 
         <div class="col-lg-3 col-6 animate__animated animate__bounceInUp" style="animation-duration: 1.8s">
@@ -260,6 +260,12 @@
 
     </div>
 </div>
+
+<?
+$this->load->view('2021_theme_1/inc/footer1/footer2')
+?>
+
+
 
 <script type="text/javascript">
     $(function () {

@@ -297,7 +297,9 @@
 				</div>
 			</div>
 		</div>
-
+		<?
+		$this->load->view('2021_theme_1/inc/footer1/footer2')
+		?>
 
 		<script src="<?=base_url()?>assets/aos-master/dist/aos.js"></script>
 		<script>

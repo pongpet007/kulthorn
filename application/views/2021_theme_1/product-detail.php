@@ -55,153 +55,153 @@
 
   <!-- Button Compare -->
   <div class="compare" data-aos="fade-right"  data-aos-offset="400"  data-aos-easing="ease-in-sine">
-  <button type="button" onclick="window.location.href='<?= base_url()?>Products/compare';" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
-    <i class="fas fa-sync-alt"></i>
-    <span class="count-compare">
-      2
-    </span>
-  </button>
-</div>
-
-
-
-<div class="container mt-3 all-product" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-  <div class="row">
-    <div class="col-lg-5">
-      <div class="" >
-      <img src="<?= base_url()?>assets/img/product-1.png" style="width: 100%;">
-    </div>
+    <button type="button" onclick="window.location.href='<?= base_url()?>Products/compare';" class="btn btn-secondary btn-compare" data-toggle="tooltip" data-placement="right" title="เปรียบเทียบผลิตภัณฑ์">
+      <i class="fas fa-sync-alt"></i>
+      <span class="count-compare">
+        2
+      </span>
+    </button>
   </div>
-  <div class="col-lg-7">
-    <div class="detail-product-pro" >
-    <h3>
-      ฟิลเตอร์ ไดเออร์
-    </h3>
-    <div class="breadcrumb-detail-pro">
-      <div class="breadcrumb-detail menu-pro-detail">หมวดหมู่สินค้า&nbsp;</div>
-      <div class="category-menu-detail">&nbsp;อุปกรณ์ทำความเย็น</div>
-    </div>
-    <div class="breadcrumb-detail-pro">
-      <div class="breadcrumb-detail menu-pro-detail">แบรนด์&nbsp;</div>
-      <div class="category-menu-detail">&nbsp;SEO</div>
-    </div>
 
-    <ul class="ul-share">
-      <li>
-        <div class="breadcrumb-detail menu-pro-detail">แชร์&nbsp;</div>
-      </li>
-      <li>
-        <div class="share-face">
-          <a href="#">
-            <i class="fab fa-facebook-square face-color"></i>&nbsp;&nbsp;<span>share</span>
-          </a>
+
+
+  <div class="container mt-3 all-product" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="" >
+          <img src="<?= base_url()?>assets/img/product-1.png" style="width: 100%;">
         </div>
-      </li>
-      <li>
-        <div class="share-line">
-          <a href="#">
-            <i class="fab fa-line line-color"></i>&nbsp;&nbsp;<span>share</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="share-twitter">
-          <a href="#">
-            <i class="fab fa-twitter line-color"></i>&nbsp;&nbsp;<span>Tweet</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="share-mail">
-          <a href="#">
-            <i class="fas fa-envelope mail-color"></i>&nbsp;&nbsp;<span>Send</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="share-print">
-          <a href="#">
-            <i class="fas fa-print print-color"></i>&nbsp;&nbsp;<span>Print</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-
-
-
-    <div>
-      <img  class="hr-product" src="<?=base_url()?>assets/img/line.png">
-    </div>
-
-    <div class="tags-pro">
-      <div class="breadcrumb-detail menu-pro-detail">ป้ายกำกับสินค้า&nbsp;</div>
-      <div class="scrollbar" id="tags">
-
-        <div class="tags-a-new">
-          <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-        </div>
-        <div class="tags-a-new">
-          <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
-        </div>
-
-
       </div>
+      <div class="col-lg-7">
+        <div class="detail-product-pro" >
+          <h3>
+            ฟิลเตอร์ ไดเออร์
+          </h3>
+          <div class="breadcrumb-detail-pro">
+            <div class="breadcrumb-detail menu-pro-detail">หมวดหมู่สินค้า&nbsp;</div>
+            <div class="category-menu-detail">&nbsp;อุปกรณ์ทำความเย็น</div>
+          </div>
+          <div class="breadcrumb-detail-pro">
+            <div class="breadcrumb-detail menu-pro-detail">แบรนด์&nbsp;</div>
+            <div class="category-menu-detail">&nbsp;SEO</div>
+          </div>
+
+          <ul class="ul-share">
+            <li>
+              <div class="breadcrumb-detail menu-pro-detail">แชร์&nbsp;</div>
+            </li>
+            <li>
+              <div class="share-face">
+                <a href="#">
+                  <i class="fab fa-facebook-square face-color"></i>&nbsp;&nbsp;<span>share</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="share-line">
+                <a href="#">
+                  <i class="fab fa-line line-color"></i>&nbsp;&nbsp;<span>share</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="share-twitter">
+                <a href="#">
+                  <i class="fab fa-twitter line-color"></i>&nbsp;&nbsp;<span>Tweet</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="share-mail">
+                <a href="#">
+                  <i class="fas fa-envelope mail-color"></i>&nbsp;&nbsp;<span>Send</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="share-print">
+                <a href="#">
+                  <i class="fas fa-print print-color"></i>&nbsp;&nbsp;<span>Print</span>
+                </a>
+              </div>
+            </li>
+          </ul>
 
 
+
+          <div>
+            <img  class="hr-product" src="<?=base_url()?>assets/img/line.png">
+          </div>
+
+          <div class="tags-pro">
+            <div class="breadcrumb-detail menu-pro-detail">ป้ายกำกับสินค้า&nbsp;</div>
+            <div class="scrollbar" id="tags">
+
+              <div class="tags-a-new">
+                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
+              </div>
+              <div class="tags-a-new">
+                <a href="#">&nbsp;ฟิลเตอร์ ไดเออร์</a>
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+          <hr>
+
+          <div class="breadcrumb-detail-pro">
+            <div class="breadcrumb-detail menu-pro-detail">รายละเอียด&nbsp;</div>
+          </div>
+          <div class="about-product">
+            <p>จำหน่ายฟิลเตอร์ ไดเออร์ อุปกรณ์ทำความเย็น หัวจ่ายน้ำยา เครื่องมือทำความเย็นสำหรับช่าง คอยล์เย็น อะไหล่คอยล์เย็น</p>
+          </div>
+
+          <div class="about-tools" >
+            <div class="quotation" data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">
+            <a href="#">
+              <i class="fas fa-th-list list-color"></i>
+              &nbsp;
+              <span>ขอใบเสนอราคา</span>
+            </a>
+          </div>
+
+          <div class="compare-product" data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="700">
+          <a href="#">
+            <i class="fas fa-sync-alt color-columns"></i>
+            <span>เปรียบเทียบผลิตภัณฑ์</span>
+          </a>
+        </div>
+
+        <div class="contact-we"
+        data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="900">
+        <div class="dropdown nav-link-new show ">
+          <a class="btn btn-secondary dropdown-toggle button-contact" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-comments color-comment"></i>&nbsp;ติดต่อเรา
+          </a>
+
+          <div class="dropdown-menu drop-contact" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item drop-new" href="#">แอดไลน์</a>
+            <a class="dropdown-item drop-new" href="#">โทรศัพย์</a>
+            <a class="dropdown-item drop-new" href="#">เฟสบุค</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <hr>
 
-    <div class="breadcrumb-detail-pro">
-      <div class="breadcrumb-detail menu-pro-detail">รายละเอียด&nbsp;</div>
-    </div>
-    <div class="about-product">
-      <p>จำหน่ายฟิลเตอร์ ไดเออร์ อุปกรณ์ทำความเย็น หัวจ่ายน้ำยา เครื่องมือทำความเย็นสำหรับช่าง คอยล์เย็น อะไหล่คอยล์เย็น</p>
-    </div>
-
-    <div class="about-tools" >
-      <div class="quotation" data-aos="fade-left"
-      data-aos-anchor="#example-anchor"
-      data-aos-offset="500"
-      data-aos-duration="500">
-      <a href="#">
-        <i class="fas fa-th-list list-color"></i>
-        &nbsp;
-        <span>ขอใบเสนอราคา</span>
-      </a>
-    </div>
-
-    <div class="compare-product" data-aos="fade-left"
-    data-aos-anchor="#example-anchor"
-    data-aos-offset="500"
-    data-aos-duration="700">
-    <a href="#">
-      <i class="fas fa-sync-alt color-columns"></i>
-      <span>เปรียบเทียบผลิตภัณฑ์</span>
-    </a>
   </div>
-
-  <div class="contact-we"
-  data-aos="fade-left"
-  data-aos-anchor="#example-anchor"
-  data-aos-offset="500"
-  data-aos-duration="900">
-  <div class="dropdown nav-link-new show ">
-    <a class="btn btn-secondary dropdown-toggle button-contact" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="fas fa-comments color-comment"></i>&nbsp;ติดต่อเรา
-    </a>
-
-    <div class="dropdown-menu drop-contact" aria-labelledby="dropdownMenuLink">
-      <a class="dropdown-item drop-new" href="#">แอดไลน์</a>
-      <a class="dropdown-item drop-new" href="#">โทรศัพย์</a>
-      <a class="dropdown-item drop-new" href="#">เฟสบุค</a>
-    </div>
-  </div>
-</div>
-</div>
-
-
-</div>
 </div>
 </div>
 </div>
@@ -367,6 +367,10 @@
 
 </div>
 
+
+<?
+$this->load->view('2021_theme_1/inc/footer1/footer2')
+?>
 
 
 

@@ -60,192 +60,199 @@
 
 
     <div class="container mt-3 all-product" data-aos="fade-up"
-     data-aos-duration="1500">
-        <div class="row">
-            <div class="col-lg-3 order-2 order-md-1 category-menu">
-             <h3><b>หมวดสินค้าทั้งหมด</b></h3>
-             <nav class="nav flex-column">
-                <a class="nav-link active" href="#"><i class="fas fa-chevron-right icon-cate"></i>วาล์ว</a>
-                <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>คอมเพรสเซอร์</a>
-                <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>อุปกรณ์ทำความเย็น</a>
-                <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>รถตัดหญ้า</a>
-                <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>ปั๊มน้ำ</a>
-                <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>สปริงเกอร์</a>
-            </nav>
+    data-aos-duration="1500">
+    <div class="row">
+        <div class="col-lg-3 order-2 order-md-1 category-menu">
+         <h3><b>หมวดสินค้าทั้งหมด</b></h3>
+         <nav class="nav flex-column">
+            <a class="nav-link active" href="#"><i class="fas fa-chevron-right icon-cate"></i>วาล์ว</a>
+            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>คอมเพรสเซอร์</a>
+            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>อุปกรณ์ทำความเย็น</a>
+            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>รถตัดหญ้า</a>
+            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>ปั๊มน้ำ</a>
+            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>สปริงเกอร์</a>
+        </nav>
 
-            <h3 class="mt-5"><b>แบรนด์สินค้า</b></h3>
-            <nav class="nav flex-column">
-                <a class="nav-link active" href="#"><i class="fas fa-chevron-right icon-cate"></i>กุลธร</a>
-                <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>SECO</a>
-            </nav>
-            <h3 class="mt-5"><b>คำค้นหายอดนิยม</b></h3>
-            <div class="scrollbar-search">
-                <div class="tags-a">
-                    <a href="#">เครื่องตัดหญ้าแบบเข็น</a>
-                </div>
-
-                <div class="tags-a">
-                    <a href="#">เครื่องตัดหญ้า</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-9 order-1 order-md-2 products-all mb-3">
-            <div class="row">
-
-                <div class= "col-6 col-lg-4 ">
-                    <div class ="picture-product">
-                        <img src="image_new/p-1.jpg">
-                        <div class="overlay-img-2 product-overlay">
-                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
-                                <h3>
-                                    ชมรายละเอียดสินค้า
-                                </h3>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="detail-product">
-                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
-                            <h3>
-                                เครื่องทำความเย็น / CONDENSING UNIT
-                            </h3>
-                        </a>
-                        <p>
-                            บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                        </p>
-                    </div>
-                </div>
-
-                <div class= "col-6 col-lg-4 ">
-                    <div class ="picture-product">
-                        <img src="image_new/p-1.jpg">
-                        <div class="overlay-img-2 product-overlay">
-                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
-                                <h3>
-                                    ชมรายละเอียดสินค้า
-                                </h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="detail-product">
-                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
-                            <h3>
-                                เครื่องทำความเย็น / CONDENSING UNIT
-                            </h3>
-                        </a>
-                        <p>
-                            บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                        </p>
-                    </div>
-                </div>
-
-                <div class= "col-6 col-lg-4 ">
-                    <div class ="picture-product">
-                        <img src="image_new/p-1.jpg">
-                        <div class="overlay-img-2 product-overlay">
-                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
-                                <h3>
-                                    ชมรายละเอียดสินค้า
-                                </h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="detail-product">
-                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
-                            <h3>
-                                เครื่องทำความเย็น / CONDENSING UNIT
-                            </h3>
-                        </a>
-                        <p>
-                            บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                        </p>
-                    </div>
-                </div>
-
-                <div class= "col-6 col-lg-4 ">
-                    <div class ="picture-product">
-                        <img src="image_new/p-1.jpg">
-                        <div class="overlay-img-2 product-overlay">
-                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
-                                <h3>
-                                    ชมรายละเอียดสินค้า
-                                </h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="detail-product">
-                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
-                            <h3>
-                                เครื่องทำความเย็น / CONDENSING UNIT
-                            </h3>
-                        </a>
-                        <p>
-                            บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                        </p>
-                    </div>
-                </div>
-
-
-                <div class= "col-6 col-lg-4 ">
-                    <div class ="picture-product">
-                        <img src="image_new/p-1.jpg">
-                        <div class="overlay-img-2 product-overlay">
-                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
-                                <h3>
-                                    ชมรายละเอียดสินค้า
-                                </h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="detail-product">
-                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
-                            <h3>
-                                เครื่องทำความเย็น / CONDENSING UNIT
-                            </h3>
-                        </a>
-                        <p>
-                            บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                        </p>
-                    </div>
-                </div>
-
-
-                <div class= "col-6 col-lg-4 ">
-                    <div class ="picture-product">
-                        <img src="image_new/p-1.jpg">
-                        <div class="overlay-img-2 product-overlay">
-                            <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
-                                <h3>
-                                    ชมรายละเอียดสินค้า
-                                </h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="detail-product">
-                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
-                            <h3>
-                                เครื่องทำความเย็น / CONDENSING UNIT
-                            </h3>
-                        </a>
-                        <p>
-                            บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
-                        </p>
-                    </div>
-                </div>
-
-
-
-
-
-
-
+        <h3 class="mt-5"><b>แบรนด์สินค้า</b></h3>
+        <nav class="nav flex-column">
+            <a class="nav-link active" href="#"><i class="fas fa-chevron-right icon-cate"></i>กุลธร</a>
+            <a class="nav-link" href="#"><i class="fas fa-chevron-right icon-cate"></i>SECO</a>
+        </nav>
+        <h3 class="mt-5"><b>คำค้นหายอดนิยม</b></h3>
+        <div class="scrollbar-search">
+            <div class="tags-a">
+                <a href="#">เครื่องตัดหญ้าแบบเข็น</a>
             </div>
 
-
+            <div class="tags-a">
+                <a href="#">เครื่องตัดหญ้า</a>
+            </div>
         </div>
     </div>
+
+    <div class="col-lg-9 order-1 order-md-2 products-all mb-3">
+        <div class="row">
+
+            <div class= "col-6 col-lg-4 ">
+                <div class ="picture-product">
+                    <img src="image_new/p-1.jpg">
+                    <div class="overlay-img-2 product-overlay">
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                            <h3>
+                                ชมรายละเอียดสินค้า
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="detail-product">
+                    <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                        <h3>
+                            เครื่องทำความเย็น / CONDENSING UNIT
+                        </h3>
+                    </a>
+                    <p>
+                        บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
+                    </p>
+                </div>
+            </div>
+
+            <div class= "col-6 col-lg-4 ">
+                <div class ="picture-product">
+                    <img src="image_new/p-1.jpg">
+                    <div class="overlay-img-2 product-overlay">
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                            <h3>
+                                ชมรายละเอียดสินค้า
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="detail-product">
+                    <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                        <h3>
+                            เครื่องทำความเย็น / CONDENSING UNIT
+                        </h3>
+                    </a>
+                    <p>
+                        บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
+                    </p>
+                </div>
+            </div>
+
+            <div class= "col-6 col-lg-4 ">
+                <div class ="picture-product">
+                    <img src="image_new/p-1.jpg">
+                    <div class="overlay-img-2 product-overlay">
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                            <h3>
+                                ชมรายละเอียดสินค้า
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="detail-product">
+                    <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                        <h3>
+                            เครื่องทำความเย็น / CONDENSING UNIT
+                        </h3>
+                    </a>
+                    <p>
+                        บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
+                    </p>
+                </div>
+            </div>
+
+            <div class= "col-6 col-lg-4 ">
+                <div class ="picture-product">
+                    <img src="image_new/p-1.jpg">
+                    <div class="overlay-img-2 product-overlay">
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                            <h3>
+                                ชมรายละเอียดสินค้า
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="detail-product">
+                    <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                        <h3>
+                            เครื่องทำความเย็น / CONDENSING UNIT
+                        </h3>
+                    </a>
+                    <p>
+                        บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
+                    </p>
+                </div>
+            </div>
+
+
+            <div class= "col-6 col-lg-4 ">
+                <div class ="picture-product">
+                    <img src="image_new/p-1.jpg">
+                    <div class="overlay-img-2 product-overlay">
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                            <h3>
+                                ชมรายละเอียดสินค้า
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="detail-product">
+                    <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                        <h3>
+                            เครื่องทำความเย็น / CONDENSING UNIT
+                        </h3>
+                    </a>
+                    <p>
+                        บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
+                    </p>
+                </div>
+            </div>
+
+
+            <div class= "col-6 col-lg-4 ">
+                <div class ="picture-product">
+                    <img src="image_new/p-1.jpg">
+                    <div class="overlay-img-2 product-overlay">
+                        <a href="<?=base_url()?>Products/detail" class="goto-productdetail">
+                            <h3>
+                                ชมรายละเอียดสินค้า
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="detail-product">
+                    <a href="<?=base_url()?>Products/detail" class="goto-productdetail-2">
+                        <h3>
+                            เครื่องทำความเย็น / CONDENSING UNIT
+                        </h3>
+                    </a>
+                    <p>
+                        บิทเซอร์คอนเดนซิ่งยูนิท เครื่องทำความเย็น
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+    
 </div>
+</div>
+
+<?
+$this->load->view('2021_theme_1/inc/footer1/footer2')
+?>
+
+
 
 <script type="text/javascript">
     $(function () {
